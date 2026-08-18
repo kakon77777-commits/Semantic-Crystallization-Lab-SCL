@@ -1,0 +1,15 @@
+{
+  "by_arm": {
+    "A00": {"imprint.correction": 3, "imprint.transfer": 21},
+    "A01": {"imprint.correction": 3, "imprint.transfer": 21},
+    "A10": {"imprint.correction": 6, "imprint.objection": 15, "imprint.transfer": 3},
+    "A11": {"imprint.correction": 6, "imprint.objection": 15, "imprint.transfer": 3}
+  },
+  "event_type_counts": {"imprint.correction": 18, "imprint.objection": 30, "imprint.transfer": 48},
+  "events": 96,
+  "first_event_sha256": "d88912abc004adbbc35f8dd575a8f3a73ee3d8fecc43669f36bb386cc99fd314",
+  "full_ledger_location": "byte-complete release ZIP",
+  "last_event_sha256": "a012d9eb98d90aaf21899e60349b8556e9466e26e1b1333ece5196efa0413a1a",
+  "ledger_sha256": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76",
+  "schema": "scl-exp0005-ledger-summary/v0.5"
+}
