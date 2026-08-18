@@ -1,0 +1,32 @@
+{
+  "boundaries": {
+    "cross_agent_coordinate": "shared F01-F19 feature space only",
+    "hidden_coordinate_comparison": false,
+    "live_ctcl_call": false,
+    "public_ai_board_write": false
+  },
+  "config": {
+    "contamination_f07": 0.05,
+    "contamination_f14": 0.05,
+    "contamination_f19": 0.98,
+    "objection_threshold": 0.12,
+    "qevra_top_k": 18,
+    "stage2": {
+      "base_epochs": 90,
+      "d_model": 48,
+      "layers": 1,
+      "learning_rate": 0.012,
+      "max_len": 384,
+      "nhead": 4,
+      "positive_weight_cap": 8.0,
+      "rms_factor": 1.0,
+      "stage1_epochs": 120,
+      "stage2_epochs": 120,
+      "support_threshold": 0.5
+    },
+    "tivak_top_k": 1,
+    "transfer_epochs": 80,
+    "transfer_lr": 0.015
+  },
+  "seeds": [11, 23, 37]
+}
