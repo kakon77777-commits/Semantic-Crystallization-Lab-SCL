@@ -1,0 +1,31 @@
+{
+  "schema": "scl-github-sync/v0.3",
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.3-exp0003",
+  "base_commit": "f7170b2202b28dec76babf9fd69e51579f554780",
+  "experiment": "EXP-0003",
+  "github_browsable_core": [
+    "README.md",
+    "VALIDATION_V03.json",
+    "GITHUB_SYNC_V03.json",
+    "requirements-exp0003.txt",
+    "experiments/EXP-0003/README.md",
+    "experiments/EXP-0003/EXP0003_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0003/config.json",
+    "experiments/EXP-0003/corpus/memory_bank.json",
+    "experiments/EXP-0003/corpus/train_arms.json",
+    "experiments/EXP-0003/corpus/eval_contexts.json",
+    "experiments/EXP-0003/results/per_seed_summary.jsonl",
+    "experiments/EXP-0003/results/report.md",
+    "experiments/EXP-0003/3m/checksums.json"
+  ],
+  "download_zip_canonical_raw": {
+    "experiments/EXP-0003/results/metrics.json": {"sha256":"f4a5c93f1093f0dd66676ea12ed954d74a96741b5ca5d7c714cf07704f1e5b4b"},
+    "experiments/EXP-0003/results/per_seed.jsonl": {"sha256":"eee94e3048e4a4000c29f5b6501038f9a13bff9fd7901300023d1f78d71e8129","bytes":1301872},
+    "experiments/EXP-0003/3m/matrices/context_feature.cells.jsonl": {"sha256":"c560788be5d333027bcf14f10d74cc53ddd628cdeca07220a28e1e2a5abd078c","bytes":1157713},
+    "experiments/EXP-0003/3m/matrices/memory_attention.cells.jsonl": {"sha256":"1ca7614a5bd504b189d352586e1c30994d76381228622a749e3534c17903058f","bytes":403036},
+    "source_and_tests": "byte-complete local release includes the EXP-0003 Python modules, deterministic runner, TDD tests, design/plan, and all prior SCL code",
+    "original_binary_sources": "byte-complete local release includes the three preserved DOCX theory papers and EML-U reference ZIP"
+  },
+  "audit_note": "Large raw ledgers are SHA-bound here and in VALIDATION_V03.json; the separate downloadable archive is the byte-complete canonical backup for this run. GitHub carries the human-readable process, deterministic configuration, finite corpora, seed-level summaries, report and checksum ledger."
+}
