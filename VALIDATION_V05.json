@@ -1,0 +1,130 @@
+{
+  "boundaries": {
+    "cross_agent_coordinate": "shared F01-F19 feature space only",
+    "ctcl_mode": "deterministic-logical-instant-compatibility-only",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "public_ai_board_write": false
+  },
+  "date": "2026-08-18",
+  "exp0005_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0005/3m/checksums.json": "a3ab2cba1881957b5a2429d62b1d901e2fe992771ae08907802b74cfae517a67",
+      "experiments/EXP-0005/ledger/ai_board_sci.jsonl": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76",
+      "experiments/EXP-0005/results/metrics.json": "9dfbbe87fe3df39259e670cd31d16af8c5fdc5566a39313735284130844ed100",
+      "experiments/EXP-0005/results/per_agent_summary.jsonl": "38eec53e07c0f42814e1ae574b72737ab7155363ece30b44889083e9475b193a",
+      "experiments/EXP-0005/results/per_arm_summary.jsonl": "68ec0f1781113a050c97a995e440b4910aca6e878687cf22fa8d464db9fe8fa7",
+      "experiments/EXP-0005/results/protocol_fault_audit.json": "1d6b881aa1a6de95bd05ec13827f83936f21afca846523eabe4d63d044ea0dba",
+      "experiments/EXP-0005/results/report.md": "45392efa1a75a7bd8864ebddcc907e7b2609b16f2203d27cf0d39b701780e3f9"
+    },
+    "reruns": 2
+  },
+  "exp0005_three_m": {
+    "failures": [],
+    "files_checked": 8,
+    "valid": true
+  },
+  "experiment": "EXP-0005",
+  "hypotheses": {
+    "H1_persistence_reduces_restart_drift": true,
+    "H2_protocol_preserves_correction_under_faults": true,
+    "H3_joint_protocol_persistence_dominates_continuity": true,
+    "H4_persistence_alone_insufficient_against_overwrite": true,
+    "H5_protocol_alone_recovers_but_restart_discontinuity_remains": true,
+    "H6_consensus_is_not_truth_signal": true
+  },
+  "node_tests": {
+    "command": "npm test",
+    "failed": 0,
+    "passed": 11
+  },
+  "primary_metrics": {
+    "A00": {
+      "final_correction_retention": 0.0,
+      "final_cross_agent_js": 0.0,
+      "max_restart_js": 0.051238288623527806,
+      "mean_final_js_from_accepted": 0.08633758118893835,
+      "mean_final_target_js": 0.10526247245577879,
+      "mean_history_events_after_restart": 0.0,
+      "mean_history_events_final": 6.0,
+      "mean_restart_js": 0.024324623546015084,
+      "persistence": false,
+      "postbootstrap_correction_retention": 1.0,
+      "prebootstrap_correction_retention": 0.0,
+      "protocol": false,
+      "protocol_rejection_reasons": {}
+    },
+    "A01": {
+      "final_correction_retention": 0.0,
+      "final_cross_agent_js": 0.0,
+      "max_restart_js": 0.0,
+      "mean_final_js_from_accepted": 0.08633758118893835,
+      "mean_final_target_js": 0.10526247245577879,
+      "mean_history_events_after_restart": 1.0,
+      "mean_history_events_final": 7.0,
+      "mean_restart_js": 0.0,
+      "persistence": true,
+      "postbootstrap_correction_retention": 1.0,
+      "prebootstrap_correction_retention": 1.0,
+      "protocol": false,
+      "protocol_rejection_reasons": {}
+    },
+    "A10": {
+      "final_correction_retention": 1.0,
+      "final_cross_agent_js": 0.0,
+      "max_restart_js": 0.051238288623527806,
+      "mean_final_js_from_accepted": 0.0,
+      "mean_final_target_js": 0.02509340994940461,
+      "mean_history_events_after_restart": 0.0,
+      "mean_history_events_final": 1.0,
+      "mean_restart_js": 0.024324623546015084,
+      "persistence": false,
+      "postbootstrap_correction_retention": 1.0,
+      "prebootstrap_correction_retention": 0.0,
+      "protocol": true,
+      "protocol_rejection_reasons": {
+        "conflicting_correction": 6,
+        "missing_provenance": 3,
+        "rollback_to_superseded": 3,
+        "stale_version": 3
+      }
+    },
+    "A11": {
+      "final_correction_retention": 1.0,
+      "final_cross_agent_js": 0.0,
+      "max_restart_js": 0.0,
+      "mean_final_js_from_accepted": 0.0,
+      "mean_final_target_js": 0.02509340994940461,
+      "mean_history_events_after_restart": 1.0,
+      "mean_history_events_final": 1.0,
+      "mean_restart_js": 0.0,
+      "persistence": true,
+      "postbootstrap_correction_retention": 1.0,
+      "prebootstrap_correction_retention": 1.0,
+      "protocol": true,
+      "protocol_rejection_reasons": {
+        "conflicting_correction": 6,
+        "missing_provenance": 3,
+        "rollback_to_superseded": 3,
+        "stale_version": 3
+      }
+    },
+    "accepted_target_js": 0.025093409949404615,
+    "contaminated_target_js": 0.10526247245577879,
+    "false_consensus_target_distortion_multiplier": 4.194825361240963
+  },
+  "prior_exp0004_canonical_integrity": {
+    "checked": 6,
+    "matches": true,
+    "mismatches": {}
+  },
+  "python_tests": {
+    "command": "python -m pytest -q",
+    "failed": 0,
+    "passed": 58
+  },
+  "runtime_note": "EXP-0005 is deterministic feature-space protocol/persistence computation over canonical EXP-0004 SCI packages; no neural retraining is performed.",
+  "schema": "scl-validation/v0.5",
+  "title": "Protocol–Persistent Cognition Continuity"
+}
