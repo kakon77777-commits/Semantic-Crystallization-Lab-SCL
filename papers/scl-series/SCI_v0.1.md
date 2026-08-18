@@ -66,7 +66,7 @@ An SCI package is a proposal, not truth. In multi-agent use it should support ap
 
 ## Current evidence boundary
 
-SCL EXP-0001 through EXP-0006 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
+SCL EXP-0001 through EXP-0007 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
 
 ## Continuity note
 
@@ -91,3 +91,15 @@ $$
 $$
 
 A persistent SCI must be revisable, but unrestricted revisability allows structurally valid contamination. The bounded experiment therefore treats admissibility as a plasticity–integrity tradeoff: stronger evidence quorums improve resistance to correlated updates while increasing the risk of rejecting genuine minority novelty. This is an experimental decomposition, not a universal optimality theorem.
+
+## Adaptive epistemic admission note
+
+EXP-0007 treats admission itself as a learned, history-conditioned process. A structurally valid transition is evaluated using provenance-root reliability estimated from delayed validation feedback, together with current risk, semantic novelty and recent pollution prevalence.
+
+Operationally, this adds a fourth distinction:
+
+$$
+\text{Admissibility threshold} \neq \text{fixed quorum}.
+$$
+
+A learned threshold can move along the plasticity–integrity frontier, but it introduces **epistemic hysteresis**: new reliable sources may be under-trusted until enough feedback arrives, while previously reliable sources may retain excess trust after compromise. This is a bounded observation about the EXP-0007 benchmark, not a claim that Beta reputation or any specific trust update rule is universally correct.
