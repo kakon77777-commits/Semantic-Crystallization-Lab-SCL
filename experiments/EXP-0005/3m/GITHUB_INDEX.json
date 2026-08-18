@@ -1,0 +1,55 @@
+{
+  "checksums": {
+    "graphs/routes.jsonl": "0e419d1f184905b3abc3ab3eb45cf2acf35352f4b44d8e7c0fdaaa5ec5831be6",
+    "ledgers/ai_board_sci.jsonl": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76",
+    "manifest.json": "f62714df46dd206658387297ce6942eb1e6681d04c399a5f7c9284fbaae26a00",
+    "matrices/arm_agent_session_feature.cells.jsonl": "768f886997e4a497c64af5d2cadadd0025e4f8a488e51384357ac623a23b5e2a",
+    "matrices/continuity_metrics.cells.jsonl": "fbd44afe9f8b95e3a2e81bf61bddccb847c65aed891f04e37820ff50d9cfd00c",
+    "provenance/events.jsonl": "ef2ce2c1c157b8d9eb688d2053ebec55390e36362cc8a2a8d84037936fed69ce",
+    "reports/projection_loss.json": "72eefdcf912af637e2b50b80b807eb52476e4ee5ce37ba436d8a851fb4f3323f",
+    "substrate.json": "d0ab7d38e2397a734bf7a380a994e7370d025f127e3b5d8afb1f70fe4bf8e67a"
+  },
+  "manifest": {
+    "arms": ["A00", "A01", "A10", "A11"],
+    "conformance": "bounded-profile-not-formal-mlf-1.0",
+    "experiment_id": "EXP-0005",
+    "feature_count": 19,
+    "hypotheses": {
+      "H1_persistence_reduces_restart_drift": true,
+      "H2_protocol_preserves_correction_under_faults": true,
+      "H3_joint_protocol_persistence_dominates_continuity": true,
+      "H4_persistence_alone_insufficient_against_overwrite": true,
+      "H5_protocol_alone_recovers_but_restart_discontinuity_remains": true,
+      "H6_consensus_is_not_truth_signal": true
+    },
+    "roles": {
+      "AI_Board": "append-only proposal/correction/objection/transfer compatibility ledger",
+      "CTCL": "deterministic logical instants only; no live verified time call",
+      "MLF": "arm/session/agent coordinates, provenance, hashes and correction state",
+      "MMLC": "deterministic restart JS, target JS, retention and protocol-fault calculations",
+      "MMR": "arm↔agent↔session↔feature multidirectional projections"
+    },
+    "schema": "scl-3m-bounded/v0.5"
+  },
+  "projection_loss": {
+    "accepted_target_js": 0.025093409949404615,
+    "arm_summaries": {
+      "A00": {"final_correction_retention":0.0,"final_cross_agent_js":0.0,"max_restart_js":0.051238288623527806,"mean_final_js_from_accepted":0.08633758118893835,"mean_final_target_js":0.10526247245577879,"mean_history_events_after_restart":0.0,"mean_history_events_final":6.0,"mean_restart_js":0.024324623546015084,"persistence":false,"postbootstrap_correction_retention":1.0,"prebootstrap_correction_retention":0.0,"protocol":false,"protocol_rejection_reasons":{}},
+      "A01": {"final_correction_retention":0.0,"final_cross_agent_js":0.0,"max_restart_js":0.0,"mean_final_js_from_accepted":0.08633758118893835,"mean_final_target_js":0.10526247245577879,"mean_history_events_after_restart":1.0,"mean_history_events_final":7.0,"mean_restart_js":0.0,"persistence":true,"postbootstrap_correction_retention":1.0,"prebootstrap_correction_retention":1.0,"protocol":false,"protocol_rejection_reasons":{}},
+      "A10": {"final_correction_retention":1.0,"final_cross_agent_js":0.0,"max_restart_js":0.051238288623527806,"mean_final_js_from_accepted":0.0,"mean_final_target_js":0.02509340994940461,"mean_history_events_after_restart":0.0,"mean_history_events_final":1.0,"mean_restart_js":0.024324623546015084,"persistence":false,"postbootstrap_correction_retention":1.0,"prebootstrap_correction_retention":0.0,"protocol":true,"protocol_rejection_reasons":{"conflicting_correction":6,"missing_provenance":3,"rollback_to_superseded":3,"stale_version":3}},
+      "A11": {"final_correction_retention":1.0,"final_cross_agent_js":0.0,"max_restart_js":0.0,"mean_final_js_from_accepted":0.0,"mean_final_target_js":0.02509340994940461,"mean_history_events_after_restart":1.0,"mean_history_events_final":1.0,"mean_restart_js":0.0,"persistence":true,"postbootstrap_correction_retention":1.0,"prebootstrap_correction_retention":1.0,"protocol":true,"protocol_rejection_reasons":{"conflicting_correction":6,"missing_provenance":3,"rollback_to_superseded":3,"stale_version":3}}
+    },
+    "contaminated_target_js": 0.10526247245577879,
+    "hypotheses": {
+      "H1_persistence_reduces_restart_drift": true,
+      "H2_protocol_preserves_correction_under_faults": true,
+      "H3_joint_protocol_persistence_dominates_continuity": true,
+      "H4_persistence_alone_insufficient_against_overwrite": true,
+      "H5_protocol_alone_recovers_but_restart_discontinuity_remains": true,
+      "H6_consensus_is_not_truth_signal": true
+    }
+  },
+  "raw_matrices_location": "byte-complete release ZIP",
+  "schema": "scl-exp0005-3m-github-index/v0.5",
+  "verification": {"failures": [], "files_checked": 8, "valid": true}
+}
