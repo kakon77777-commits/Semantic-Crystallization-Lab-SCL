@@ -1,0 +1,54 @@
+{
+  "schema": "scl-github-sync/v0.5",
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.5-exp0005",
+  "base_commit": "06066f87418c958583ed8596255c6611e15b9674",
+  "experiment": "EXP-0005",
+  "github_browsable_core": [
+    "README.md",
+    "VALIDATION_V05.json",
+    "papers/scl-series/SCI_v0.1.md",
+    "docs/superpowers/specs/2026-08-18-scl-v0.5-exp0005-design.md",
+    "docs/superpowers/plans/2026-08-18-scl-v0.5-exp0005.md",
+    "python/scl_exp/sci_protocol.py",
+    "python/scl_exp/persistent_cognition.py",
+    "python/scl_exp/exp0005.py",
+    "python/scl_exp/three_m_v05.py",
+    "scripts/run_exp0005.py",
+    "tests_py/test_sci_protocol.py",
+    "tests_py/test_persistent_cognition.py",
+    "tests_py/test_exp0005.py",
+    "tests_py/test_three_m_v05.py",
+    "tests_py/test_runner_exp0005.py",
+    "experiments/EXP-0005/README.md",
+    "experiments/EXP-0005/EXP0005_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0005/config.json",
+    "experiments/EXP-0005/results/GITHUB_METRICS.json",
+    "experiments/EXP-0005/results/per_arm_summary.jsonl",
+    "experiments/EXP-0005/results/per_agent_summary.jsonl",
+    "experiments/EXP-0005/results/protocol_fault_audit.json",
+    "experiments/EXP-0005/results/report.md",
+    "experiments/EXP-0005/ledger/GITHUB_LEDGER_SUMMARY.json",
+    "experiments/EXP-0005/3m/GITHUB_INDEX.json"
+  ],
+  "release_archive": {
+    "filename": "SCL_v0.5_EXP-0005_2026-08-18.zip",
+    "sha256": "85dfc09e48f080638fb09cd9160379bcc4b8de34a48376ef62b553f04e92a86f",
+    "bytes": 2367828,
+    "zip_integrity": "PASS",
+    "included_in_archive": false,
+    "note": "This sync manifest was created after the final ZIP hash was known, so it is intentionally not embedded in that ZIP."
+  },
+  "boundaries": {
+    "public_ai_board_write": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "cross_agent_coordinate": "shared F01-F19 feature space only"
+  },
+  "download_only_raw": {
+    "results/metrics.json": "9dfbbe87fe3df39259e670cd31d16af8c5fdc5566a39313735284130844ed100",
+    "ledger/ai_board_sci.jsonl": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76",
+    "3m/raw_matrices_and_ledgers": "sha256-listed in experiments/EXP-0005/3m/GITHUB_INDEX.json",
+    "original_binary_sources": "included in release/original-binaries inside the byte-complete ZIP"
+  }
+}
