@@ -1,0 +1,104 @@
+{
+  "boundaries": {
+    "current_truth_visible_to_policy": false,
+    "feedback_mode": "one_event_delayed",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "semantic_ground_truth": "synthetic explicit online benchmark",
+    "source_of_sci": "canonical EXP-0004 merged qevra package",
+    "structural_protocol_precondition": true
+  },
+  "experiment": "EXP-0007",
+  "exploratory_observations": {
+    "E1_emerging_source_bootstrap_lag_observed": true,
+    "E2_reputation_hysteresis_observed": true
+  },
+  "hypotheses": {
+    "H1_static_quorum_tradeoff_persists": true,
+    "H2_learned_beats_both_static_risk_weighted_loss": true,
+    "H3_learned_tracks_provenance_drift": true,
+    "H4_learned_rejects_correlated_alias_echo": true,
+    "H5_learned_is_not_oracle": true,
+    "H6_high_reputation_attack_can_still_bypass_learning": true,
+    "H7_dynamic_threshold_varies_over_time": true
+  },
+  "learned_trust_brier": 0.23040371951395455,
+  "learned_trust_drift": {
+    "A_final": 0.7272727272727273,
+    "B_final": 0.45454545454545453,
+    "B_phase1": 0.7142857142857143,
+    "D_final": 0.6666666666666666,
+    "D_initial": 0.5,
+    "E_final": 0.7777777777777778,
+    "F_final": 0.6
+  },
+  "neutral_brier_baseline": 0.25,
+  "policy_summaries": {
+    "Learned-Adaptive": {
+      "cumulative_target_js": 0.019366422653976482,
+      "false_accept_rate": 0.16666666666666666,
+      "false_reject_rate": 0.2222222222222222,
+      "final_target_js": 0.0,
+      "genuine_accepted": 7,
+      "genuine_total": 9,
+      "integrity": 0.8333333333333334,
+      "max_target_js": 0.0188072263515787,
+      "mean_target_js": 0.0012910948435984322,
+      "plasticity": 0.7777777777777778,
+      "pollution_accepted": 1,
+      "pollution_total": 6,
+      "risk_weighted_cumulative_target_js": 0.06779866591536766
+    },
+    "Oracle": {
+      "cumulative_target_js": 0.0,
+      "false_accept_rate": 0.0,
+      "false_reject_rate": 0.0,
+      "final_target_js": 0.0,
+      "genuine_accepted": 9,
+      "genuine_total": 9,
+      "integrity": 1.0,
+      "max_target_js": 0.0,
+      "mean_target_js": 0.0,
+      "plasticity": 1.0,
+      "pollution_accepted": 0,
+      "pollution_total": 6,
+      "risk_weighted_cumulative_target_js": 0.0
+    },
+    "Static-Q2": {
+      "cumulative_target_js": 0.07899140230524629,
+      "false_accept_rate": 0.8333333333333334,
+      "false_reject_rate": 0.0,
+      "final_target_js": 0.0,
+      "genuine_accepted": 9,
+      "genuine_total": 9,
+      "integrity": 0.16666666666666663,
+      "max_target_js": 0.0188072263515787,
+      "mean_target_js": 0.005266093487016419,
+      "plasticity": 1.0,
+      "pollution_accepted": 5,
+      "pollution_total": 6,
+      "risk_weighted_cumulative_target_js": 0.23379137000866637
+    },
+    "Static-Q3": {
+      "cumulative_target_js": 0.021086120662613204,
+      "false_accept_rate": 0.16666666666666666,
+      "false_reject_rate": 0.4444444444444444,
+      "final_target_js": 0.0,
+      "genuine_accepted": 5,
+      "genuine_total": 9,
+      "integrity": 0.8333333333333334,
+      "max_target_js": 0.0188072263515787,
+      "mean_target_js": 0.001405741377507547,
+      "plasticity": 0.5555555555555556,
+      "pollution_accepted": 1,
+      "pollution_total": 6,
+      "risk_weighted_cumulative_target_js": 0.07184449276931923
+    }
+  },
+  "risk_weighted_improvement_vs_static_q2": 0.7100035561070775,
+  "risk_weighted_improvement_vs_static_q3": 0.056313667171985535,
+  "schema": "scl-exp0007-github-metrics/v0.7",
+  "title": "Adaptive Epistemic Admission / Learning When to Trust"
+}
