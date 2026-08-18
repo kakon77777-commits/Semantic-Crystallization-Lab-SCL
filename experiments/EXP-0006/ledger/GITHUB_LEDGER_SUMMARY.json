@@ -1,0 +1,24 @@
+{
+  "by_policy_event_type": {
+    "Adaptive-Q2|imprint.transition.accept": 4,
+    "Adaptive-Q2|imprint.transition.objection": 1,
+    "Adaptive-Q3|imprint.transition.accept": 2,
+    "Adaptive-Q3|imprint.transition.objection": 3,
+    "Permissive|imprint.transition.accept": 5,
+    "Rigid|imprint.transition.objection": 5
+  },
+  "by_policy_reason": {
+    "Adaptive-Q2|accepted_adaptive": 4,
+    "Adaptive-Q2|insufficient_independent_evidence": 1,
+    "Adaptive-Q3|accepted_adaptive": 2,
+    "Adaptive-Q3|insufficient_independent_evidence": 3,
+    "Permissive|accepted_permissive": 5,
+    "Rigid|rigid_semantic_lock": 5
+  },
+  "events": 20,
+  "live_ctcl_call": false,
+  "logical_instant_first": "EXP0006-Adaptive-Q2-01",
+  "logical_instant_last": "EXP0006-Rigid-05",
+  "public_ai_board_write": false,
+  "schema": "scl-exp0006-ledger-summary/v0.6"
+}
