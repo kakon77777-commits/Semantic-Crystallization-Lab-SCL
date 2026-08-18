@@ -1,0 +1,4 @@
+7655bbbfd5fc33792660ac52a0d9a270caf92935226d3bf42e53f20a49d4f3ce  Content-Information-Bounds_2026-04-25.docx
+4dc9123c2def26fa8f15a2bf81fffd4cbc7710b82f31c98c4bd3bf6c1cbe8411  EML-U-MVP_v0.1.0_2026-08-18.zip
+4912b2a5da61eea6ac1d9b5fbdb2c86d423abe2864e107003cc031bdb25e5310  Experimental-Proof-of-Linguistic-Isomorphism_2026-05-25.docx
+7a0aa342e8dc0a621d5ec743320cdff1c22917308c0b4ce0c84917ec901cb8b8  Ontology-of-Code-Replacement_2026-04-25.docx

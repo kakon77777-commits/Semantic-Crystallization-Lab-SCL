@@ -1,0 +1,28 @@
+{
+  "schema": "scl-exp-result/v0.1",
+  "experimentId": "EXP-0001",
+  "source": {"codePoints": 358, "utf8Bytes": 1026, "file": "experiments/EXP-0001/source/source.zh.txt"},
+  "terminalLexeme": "qevra",
+  "surfaceMonotonic": true,
+  "levels": [
+    {"id":"L0","kind":"source-prose","dictionaryMode":"none","surface":{"codePoints":358,"utf8Bytes":1026},"dictionary":{"codePoints":0,"utf8Bytes":0},"package":{"codePoints":358,"utf8Bytes":1026},"surfaceCompression":{"codePoints":1,"utf8Bytes":1},"dictionaryAwareCompression":{"codePoints":1,"utf8Bytes":1},"breakEvenDocuments":{"codePoints":null,"utf8Bytes":null}},
+    {"id":"L1","kind":"controlled-zh","dictionaryMode":"none","surface":{"codePoints":149,"utf8Bytes":447},"dictionary":{"codePoints":0,"utf8Bytes":0},"package":{"codePoints":149,"utf8Bytes":447},"surfaceCompression":{"codePoints":2.402684563758389,"utf8Bytes":2.295302013422819},"dictionaryAwareCompression":{"codePoints":2.402684563758389,"utf8Bytes":2.295302013422819},"breakEvenDocuments":{"codePoints":1,"utf8Bytes":1}},
+    {"id":"L2","kind":"base-semantic-ir","dictionaryMode":"base-atoms","surface":{"codePoints":128,"utf8Bytes":128},"dictionary":{"codePoints":824,"utf8Bytes":824},"package":{"codePoints":952,"utf8Bytes":952},"surfaceCompression":{"codePoints":2.796875,"utf8Bytes":8.015625},"dictionaryAwareCompression":{"codePoints":0.3760504201680672,"utf8Bytes":1.0777310924369747},"breakEvenDocuments":{"codePoints":4,"utf8Bytes":1}},
+    {"id":"L3","kind":"composite-operator-ir","dictionaryMode":"composites","surface":{"codePoints":74,"utf8Bytes":74},"dictionary":{"codePoints":2329,"utf8Bytes":2329},"package":{"codePoints":2403,"utf8Bytes":2403},"surfaceCompression":{"codePoints":4.837837837837838,"utf8Bytes":13.864864864864865},"dictionaryAwareCompression":{"codePoints":0.1489804411152726,"utf8Bytes":0.42696629213483145},"breakEvenDocuments":{"codePoints":9,"utf8Bytes":3}},
+    {"id":"L4","kind":"context-bound-terminal-lexeme","dictionaryMode":"full","surface":{"codePoints":5,"utf8Bytes":5},"dictionary":{"codePoints":3376,"utf8Bytes":3376},"package":{"codePoints":3381,"utf8Bytes":3381},"surfaceCompression":{"codePoints":71.6,"utf8Bytes":205.2},"dictionaryAwareCompression":{"codePoints":0.10588583259390713,"utf8Bytes":0.3034605146406389},"breakEvenDocuments":{"codePoints":10,"utf8Bytes":4}}
+  ],
+  "semantic": {
+    "expectedInvariants": ["I1","I2","I3","I4","I5","I6","I7","I8"],
+    "matchedInvariants": ["I1","I2","I3","I4","I5","I6","I7","I8"],
+    "missingInvariants": [],
+    "extraInvariants": [],
+    "invariantRecall": 1,
+    "expandedAtoms": ["ISO(a,b,m)","PATH(a,m,o,path[a])","PATH(b,m,o,path[b])","DIFF(path[a],path[b])","FINITE(c)","PROBE(c,M)","BOUND(M,P)","MEAN(l,M)","BOUND(M,P)","MULTIEXP(m)","BOUND(m,P)","NEWTOPO(n)","NOTSURFACE(r)"]
+  },
+  "antiPointer": {"sourceEmbeddedInLexicon": false, "sourcePrefixEmbeddedInLexicon": false, "expansionTarget": "semantic-ir"},
+  "generativity": {
+    "novelCompositionVerified": true,
+    "narelExpansion": ["ISO(codeA,codeB,sortMeaning)","PATH(codeA,sortMeaning,developer,path[codeA])","PATH(codeB,sortMeaning,developer,path[codeB])","DIFF(path[codeA],path[codeB])"],
+    "veshExpansion": ["MEAN(codeA,sortMeaning)","BOUND(sortMeaning,computeBoundary)"]
+  }
+}

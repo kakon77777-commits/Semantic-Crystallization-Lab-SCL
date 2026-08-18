@@ -1,0 +1,34 @@
+{
+  "schema": "scl-invariants/v0.1",
+  "expectedIds": [
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8"
+  ],
+  "definitions": {
+    "I1": "Different texts may be meaning-equivalent.",
+    "I2": "Meaning-equivalent texts may induce different cognitive paths/experiences.",
+    "I3": "The proposed accessibility boundary of meaning is not determined by language alone.",
+    "I4": "Physical reality is proposed as a constraint on accessible meaning.",
+    "I5": "Finite character/symbolic carriers can be used to probe a larger meaning space.",
+    "I6": "The same meaning can admit multiple expressions.",
+    "I7": "Expression multiplicity can coexist with a boundary on accessible meaning.",
+    "I8": "Surface character replacement is distinguished from reaching a new meaning topology."
+  },
+  "atomToInvariantIds": {
+    "ISO(a,b,m)": ["I1"],
+    "DIFF(path[a],path[b])": ["I2"],
+    "BOUND(M,P)": ["I3", "I4"],
+    "FINITE(c)": ["I5"],
+    "PROBE(c,M)": ["I5"],
+    "MULTIEXP(m)": ["I6"],
+    "BOUND(m,P)": ["I7"],
+    "NEWTOPO(n)": ["I8"],
+    "NOTSURFACE(r)": ["I8"]
+  }
+}

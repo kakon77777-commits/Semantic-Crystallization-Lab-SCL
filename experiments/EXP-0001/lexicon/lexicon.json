@@ -1,0 +1,51 @@
+{
+  "schema": "scl-lexicon/v0.1",
+  "namespace": "scl.exp0001",
+  "note": "Experimental lexemes are namespace-scoped labels. Semantics are defined only by this expansion graph.",
+  "entries": {
+    "narel": {
+      "params": ["x", "y", "m", "o"],
+      "kind": "composite-operator",
+      "gloss": "two representations share meaning while cognitive paths differ for an observer",
+      "expansion": [
+        {"atom": "ISO($x,$y,$m)"},
+        {"atom": "PATH($x,$m,$o,path[$x])"},
+        {"atom": "PATH($y,$m,$o,path[$y])"},
+        {"atom": "DIFF(path[$x],path[$y])"}
+      ]
+    },
+    "vek": {
+      "params": ["x", "m", "b"],
+      "kind": "composite-operator",
+      "gloss": "finite representation probes meaning under a boundary",
+      "expansion": [
+        {"atom": "FINITE($x)"},
+        {"atom": "PROBE($x,$m)"},
+        {"atom": "BOUND($m,$b)"}
+      ]
+    },
+    "vesh": {
+      "params": ["x", "m", "b"],
+      "kind": "composite-operator",
+      "gloss": "representation reaches meaning under an admissibility boundary",
+      "expansion": [
+        {"atom": "MEAN($x,$m)"},
+        {"atom": "BOUND($m,$b)"}
+      ]
+    },
+    "qevra": {
+      "params": [],
+      "kind": "context-bound-crystallization",
+      "gloss": "EXP-0001 terminal crystallization; meaningful only with this checked-in expansion contract",
+      "expansion": [
+        {"call": "narel", "args": ["a", "b", "m", "o"]},
+        {"call": "vek", "args": ["c", "M", "P"]},
+        {"call": "vesh", "args": ["l", "M", "P"]},
+        {"atom": "MULTIEXP(m)"},
+        {"atom": "BOUND(m,P)"},
+        {"atom": "NEWTOPO(n)"},
+        {"atom": "NOTSURFACE(r)"}
+      ]
+    }
+  }
+}

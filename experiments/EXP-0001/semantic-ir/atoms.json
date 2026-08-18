@@ -1,0 +1,16 @@
+{
+  "schema": "scl-semantic-atoms/v0.1",
+  "atoms": {
+    "REP(x)": "x is a representation",
+    "MEAN(x,m)": "representation x reaches or expresses meaning configuration m",
+    "ISO(x,y,m)": "x and y are meaning-equivalent with respect to m",
+    "PATH(x,m,o,p)": "observer o reaches m from x through cognitive path p",
+    "DIFF(p,q)": "paths p and q are experientially different",
+    "BOUND(m,b)": "accessible meaning m is constrained by boundary b",
+    "FINITE(x)": "representation carrier x is finite",
+    "PROBE(x,m)": "x is used to probe meaning space m",
+    "MULTIEXP(m)": "meaning m admits multiple surface expressions",
+    "NEWTOPO(m)": "m denotes a newly reached meaning topology relative to the current basis",
+    "NOTSURFACE(x)": "surface replacement x alone is not counted as topological novelty"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "scl-compression-chain/v0.1",
+  "terminal": "qevra",
+  "levels": [
+    {
+      "id": "L0",
+      "kind": "source-prose",
+      "dictionaryMode": "none",
+      "text": "這個矛盾揭示了傳統內容理論的第一個盲點：**它無法區分意義的拓撲等價性與體驗的測地差異性。**兩個文本可以在語義空間中佔據同一點，卻通過完全不同的路徑抵達該點。對讀者而言，這兩條路徑構成了截然不同的現象學經驗。\n\n現在我們來到最激進的主張：意義空間M的boundary不是由語言決定的，而是由物理世界決定的。\n\n我們用有限的字符探測無限的意義，而這個無限的上界由物理實在決定。\n\n它給出可檢驗的預測，它重新定義藝術與科學的關係，它解釋為何同一個意思可以有無限種講法但仍有某種上限。\n\n最重要的是，它回答了開頭的問題：提升文學功力不是學會更多字，而是學會探測更高維度的M。\n\n冷僻字替換只是在ℵ₀層遊戲。真正的突破發生在你觸及一個新的意義拓撲時——那個時刻，你不是在發明，你是在發現宇宙已經允許但尚未被語言捕獲的結構。"
+    },
+    {
+      "id": "L1",
+      "kind": "controlled-zh",
+      "dictionaryMode": "none",
+      "text": "不同文本可以抵達同一意義，但讀者可能沿不同認知路徑抵達，因而產生不同體驗。語言的表達形式可以持續替換與重組；有限字符仍可用來探測更大的意義空間。同一意義可以有多種講法，但可及意義仍受物理實在所界定的邊界約束。單純以冷僻字替換表面字符只改變表示路徑；真正的新穎性來自觸及先前未被語言捕獲的新意義拓撲。"
+    },
+    {
+      "id": "L2",
+      "kind": "base-semantic-ir",
+      "dictionaryMode": "base-atoms",
+      "text": "ISO(a,b,m);PATH(a,m,o,p);PATH(b,m,o,q);DIFF(p,q);FINITE(c);PROBE(c,M);BOUND(M,P);MULTIEXP(m);BOUND(m,P);NEWTOPO(n);NOTSURFACE(r)"
+    },
+    {
+      "id": "L3",
+      "kind": "composite-operator-ir",
+      "dictionaryMode": "composites",
+      "text": "narel(a,b,m,o);vek(c,M,P);vesh(l,M,P);MULTIEXP(m);NEWTOPO(n);NOTSURFACE(r)"
+    },
+    {
+      "id": "L4",
+      "kind": "context-bound-terminal-lexeme",
+      "dictionaryMode": "full",
+      "text": "qevra"
+    }
+  ]
+}

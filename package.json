@@ -1,0 +1,14 @@
+{
+  "name": "semantic-crystallization-lab-scl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Finite semantic crystallization experiments with explicit expansion contracts and dictionary-aware metrics.",
+  "scripts": {
+    "test": "node --test",
+    "exp:0001": "node scripts/run-exp0001.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
