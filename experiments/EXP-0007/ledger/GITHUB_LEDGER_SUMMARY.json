@@ -1,0 +1,11 @@
+{
+  "by_policy": {
+    "Learned-Adaptive": {"accepted": 8, "events": 15, "rejected": 7},
+    "Oracle": {"accepted": 9, "events": 15, "rejected": 6},
+    "Static-Q2": {"accepted": 14, "events": 15, "rejected": 1},
+    "Static-Q3": {"accepted": 6, "events": 15, "rejected": 9}
+  },
+  "canonical_ledger_sha256": "959ce551344c884250fe4f32775dcb7fa75a72ce9088282258e295c12c677b1c",
+  "schema": "scl-exp0007-ledger-summary/v0.7",
+  "total_events": 60
+}
