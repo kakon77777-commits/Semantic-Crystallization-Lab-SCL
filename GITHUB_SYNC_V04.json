@@ -1,0 +1,45 @@
+{
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.4-exp0004",
+  "experiment": "EXP-0004",
+  "github_browsable_core": [
+    "README.md",
+    "package.json",
+    "VALIDATION_V04.json",
+    "papers/scl-series/SCI_v0.1.md",
+    "docs/superpowers/specs/2026-08-18-scl-v0.4-exp0004-design.md",
+    "docs/superpowers/plans/2026-08-18-scl-v0.4-exp0004.md",
+    "experiments/EXP-0004/README.md",
+    "experiments/EXP-0004/config.json",
+    "experiments/EXP-0004/results/report.md",
+    "experiments/EXP-0004/results/objections.json",
+    "experiments/EXP-0004/results/prior_regression_v04.json",
+    "experiments/EXP-0004/ledger/ai_board_sci.jsonl",
+    "experiments/EXP-0004/3m/checksums.json",
+    "experiments/EXP-0004/3m/verification.json",
+    "python/scl_exp/sci.py",
+    "python/scl_exp/sci_ledger.py",
+    "python/scl_exp/cross_agent.py",
+    "python/scl_exp/exp0004.py",
+    "python/scl_exp/three_m_v04.py",
+    "scripts/run_exp0004.py"
+  ],
+  "byte_complete_archive": {
+    "filename": "SCL_v0.4_EXP-0004_2026-08-18.zip",
+    "sha256": "305ce79e0edd134e777b3dfb181fb30e89afd2ae4608afa0997fe474226f2315",
+    "bytes": 2103393,
+    "contains": [
+      "full repository working tree for EXP-0001 through EXP-0004",
+      "all Python source and tests",
+      "raw EXP-0004 metrics and per-agent ledgers",
+      "full bounded 3M outputs",
+      "three original DOCX theory files",
+      "original EML-U MVP ZIP"
+    ],
+    "note": "The archive is delivered separately to the user. The GitHub connector used here synchronizes the readable/auditable process and result core; it does not efficiently stream this 2.1 MB local binary as a release asset without inlining the entire binary payload."
+  },
+  "public_ai_board_write": false,
+  "live_ctcl_call": false,
+  "sci_ledger_mode": "AI-Board-compatible append-only offline ledger",
+  "ctcl_mode": "logical-compatible-not-live-verified"
+}
