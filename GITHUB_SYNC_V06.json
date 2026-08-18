@@ -1,0 +1,52 @@
+{
+  "schema": "scl-github-sync/v0.6",
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.6-exp0006",
+  "base_commit": "b27552a0a4deeebc89968509ae3efeee6b24b116",
+  "experiment": "EXP-0006",
+  "github_browsable_core": [
+    "README.md",
+    "package.json",
+    "VALIDATION_V06.json",
+    "papers/scl-series/SCI_v0.1.md",
+    "python/scl_exp/cognitive_transition.py",
+    "python/scl_exp/exp0006.py",
+    "python/scl_exp/three_m_v06.py",
+    "scripts/run_exp0006.py",
+    "tests_py/test_cognitive_transition.py",
+    "tests_py/test_exp0006.py",
+    "experiments/EXP-0006/README.md",
+    "experiments/EXP-0006/EXP0006_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0006/config.json",
+    "experiments/EXP-0006/results/GITHUB_METRICS.json",
+    "experiments/EXP-0006/results/report.md",
+    "experiments/EXP-0006/ledger/GITHUB_LEDGER_SUMMARY.json",
+    "experiments/EXP-0006/3m/GITHUB_INDEX.json",
+    "experiments/EXP-0006/3m/checksums.json",
+    "experiments/EXP-0006/3m/verification.json"
+  ],
+  "release_archive": {
+    "filename": "SCL_v0.6_EXP-0006_2026-08-18.zip",
+    "sha256": "860325614a5614cb9ca5749fda22a2bbde2b17b861b23f050b99ae7caf283095",
+    "bytes": 2248838,
+    "zip_integrity": "PASS",
+    "included_in_archive": false,
+    "note": "This sync manifest is intentionally excluded from the ZIP because it records that ZIP's final SHA-256. The ZIP contains the complete raw experiment outputs, complete TDD suite, repository history snapshot and original binary source artifacts."
+  },
+  "boundaries": {
+    "public_ai_board_write": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "structural_protocol_precondition": true,
+    "synthetic_transition_ground_truth": true,
+    "cross_agent_coordinate": "shared F01-F19 feature space only"
+  },
+  "download_only_raw": {
+    "experiments/EXP-0006/results/metrics.json": "ca05836479b0e228058b6baeea72d5ef95f9edb5f6bf83ab79e14bd4e926611f",
+    "experiments/EXP-0006/results/per_event_summary.jsonl": "adfd7d586c7af348a259a951e9f0a4610812b536afb2ac2d4552376bb1872d1b",
+    "experiments/EXP-0006/ledger/transition_events.jsonl": "8d61fd11ca351b1ae31b4c14b6de82628187075f23bb34a657dc9b707e585b18",
+    "experiments/EXP-0006/3m/raw_projection_files": "sha256-listed in experiments/EXP-0006/3m/GITHUB_INDEX.json",
+    "full_tdd_suite": "included in the byte-complete ZIP; the two most decision-critical test files are browsable on GitHub",
+    "original_binary_sources": "included under release/original-binaries inside the byte-complete ZIP"
+  }
+}
