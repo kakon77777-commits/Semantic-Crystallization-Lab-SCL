@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-18",
+  "exp0001_regression": {
+    "hashes": {
+      "experiments/EXP-0001/results/metrics.json": "2f55a63ac08474100cddf6b7b7cb4f22837a8bbf31a82779cd3927792dfb151b",
+      "experiments/EXP-0001/results/report.md": "29c6781ad83dc84bc1ab2511a1b0c64883c3239a207ffd3dfcd4bff6fdff0bc6"
+    },
+    "identical": true
+  },
+  "exp0002_regression": {
+    "hashes": {
+      "experiments/EXP-0002/3m/checksums.json": "aa070dc4570d089e974be294e102f36a419be0a5b4021a51a6de76fbcb01ce29",
+      "experiments/EXP-0002/results/metrics.json": "484548f04a734f39998d9ed829aefe79990140b49aaf91d28f2973a0c8f1090c",
+      "experiments/EXP-0002/results/per_seed_summary.jsonl": "03673196b200022a8631b3db9aa867f5b3fd2447a5a3a74d9ae52d719d8ac590",
+      "experiments/EXP-0002/results/report.md": "799c211e5f6a777dbe643f7dd2ef4d05aa251b434c69132e57d53d9aadfc31f3"
+    },
+    "identical": true
+  },
+  "exp0003_determinism": {
+    "hashes": {
+      "experiments/EXP-0003/3m/checksums.json": "c9422c9173fb6c90a2996d62786215083a1eff01bff1444803773f5bcd818ab1",
+      "experiments/EXP-0003/config.json": "7012ad47854e4d8c7b3e1a9778f9acf62dc4abbbdf7223175886692ad70b1c68",
+      "experiments/EXP-0003/results/metrics.json": "f4a5c93f1093f0dd66676ea12ed954d74a96741b5ca5d7c714cf07704f1e5b4b",
+      "experiments/EXP-0003/results/per_seed.jsonl": "eee94e3048e4a4000c29f5b6501038f9a13bff9fd7901300023d1f78d71e8129",
+      "experiments/EXP-0003/results/per_seed_summary.jsonl": "9295826d0e943486bbd4faecf3726ae65d91dc6b271cc1bddf8c30920cc10151",
+      "experiments/EXP-0003/results/report.md": "d8a9468bc2d0b2a977fb06234efb631b6d4af90be728ce359c906c2941c240de"
+    },
+    "identical": true,
+    "reruns": 2
+  },
+  "exp0003_three_m": {"failures": [], "files_checked": 9, "valid": true},
+  "experiment": "EXP-0003",
+  "frozen_vocab_oov": {"eval": 0.0, "memory": 0.0, "train": 0.0},
+  "github_audit_exact_reconstruction": {
+    "experiments/EXP-0003/3m/matrices/context_feature.cells.jsonl": {"matches": true, "sha256": "c560788be5d333027bcf14f10d74cc53ddd628cdeca07220a28e1e2a5abd078c"},
+    "experiments/EXP-0003/3m/matrices/memory_attention.cells.jsonl": {"matches": true, "sha256": "1ca7614a5bd504b189d352586e1c30994d76381228622a749e3534c17903058f"},
+    "experiments/EXP-0003/results/per_seed.jsonl": {"matches": true, "sha256": "eee94e3048e4a4000c29f5b6501038f9a13bff9fd7901300023d1f78d71e8129"}
+  },
+  "hypotheses": {
+    "H1_baseline_instability_exists": true,
+    "H2_diverse_learning_beats_repetition": false,
+    "H3_intrinsic_exact": true,
+    "H3_memory_assists_without_intrinsic_consolidation": true,
+    "H3_seed_successes": 3,
+    "H4_attentive_consolidation_stabilizes": true,
+    "H4_seed_successes": 2,
+    "H5_attention_routing_aligns": true,
+    "H5_q_semantic_density_non_decrease_seeds": 3,
+    "H5_seed_successes": 3
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "primary_metrics": {
+    "baseline_context_js": 0.08337728521956461,
+    "baseline_cross_seed_centroid_js": 0.05587371987615633,
+    "baseline_support_jaccard": 0.6290879823180243,
+    "baseline_target_js": 0.0525990306276289,
+    "full_context_js": 0.05877168206776677,
+    "full_cross_seed_centroid_js": 0.032859675272561825,
+    "full_support_jaccard": 0.7207151984725514,
+    "full_target_js": 0.03557568655010086
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 37},
+  "runtime_note": "PyTorch emits a non-fatal nested-tensor prototype warning during evaluation; deterministic outputs and all tests remain stable.",
+  "schema": "scl-validation/v0.3"
+}
