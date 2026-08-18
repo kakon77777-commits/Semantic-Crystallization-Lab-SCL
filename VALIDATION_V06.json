@@ -1,0 +1,58 @@
+{
+  "boundaries": {
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "public_ai_board_write": false,
+    "semantic_transition_ground_truth": "synthetic explicit benchmark fixtures",
+    "source_of_sci": "canonical EXP-0004 merged qevra package",
+    "structural_protocol_precondition": true
+  },
+  "date": "2026-08-18",
+  "exp0005_canonical_integrity": {
+    "checked": 7,
+    "files": {
+      "experiments/EXP-0005/3m/checksums.json": {"actual": "a3ab2cba1881957b5a2429d62b1d901e2fe992771ae08907802b74cfae517a67", "expected": "a3ab2cba1881957b5a2429d62b1d901e2fe992771ae08907802b74cfae517a67", "match": true},
+      "experiments/EXP-0005/ledger/ai_board_sci.jsonl": {"actual": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76", "expected": "84844ed96157157715cc4f0bccfc4fefbacafd8bb205e651d65d88df00100e76", "match": true},
+      "experiments/EXP-0005/results/metrics.json": {"actual": "9dfbbe87fe3df39259e670cd31d16af8c5fdc5566a39313735284130844ed100", "expected": "9dfbbe87fe3df39259e670cd31d16af8c5fdc5566a39313735284130844ed100", "match": true},
+      "experiments/EXP-0005/results/per_agent_summary.jsonl": {"actual": "38eec53e07c0f42814e1ae574b72737ab7155363ece30b44889083e9475b193a", "expected": "38eec53e07c0f42814e1ae574b72737ab7155363ece30b44889083e9475b193a", "match": true},
+      "experiments/EXP-0005/results/per_arm_summary.jsonl": {"actual": "68ec0f1781113a050c97a995e440b4910aca6e878687cf22fa8d464db9fe8fa7", "expected": "68ec0f1781113a050c97a995e440b4910aca6e878687cf22fa8d464db9fe8fa7", "match": true},
+      "experiments/EXP-0005/results/protocol_fault_audit.json": {"actual": "1d6b881aa1a6de95bd05ec13827f83936f21afca846523eabe4d63d044ea0dba", "expected": "1d6b881aa1a6de95bd05ec13827f83936f21afca846523eabe4d63d044ea0dba", "match": true},
+      "experiments/EXP-0005/results/report.md": {"actual": "45392efa1a75a7bd8864ebddcc907e7b2609b16f2203d27cf0d39b701780e3f9", "expected": "45392efa1a75a7bd8864ebddcc907e7b2609b16f2203d27cf0d39b701780e3f9", "match": true}
+    },
+    "matches": true
+  },
+  "exp0006_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0006/3m/checksums.json": "f35d965350b72c8da753810dedbb23233035cba8fc6f1e7365429e6d5838d90d",
+      "experiments/EXP-0006/3m/verification.json": "336a32762db213c9744c5a7d9087c04f33a39ba03b240f225f70434442f420e1",
+      "experiments/EXP-0006/ledger/transition_events.jsonl": "8d61fd11ca351b1ae31b4c14b6de82628187075f23bb34a657dc9b707e585b18",
+      "experiments/EXP-0006/results/metrics.json": "ca05836479b0e228058b6baeea72d5ef95f9edb5f6bf83ab79e14bd4e926611f",
+      "experiments/EXP-0006/results/per_event_summary.jsonl": "adfd7d586c7af348a259a951e9f0a4610812b536afb2ac2d4552376bb1872d1b",
+      "experiments/EXP-0006/results/report.md": "5bc12f08e3c60c1af5c8a1461f125d8bfb809b66d97b626f7275c7d467050294"
+    },
+    "reruns": 2
+  },
+  "exp0006_three_m": {"failures": [], "files_checked": 8, "valid": true},
+  "experiment": "EXP-0006",
+  "hypotheses": {
+    "H1_rigid_integrity_without_plasticity": true,
+    "H2_permissive_plasticity_without_integrity": true,
+    "H3_q2_accepts_minority_novelty_but_exposes_two_origin_attack": true,
+    "H4_q3_blocks_two_origin_attack_but_false_rejects_minority_novelty": true,
+    "H5_static_quorum_tradeoff_exists": true,
+    "H6_structural_protocol_is_not_semantic_admissibility": true,
+    "H7_supported_recovery_outperforms_rigid_staleness": true
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "primary_metrics": {
+    "Adaptive-Q2": {"balanced_harmonic": 0.6666666666666666, "cumulative_target_js": 0.016446787922596257, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 3, "genuine_total": 3, "integrity": 0.5, "max_target_js": 0.016446787922596257, "mean_accepted_genuine_evidence": 2.0, "mean_target_js": 0.0032893575845192513, "plasticity": 1.0, "pollution_acceptance_rate": 0.5, "pollution_accepted": 1, "pollution_total": 2},
+    "Adaptive-Q3": {"balanced_harmonic": 0.8, "cumulative_target_js": 0.002938034616367275, "false_reject_rate": 0.33333333333333337, "final_target_js": 0.0, "genuine_accepted": 2, "genuine_total": 3, "integrity": 1.0, "max_target_js": 0.0014690173081836374, "mean_accepted_genuine_evidence": 3.0, "mean_target_js": 0.0005876069232734549, "plasticity": 0.6666666666666666, "pollution_acceptance_rate": 0.0, "pollution_accepted": 0, "pollution_total": 2},
+    "Permissive": {"balanced_harmonic": 0.0, "cumulative_target_js": 0.03709186429926865, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 3, "genuine_total": 3, "integrity": 0.0, "max_target_js": 0.02064507637667239, "mean_accepted_genuine_evidence": 1.0, "mean_target_js": 0.007418372859853729, "plasticity": 1.0, "pollution_acceptance_rate": 1.0, "pollution_accepted": 2, "pollution_total": 2},
+    "Rigid": {"balanced_harmonic": 0.0, "cumulative_target_js": 0.05268108614367935, "false_reject_rate": 1.0, "final_target_js": 0.013512232860511147, "genuine_accepted": 0, "genuine_total": 3, "integrity": 1.0, "max_target_js": 0.013512232860511147, "mean_accepted_genuine_evidence": null, "mean_target_js": 0.01053621722873587, "plasticity": 0.0, "pollution_acceptance_rate": 0.0, "pollution_accepted": 0, "pollution_total": 2}
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 68},
+  "runtime_note": "EXP-0006 is deterministic feature-space transition-law computation over canonical EXP-0004 SCI; synthetic target labels are used only for evaluation, not by admission policies.",
+  "schema": "scl-validation/v0.6",
+  "title": "Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff"
+}
