@@ -12,7 +12,19 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.4 / EXP-0004 — Cross-Agent Symbolic Cognitive Imprint Transfer**
+**SCL v0.5 / EXP-0005 — Protocol–Persistent Cognition Continuity**
+
+EXP-0005 isolates two continuity laws above the neural layer: **protocol** as inter-agent continuity and **persistence** as intra-agent continuity through time. It consumes the canonical F01–F19 SCI artifacts from EXP-0004 and runs a deterministic 2×2 protocol × persistence experiment across three agents.
+
+The factor separation is clean: persistent arms reduce immediate restart JS from `0.0243` to `0.0000`, while protocol arms raise final correction retention under stale/provenance/rollback/fork faults from `0%` to `100%`. Persistence without protocol (`A01`) survives restart but is later overwritten by untyped last-write-wins traffic; protocol without persistence (`A10`) initially loses the SCI but reconstructs it from a valid bootstrap and then rejects all four fault classes. `A11` is the only arm with both zero restart drift and full fault-resistant correction retention.
+
+The no-protocol arms also produce an explicit temporal false consensus: final cross-agent JS is `0.0000`, yet target JS worsens from the accepted reference `0.0251` to `0.1053` (about `4.19×`). Agreement across time is therefore not a truth signal.
+
+See `experiments/EXP-0005/results/report.md`, `experiments/EXP-0005/EXP0005_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0005/3m/`.
+
+---
+
+### Previous milestone: SCL v0.4 / EXP-0004 — Cross-Agent Symbolic Cognitive Imprint Transfer
 
 EXP-0004 freezes the term **Symbolic Cognitive Imprint (SCI) / 符號認知印刻** and tests whether one symbol-conditioned semantic feature basin can be transferred and corrected across three independently initialized agents without assuming aligned raw hidden coordinates. The shared comparison space is the explicit F01–F19 feature coordinate only.
 
@@ -135,6 +147,7 @@ experiments/EXP-0001/results/ reproducible metrics/report
 experiments/EXP-0002/        neural symbol-feature localization experiment and bounded 3M outputs
 experiments/EXP-0003/        semantic-basin stabilization, memory attention, ablations, and 3M outputs
 experiments/EXP-0004/        cross-agent SCI reconstruction, transfer, correction, contamination stress, ledger, and 3M outputs
+experiments/EXP-0005/        protocol × persistence continuity, restart/fault audit, and 3M outputs
 python/scl_exp/              transparent neural/grid/3M experiment helpers
 tests_py/                    Python unit and experiment-mechanics tests
 src/                          generic validator/expander/metrics functions
