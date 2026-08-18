@@ -1,0 +1,16 @@
+{
+  "schema": "scl-exp0002-github-audit/v0.1",
+  "source_process_parts": ["SOURCE_PROCESS_PART_01.md","SOURCE_PROCESS_PART_02.md","SOURCE_PROCESS_PART_03.md","SOURCE_PROCESS_PART_04.md","SOURCE_PROCESS_PART_05.md"],
+  "three_m_files": [
+    {"path":"3m/manifest.json","bytes":377,"sha256":"792d6c4fc749b6b72c47636271aae2de985e9eea06ff5111a9fb15830098d7d6"},
+    {"path":"3m/substrate.json","bytes":323,"sha256":"5d74fd474568fd78478f1db50455b5e71095721c56968baf47fb7e68fbdd9e02"},
+    {"path":"3m/matrices/symbol_feature.cells.jsonl","bytes":9945,"sha256":"b03ee4c6bddb2ac7f7921149b47509f9227dc4ccf6d9f7247720579ed11f37d7"},
+    {"path":"3m/matrices/feature_symbol.cells.jsonl","bytes":9930,"sha256":"4ad7f0f15db2a1ad8d33418d19676f4e05102fdcd53e48622828af8156f8c055"},
+    {"path":"3m/matrices/hidden_vectors.jsonl","bytes":18824,"sha256":"d3c5dee772269c5249beec0ea9915f22e0914d6b84bf531161da8731f5635530"},
+    {"path":"3m/graphs/routes.jsonl","bytes":3498,"sha256":"2e50387437ba4ef56991c3f219cf0d4bdf53fd24e560220d2d3e48936e68213f"},
+    {"path":"3m/projections/human_views.jsonl","bytes":456,"sha256":"2b9f95f8de979f5616ed4ea40d94939ed053663abca491451766186a866480a9"},
+    {"path":"3m/provenance/events.jsonl","bytes":329,"sha256":"81b438aa7c07e123b841252d079ded7efc792d3b38af20e12dd8d0a70a4b9a"},
+    {"path":"3m/reports/projection_loss.json","bytes":874,"sha256":"2ad359ef83ed6bbc6c110a967a00301bf150c316c0292e7c2d8a6ebd323a3ca6"},
+    {"path":"3m/checksums.json","bytes":894,"sha256":"aa070dc4570d089e974be294e102f36a419be0a5b4021a51a6de76fbcb01ce29"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.2-exp0002",
+  "base_commit": "baf0a99b9e0588b36ddeb2c5c9a890a0b72b94a8",
+  "sync_strategy": "GitHub branch stores the experimental design/plan, finite corpus and feature catalog, validation record, reported aggregate metrics, per-seed summaries, human-readable report, and bounded 3M matrix-ledger outputs. The separate byte-complete download ZIP additionally carries the executable source/tests, full raw per-seed hidden-vector ledger, and original binary source artifacts.",
+  "github_browsable_core": ["README.md","VALIDATION.json","GITHUB_SYNC.json","docs/superpowers/specs/2026-08-18-scl-v0.2-exp0002-design.md","docs/superpowers/plans/2026-08-18-scl-v0.2-exp0002.md","experiments/EXP-0002/README.md","experiments/EXP-0002/config.json","experiments/EXP-0002/corpus/train.jsonl","experiments/EXP-0002/corpus/validation.json","experiments/EXP-0002/features/feature_catalog.json","experiments/EXP-0002/results/GITHUB_METRICS.json","experiments/EXP-0002/results/per_seed_summary.jsonl","experiments/EXP-0002/results/report.md","experiments/EXP-0002/3m/manifest.json","experiments/EXP-0002/3m/substrate.json","experiments/EXP-0002/3m/matrices/symbol_feature.cells.jsonl","experiments/EXP-0002/3m/matrices/feature_symbol.cells.jsonl","experiments/EXP-0002/3m/matrices/hidden_vectors.jsonl","experiments/EXP-0002/3m/graphs/routes.jsonl","experiments/EXP-0002/3m/projections/human_views.jsonl","experiments/EXP-0002/3m/provenance/events.jsonl","experiments/EXP-0002/3m/reports/projection_loss.json","experiments/EXP-0002/3m/checksums.json"],
+  "download_only_raw": {
+    "experiments/EXP-0002/results/per_seed.jsonl": {"sha256":"551701abc8f6f84da1357a1f41a447d75c19624a0c5a6ef715065f97189cf811","bytes":301621},
+    "original_binary_sources": [
+      {"name":"內容信息上下界無限原理：認識論猜想(2).docx","sha256":"7655bbbfd5fc33792660ac52a0d9a270caf92935226d3bf42e53f20a49d4f3ce","bytes":28077},
+      {"name":"程式碼替換的本體論：從語義空間到物理manifold的雙層無限原理(3).docx","sha256":"7a0aa342e8dc0a621d5ec743320cdff1c22917308c0b4ce0c84917ec901cb8b8","bytes":59450},
+      {"name":"語言同構的實驗證明：當讀者成為定理的見證者.docx","sha256":"4912b2a5da61eea6ac1d9b5fbdb2c86d423abe2864e107003cc031bdb25e5310","bytes":57505},
+      {"name":"EML-U-MVP_v0.1.0_2026-08-18(1).zip","sha256":"4dc9123c2def26fa8f15a2bf81fffd4cbc7710b82f31c98c4bd3bf6c1cbe8411","bytes":36312}
+    ],
+    "executable_source_tests": {"location":"download ZIP","note":"canonical individual Python source/test files are included byte-for-byte in the downloadable release archive; GitHub connector sync records the exact design, corpus, validation and output evidence."}
+  },
+  "note": "download_only_raw means these byte-complete artifacts are present in the downloadable release ZIP but are not expanded as standalone GitHub files in this connector sync."
+}

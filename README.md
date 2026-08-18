@@ -12,7 +12,26 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.1 / EXP-0001 — Finite Semantic Crystallization**
+**SCL v0.2 / EXP-0002 — Bidirectional Symbol–Feature Localization**
+
+EXP-0002 extends the finite crystallization chain into a transparent neural feature space. A tiny PyTorch Transformer first learns a fixed semantic feature space; after that freeze, only the embeddings of held-out crystallized lexeme `qevra` and frequency-matched pointer control `tivak` may move. Across seeds 11/23/37, `qevra` grows from a mean 3.333 thresholded features before semantic assignment to 13.333 after compositional definition plus contextual reuse, while semantic recall against the 14 source-derived features rises from 0.143 to 0.762 and explicit-target Jensen–Shannon distortion falls from 0.413 to 0.191. Reverse feature-to-symbol top-1 recovery rises from 1/3 to 3/3.
+
+The naive stronger hypothesis is rejected: hidden effective dimension and RMS-relative active-coordinate count do not increase with semantic breadth. In this bounded model, crystallization looks more like selective localization of a broader learned feature bundle than simply turning on more hidden coordinates.
+
+The Stage-2 breadth ladder is also explicit: mean thresholded support is `narel=5.0`, `vek=6.333`, `vesh=3.667`, `qevra=13.333`, and pointer-only `tivak=1.0`.
+
+The GitHub audit branch stores the design, finite corpus, validation evidence, reported metrics and bounded 3M matrix-ledger projection. The separate byte-complete release ZIP also contains the executable Python source/tests and full raw per-seed hidden-vector ledger. To reproduce from that archive:
+
+```bash
+python -m unittest discover -s tests_py -v
+python scripts/run_exp0002.py
+```
+
+See `experiments/EXP-0002/results/report.md` and `experiments/EXP-0002/3m/`. This is a finite toy-model mechanism experiment; it does not expose or claim hidden states from ChatGPT or any proprietary foundation model.
+
+---
+
+### Previous milestone: SCL v0.1 / EXP-0001 — Finite Semantic Crystallization
 
 EXP-0001 starts from a 358-code-point Chinese passage selected from *內容信息上下界無限原理：認識論猜想* and constructs the following finite chain:
 
@@ -77,12 +96,15 @@ Generated outputs:
 ```text
 docs/superpowers/specs/       experiment design/specification
 docs/superpowers/plans/       implementation plan
-papers/                       source provenance and SHA-256 index; binary originals are in the downloadable experiment bundle
+papers/source-original/       preserved source papers and EML-U reference package
 experiments/EXP-0001/source/  source passage
 experiments/EXP-0001/semantic-ir/ explicit atoms and invariant map
 experiments/EXP-0001/lexicon/ new lexemes and expansion graph
 experiments/EXP-0001/chain/   checked-in compression levels
 experiments/EXP-0001/results/ reproducible metrics/report
+experiments/EXP-0002/        neural symbol-feature localization experiment and bounded 3M outputs
+python/scl_exp/              transparent neural/grid/3M experiment helpers
+tests_py/                    Python unit and experiment-mechanics tests
 src/                          generic validator/expander/metrics functions
 test/                         Node built-in tests
 scripts/                      deterministic experiment runners

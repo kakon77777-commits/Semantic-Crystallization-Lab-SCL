@@ -1,0 +1,24 @@
+{
+  "features": [
+    {"description":"different representations can preserve the same core meaning","id":"F01","name":"meaning_equivalence","scope":"source"},
+    {"description":"one meaning can admit multiple surface representations","id":"F02","name":"representation_multiplicity","scope":"source"},
+    {"description":"understanding follows a path from representation toward meaning","id":"F03","name":"cognitive_path","scope":"source"},
+    {"description":"meaning-equivalent representations can induce different paths","id":"F04","name":"path_difference","scope":"source"},
+    {"description":"an observer can experience different cognitive trajectories","id":"F05","name":"observer_experience","scope":"source"},
+    {"description":"the proposed meaning boundary is not fixed by language alone","id":"F06","name":"language_independent_boundary","scope":"source"},
+    {"description":"physical reality constrains the admissible meaning domain","id":"F07","name":"physical_constraint","scope":"source"},
+    {"description":"a finite symbolic carrier can represent or probe larger meaning","id":"F08","name":"finite_symbolic_carrier","scope":"source"},
+    {"description":"a representation can probe a broader meaning space","id":"F09","name":"semantic_probe","scope":"source"},
+    {"description":"meaning is treated as a structured space rather than a string","id":"F10","name":"meaning_space","scope":"source"},
+    {"description":"the same meaning may have many expressions","id":"F11","name":"multiple_expression","scope":"source"},
+    {"description":"expression multiplicity can coexist with a boundary","id":"F12","name":"bounded_expression_space","scope":"source"},
+    {"description":"novelty can arise from reaching a new meaning topology","id":"F13","name":"new_meaning_topology","scope":"source"},
+    {"description":"surface replacement is distinguished from structural novelty","id":"F14","name":"surface_rewrite_distinction","scope":"source"},
+    {"description":"a reusable lexeme can compose lower-order semantic operators","id":"F15","name":"compositional_operator","scope":"scl"},
+    {"description":"a crystallized lexeme has an explicit reverse expansion contract","id":"F16","name":"reversible_expansion","scope":"scl"},
+    {"description":"a compact representation can localize a concept bundle","id":"F17","name":"concept_localization","scope":"scl"},
+    {"description":"a new symbol can become an address into learned feature space","id":"F18","name":"symbol_localization","scope":"scl"},
+    {"description":"a token can merely point to a document identity without carrying its structure","id":"F19","name":"document_pointer","scope":"control"}
+  ],
+  "schema": "scl-feature-catalog/v0.2"
+}

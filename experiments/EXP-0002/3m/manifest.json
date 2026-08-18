@@ -1,0 +1,9 @@
+{
+  "conformance": "bounded-profile-not-formal-mlf-1.0",
+  "experiment_id": "EXP-0002",
+  "feature_count": 19,
+  "matrices": ["symbol_feature","feature_symbol"],
+  "roles": {"MLF":"container/coordinates/provenance","MMLC":"projection/loss computation","MMR":"bidirectional traversal"},
+  "schema": "scl-3m-bounded/v0.2",
+  "symbol_count": 6
+}

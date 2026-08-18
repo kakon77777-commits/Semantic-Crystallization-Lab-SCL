@@ -1,0 +1,16 @@
+{
+  "config": {
+    "base_epochs": 90,
+    "d_model": 48,
+    "layers": 1,
+    "learning_rate": 0.012,
+    "max_len": 384,
+    "nhead": 4,
+    "positive_weight_cap": 8.0,
+    "rms_factor": 1.0,
+    "stage1_epochs": 120,
+    "stage2_epochs": 120,
+    "support_threshold": 0.5
+  },
+  "seeds": [11,23,37]
+}

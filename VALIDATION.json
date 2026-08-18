@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-18",
+  "exp0001_regression": {
+    "invariantRecall": 1,
+    "surfaceMonotonic": true,
+    "terminalDictionaryAwareCompression": 0.10588583259390713,
+    "terminalSurfaceCompression": 71.6
+  },
+  "exp0002_determinism": {
+    "hashes": {
+      "experiments/EXP-0002/3m/checksums.json": "aa070dc4570d089e974be294e102f36a419be0a5b4021a51a6de76fbcb01ce29",
+      "experiments/EXP-0002/results/metrics.json": "484548f04a734f39998d9ed829aefe79990140b49aaf91d28f2973a0c8f1090c",
+      "experiments/EXP-0002/results/per_seed.jsonl": "551701abc8f6f84da1357a1f41a447d75c19624a0c5a6ef715065f97189cf811",
+      "experiments/EXP-0002/results/per_seed_summary.jsonl": "03673196b200022a8631b3db9aa867f5b3fd2447a5a3a74d9ae52d719d8ac590",
+      "experiments/EXP-0002/results/report.md": "799c211e5f6a777dbe643f7dd2ef4d05aa251b434c69132e57d53d9aadfc31f3"
+    },
+    "identical": true,
+    "reruns": 2
+  },
+  "experiment": "EXP-0002",
+  "hypotheses": {
+    "H_bidirectional_roundtrip_growth": true,
+    "H_composite_symbol_breadth": true,
+    "H_feature_localization_growth": true,
+    "H_naive_hidden_coordinate_growth": false,
+    "H_pointer_control_is_narrow": true
+  },
+  "node_tests": {
+    "command": "npm test",
+    "failed": 0,
+    "passed": 11
+  },
+  "python_tests": {
+    "command": "python -m unittest discover -s tests_py -v",
+    "failed": 0,
+    "passed": 21
+  },
+  "runtime_note": "PyTorch emits a non-fatal nested-tensor prototype warning during evaluation; tests and deterministic outputs remain stable.",
+  "schema": "scl-validation/v0.2"
+}

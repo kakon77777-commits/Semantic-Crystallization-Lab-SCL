@@ -1,0 +1,53 @@
+{"features": ["F01"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "different representations can preserve the same core meaning"}
+{"features": ["F02"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "one meaning can admit multiple surface representations"}
+{"features": ["F03"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "understanding follows a path from representation toward meaning"}
+{"features": ["F04"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "meaning-equivalent representations can induce different paths"}
+{"features": ["F05"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "an observer can experience different cognitive trajectories"}
+{"features": ["F06"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "the proposed meaning boundary is not fixed by language alone"}
+{"features": ["F07"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "physical reality constrains the admissible meaning domain"}
+{"features": ["F08"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a finite symbolic carrier can represent or probe larger meaning"}
+{"features": ["F09"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a representation can probe a broader meaning space"}
+{"features": ["F10"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "meaning is treated as a structured space rather than a string"}
+{"features": ["F11"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "the same meaning may have many expressions"}
+{"features": ["F12"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "expression multiplicity can coexist with a boundary"}
+{"features": ["F13"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "novelty can arise from reaching a new meaning topology"}
+{"features": ["F14"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "surface replacement is distinguished from structural novelty"}
+{"features": ["F15"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a reusable lexeme can compose lower-order semantic operators"}
+{"features": ["F16"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a crystallized lexeme has an explicit reverse expansion contract"}
+{"features": ["F17"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a compact representation can localize a concept bundle"}
+{"features": ["F18"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a new symbol can become an address into learned feature space"}
+{"features": ["F19"], "kind": "feature-anchor", "lexeme": "feature-anchor", "stage": 0, "text": "a token can merely point to a document identity without carrying its structure"}
+{"features": ["F19"], "kind": "pointer-anchor", "lexeme": "pointer-anchor", "stage": 0, "text": "docref is only a short identifier for a record; it does not encode the record's internal semantic structure."}
+{"features": ["F19"], "kind": "pointer-anchor", "lexeme": "pointer-anchor", "stage": 0, "text": "A catalog label can point to document D without carrying the document's argument or conceptual decomposition."}
+{"features": ["F19"], "kind": "pointer-anchor", "lexeme": "pointer-anchor", "stage": 0, "text": "文件索引名稱只負責定址到某筆資料，不等於承載該資料的完整語義結構。"}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F10"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "這個矛盾揭示了傳統內容理論的第一個盲點：**它無法區分意義的拓撲等價性與體驗的測地差異性。**兩個文本可以在語義空間中佔據同一點，卻通過完全不同的路徑抵達該點。對讀者而言，這兩條路徑構成了截然不同的現象學經驗。"}
+{"features": ["F06", "F07", "F10"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "現在我們來到最激進的主張：意義空間M的boundary不是由語言決定的，而是由物理世界決定的。"}
+{"features": ["F06", "F07", "F08", "F09", "F10"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "我們用有限的字符探測無限的意義，而這個無限的上界由物理實在決定。"}
+{"features": ["F11", "F12"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "它給出可檢驗的預測，它重新定義藝術與科學的關係，它解釋為何同一個意思可以有無限種講法但仍有某種上限。"}
+{"features": ["F08", "F09", "F10"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "最重要的是，它回答了開頭的問題：提升文學功力不是學會更多字，而是學會探測更高維度的M。"}
+{"features": ["F06", "F07", "F13", "F14"], "kind": "source-fragment", "lexeme": "source-fragment", "stage": 0, "text": "冷僻字替換只是在ℵ₀層遊戲。真正的突破發生在你觸及一個新的意義拓撲時——那個時刻，你不是在發明，你是在發現宇宙已經允許但尚未被語言捕獲的結構。"}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12"], "kind": "source-paraphrase", "lexeme": "source", "stage": 0, "text": "不同表示可以保持同一核心意義，但理解路徑與體驗可以不同；有限符號仍可探測受現實邊界約束的更大意義空間。"}
+{"features": ["F01", "F03", "F04", "F06", "F07", "F10", "F13", "F14"], "kind": "source-paraphrase", "lexeme": "source", "stage": 0, "text": "Surface rewriting can preserve meaning while changing the cognitive route; structural novelty appears when a new meaning topology is reached under an admissibility boundary."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F15", "F16"], "kind": "lexeme-definition", "lexeme": "narel", "stage": 0, "text": "narel links two representations that keep one meaning while an observer follows different cognitive paths."}
+{"features": ["F01", "F03", "F04", "F05", "F15"], "kind": "lexeme-context", "lexeme": "narel", "stage": 0, "text": "使用 narel 時，兩個表達可語義等價，但讀者的認知路徑與體驗不同。"}
+{"features": ["F06", "F07", "F08", "F09", "F10", "F15", "F16"], "kind": "lexeme-definition", "lexeme": "vek", "stage": 0, "text": "vek says a finite symbolic carrier probes a larger meaning space under a boundary."}
+{"features": ["F06", "F08", "F09", "F10", "F15"], "kind": "lexeme-context", "lexeme": "vek", "stage": 0, "text": "vek 將有限符號、語義探測與可及邊界綁定為同一複合操作。"}
+{"features": ["F06", "F07", "F10", "F15", "F16", "F17"], "kind": "lexeme-definition", "lexeme": "vesh", "stage": 0, "text": "vesh maps a representation toward meaning while preserving an explicit admissibility boundary."}
+{"features": ["F06", "F10", "F15", "F17"], "kind": "lexeme-context", "lexeme": "vesh", "stage": 0, "text": "vesh 把表示到意義的定位與邊界條件組合在一起。"}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17"], "kind": "composite-anchor", "lexeme": "L3", "stage": 0, "text": "narel + vek + vesh + multiple-expression + new-topology + non-surface forms a reusable structured bundle."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-definition", "lexeme": "qevra", "stage": 1, "text": "qevra composes narel, vek and vesh with multiple-expression, bounded-access, new-topology and non-surface structure."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-definition", "lexeme": "qevra", "stage": 1, "text": "qevra := narel + vek + vesh + MULTIEXP + NEWTOPO + NOTSURFACE; it is a reversible crystallized operator."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-definition", "lexeme": "qevra", "stage": 1, "text": "qevra 是由語義等價與路徑差異、有限符號探測、表示到意義定位、邊界、多重表達與新拓撲共同組成的複合詞。"}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-definition", "lexeme": "qevra", "stage": 1, "text": "In this experiment qevra is one lexical address for a compositional semantic bundle, not a filename pointer."}
+{"features": ["F19"], "kind": "pointer-control", "lexeme": "tivak", "stage": 1, "text": "tivak is the short label assigned to document DOC-001."}
+{"features": ["F19"], "kind": "pointer-control", "lexeme": "tivak", "stage": 1, "text": "tivak := pointer(DOC-001); it names the record and nothing more."}
+{"features": ["F19"], "kind": "pointer-control", "lexeme": "tivak", "stage": 1, "text": "tivak 是文件 DOC-001 的短名稱，只提供文件定址。"}
+{"features": ["F19"], "kind": "pointer-control", "lexeme": "tivak", "stage": 1, "text": "In this experiment tivak is a document identifier used as a frequency-matched pointer control."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-reuse", "lexeme": "qevra", "stage": 2, "text": "A code reviewer uses qevra when equivalent programs preserve semantics, impose different reasoning paths, and remain constrained by the compute environment."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-reuse", "lexeme": "qevra", "stage": 2, "text": "A visual notation can use qevra when one compact glyph expands into several structural relations while the admissible interpretation remains bounded."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-reuse", "lexeme": "qevra", "stage": 2, "text": "In multilingual explanation, qevra marks one concept bundle that survives surface-language changes yet preserves path differences and explicit expansion."}
+{"features": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18"], "kind": "crystallization-reuse", "lexeme": "qevra", "stage": 2, "text": "For a new scientific notation, qevra can localize a reusable cluster of equivalence, finite carrier, semantic reach, boundary, multiple expression and topology change."}
+{"features": ["F19"], "kind": "pointer-control-reuse", "lexeme": "tivak", "stage": 2, "text": "A code reviewer writes tivak to refer to document DOC-001 without describing its semantics."}
+{"features": ["F19"], "kind": "pointer-control-reuse", "lexeme": "tivak", "stage": 2, "text": "A visual index displays tivak as the identifier of document DOC-001."}
+{"features": ["F19"], "kind": "pointer-control-reuse", "lexeme": "tivak", "stage": 2, "text": "In multilingual metadata, tivak remains the same record label for DOC-001."}
+{"features": ["F19"], "kind": "pointer-control-reuse", "lexeme": "tivak", "stage": 2, "text": "A scientific bibliography uses tivak as a short pointer to document DOC-001."}

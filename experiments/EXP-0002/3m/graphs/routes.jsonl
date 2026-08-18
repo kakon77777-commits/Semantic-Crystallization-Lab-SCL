@@ -1,0 +1,25 @@
+{"axis": "row", "from": "narel", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "row", "from": "vek", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "row", "from": "vesh", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "row", "from": "qevra", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "row", "from": "tivak", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "row", "from": "L3", "route": "symbol_to_feature", "to": ["F01", "F02", "F03", "F04", "F05", "F06", "F07", "F08", "F09", "F10", "F11", "F12", "F13", "F14", "F15", "F16", "F17", "F18", "F19"]}
+{"axis": "column", "from": "F01", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F02", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F03", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F04", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F05", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F06", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F07", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F08", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F09", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F10", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F11", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F12", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F13", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F14", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F15", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F16", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F17", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F18", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
+{"axis": "column", "from": "F19", "route": "feature_to_symbol", "to": ["narel", "vek", "vesh", "qevra", "tivak", "L3"]}
