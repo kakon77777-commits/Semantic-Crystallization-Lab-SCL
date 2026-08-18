@@ -66,4 +66,18 @@ An SCI package is a proposal, not truth. In multi-agent use it should support ap
 
 ## Current evidence boundary
 
-SCL EXP-0001 through EXP-0004 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
+SCL EXP-0001 through EXP-0005 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
+
+## Continuity note
+
+EXP-0005 separates two mechanisms that can stabilize an SCI across a multi-agent system:
+
+$$
+\text{Protocol} \approx \text{inter-agent continuity},
+$$
+
+$$
+\text{Persistence} \approx \text{intra-agent continuity through time}.
+$$
+
+This is an operational distinction, not an identity theorem. Protocol constrains admissible inter-agent state transitions; persistence preserves an agent's accepted imprint/history across restart. The bounded experiment shows that either factor alone can fail in a different way.
