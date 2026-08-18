@@ -12,24 +12,42 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.2 / EXP-0002 — Bidirectional Symbol–Feature Localization**
+**SCL v0.3 / EXP-0003 — Semantic Basin Stabilization**
 
-EXP-0002 extends the finite crystallization chain into a transparent neural feature space. A tiny PyTorch Transformer first learns a fixed semantic feature space; after that freeze, only the embeddings of held-out crystallized lexeme `qevra` and frequency-matched pointer control `tivak` may move. Across seeds 11/23/37, `qevra` grows from a mean 3.333 thresholded features before semantic assignment to 13.333 after compositional definition plus contextual reuse, while semantic recall against the 14 source-derived features rises from 0.143 to 0.762 and explicit-target Jensen–Shannon distortion falls from 0.413 to 0.191. Reverse feature-to-symbol top-1 recovery rises from 1/3 to 3/3.
+EXP-0003 refines the AI-side hypothesis from “more semantic content means more active hidden coordinates” to a dynamic localization claim: a learned symbol should become a more stable address into a distributed semantic feature basin as it is repeatedly recalled, routed through memory, and learned across compatible contexts.
 
-The naive stronger hypothesis is rejected: hidden effective dimension and RMS-relative active-coordinate count do not increase with semantic breadth. In this bounded model, crystallization looks more like selective localization of a broader learned feature bundle than simply turning on more hidden coordinates.
+Across deterministic seeds `11/23/37`, the preregistered attentive-consolidation arm moves `qevra` from mean intrinsic context JS `0.0834` to `0.0588`, support Jaccard `0.6291` to `0.7207`, target recall `0.6181` to `0.7106`, centroid-to-target JS `0.0526` to `0.0356`, and cross-seed centroid JS `0.0559` to `0.0329`. The full preregistered directional gate passes on `2/3` seeds.
 
-The Stage-2 breadth ladder is also explicit: mean thresholded support is `narel=5.0`, `vek=6.333`, `vesh=3.667`, `qevra=13.333`, and pointer-only `tivak=1.0`.
+The ablations matter:
 
-The GitHub audit branch stores the design, finite corpus, validation evidence, reported metrics and bounded 3M matrix-ledger projection. The separate byte-complete release ZIP also contains the executable Python source/tests and full raw per-seed hidden-vector ledger. To reproduce from that archive:
+- repetition-only stabilizes strongly and, on pure stability metrics, is not beaten by diverse learning; `H2` is therefore a preserved negative result;
+- memory-only assistance improves the current inference on `3/3` seeds while intrinsic metrics remain exactly unchanged, separating retrieval assistance from consolidation;
+- attentive recall plus repeated learning transfers part of the external support back into the intrinsic symbol basin;
+- after count-normalizing the `7` semantic vs `2` pointer memory entries, `qevra` preferentially routes toward semantic memory and `tivak` toward pointer memory on `3/3` seeds.
+
+The bounded conclusion is not an infinite fixed point. It is directional evidence for:
+
+$$
+D_{\mathrm{ctx}}(s)\downarrow,\qquad J_{\mathrm{support}}(s)\uparrow
+$$
+
+under semantic consolidation, while target fidelity is tracked separately.
+
+Reproduce from the byte-complete release archive:
 
 ```bash
-python -m unittest discover -s tests_py -v
-python scripts/run_exp0002.py
+python -m pytest -q
+npm test
+python scripts/run_exp0003.py
 ```
 
-See `experiments/EXP-0002/results/report.md` and `experiments/EXP-0002/3m/`. This is a finite toy-model mechanism experiment; it does not expose or claim hidden states from ChatGPT or any proprietary foundation model.
+See `experiments/EXP-0003/results/report.md`, `experiments/EXP-0003/3m/`, and `experiments/EXP-0003/EXP0003_SOURCE_AND_PROCESS.md`. This remains a finite transparent toy-model mechanism experiment; it does not expose proprietary-model hidden states or prove a universal semantic fixed point.
 
 ---
+
+### Previous milestone: SCL v0.2 / EXP-0002 — Bidirectional Symbol–Feature Localization
+
+EXP-0002 established the immediately preceding result: `qevra` gained broader learned feature localization and better reverse retrieval while raw hidden-coordinate breadth did not monotonically increase. Its formal report remains at `experiments/EXP-0002/results/report.md`.
 
 ### Previous milestone: SCL v0.1 / EXP-0001 — Finite Semantic Crystallization
 
@@ -79,7 +97,7 @@ It does **not** prove the stronger ontological/cardinality claims of the source 
 
 ## Reproduce
 
-Requires Node.js 20+ and no third-party runtime dependencies.
+Requires Node.js 20+ and no third-party runtime dependencies for EXP-0001.
 
 ```bash
 npm test
@@ -96,20 +114,17 @@ Generated outputs:
 ```text
 docs/superpowers/specs/       experiment design/specification
 docs/superpowers/plans/       implementation plan
-papers/source-original/       preserved source papers and EML-U reference package
-experiments/EXP-0001/source/  source passage
-experiments/EXP-0001/semantic-ir/ explicit atoms and invariant map
-experiments/EXP-0001/lexicon/ new lexemes and expansion graph
-experiments/EXP-0001/chain/   checked-in compression levels
-experiments/EXP-0001/results/ reproducible metrics/report
-experiments/EXP-0002/        neural symbol-feature localization experiment and bounded 3M outputs
-python/scl_exp/              transparent neural/grid/3M experiment helpers
-tests_py/                    Python unit and experiment-mechanics tests
+papers/source-original/       preserved source papers and EML-U reference package in byte-complete archive
+experiments/EXP-0001/        finite semantic crystallization
+experiments/EXP-0002/        neural symbol-feature localization and bounded 3M outputs
+experiments/EXP-0003/        semantic-basin stabilization, memory attention, ablations, and 3M outputs
+python/scl_exp/              transparent neural/grid/3M experiment helpers in byte-complete archive
+tests_py/                    Python experiment-mechanics tests in byte-complete archive
 src/                          generic validator/expander/metrics functions
 test/                         Node built-in tests
-scripts/                      deterministic experiment runners
+scripts/                      deterministic experiment runners; EXP-0003 runner in byte-complete archive
 ```
 
 ## Design boundary
 
-SCL v0.1 is deliberately manual at the semantic-decomposition step. This makes the first experiment auditable: the system tests crystallization mechanics rather than hiding an unvalidated language-model judgment behind a compression score.
+SCL deliberately keeps finite experiment boundaries explicit. These runs demonstrate mechanisms and measured trends; they do not by themselves establish the stronger ontological/cardinality claims of the source papers.
