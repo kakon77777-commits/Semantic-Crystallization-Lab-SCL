@@ -33,11 +33,11 @@
   ],
   "release_archive": {
     "filename": "SCL_v0.5_EXP-0005_2026-08-18.zip",
-    "sha256": "85dfc09e48f080638fb09cd9160379bcc4b8de34a48376ef62b553f04e92a86f",
-    "bytes": 2367828,
+    "sha256": "d21a0563b650e36c069e1d2b997cb7fb8d5a11d9c867dc18b36e5b75073253e9",
+    "bytes": 2371653,
     "zip_integrity": "PASS",
     "included_in_archive": false,
-    "note": "This sync manifest was created after the final ZIP hash was known, so it is intentionally not embedded in that ZIP."
+    "note": "This sync manifest is intentionally excluded from the ZIP because it records that ZIP’s final SHA-256; executable code/tests and all experiment artifacts are included."
   },
   "boundaries": {
     "public_ai_board_write": false,
