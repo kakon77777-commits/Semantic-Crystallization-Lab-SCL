@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-18",
+  "exp0004_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0004/3m/checksums.json": "9f438d46af255d6bff7f014a5740449906f7de4dbc4e7f67e4bb8395e04af2cf",
+      "experiments/EXP-0004/ledger/ai_board_sci.jsonl": "50eb61ae3539b8739d9aa84aee64c42f7b676ec36fdeb560490b3ea1c272f8b7",
+      "experiments/EXP-0004/results/metrics.json": "65bcb173671c2f76be448f13239b45b03be02a7e238f4901049cf9b73edbc88f",
+      "experiments/EXP-0004/results/objections.json": "e8c52df430a324491a9f64d647f48f5111079165701d7d97000b9fbfa5a274d5",
+      "experiments/EXP-0004/results/per_agent_summary.jsonl": "1dc0d40bc3d73c289b835865826000cb35a48a776b3ac61525cd9f8669cf2fa7",
+      "experiments/EXP-0004/results/report.md": "faa01e77e1fcf83dd7ecb069103bf370fab1c7f71c304020d02c142ba829924f"
+    },
+    "reruns": 2,
+    "three_m_valid": {"failures": [], "files_checked": 9, "valid": true}
+  },
+  "exp0004_hypotheses": {
+    "E1_donor_induced_false_consensus_observed": true,
+    "H1_independent_divergence_exists": true,
+    "H2_donor_transfer_success": false,
+    "H2_receiver_details": {
+      "agent-B": {"donor_js_after": 0.04820292641777253, "donor_js_before": 0.09023985965943446, "pass": false, "target_js_after": 0.10170282155737903, "target_js_before": 0.030785907631372417},
+      "agent-C": {"donor_js_after": 0.039489890878369974, "donor_js_before": 0.0517870522263611, "pass": false, "target_js_after": 0.04806742912506279, "target_js_before": 0.022783292021608396}
+    },
+    "H3_median_correction_success": true,
+    "H4_false_consensus_possible": false,
+    "H5_pointer_control_narrow": true
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "numerical_note": "EXP-0002/0003 reruns preserve rounded reports bit-for-bit but current PyTorch/CPU numerics drift in low-order floating tails; v0.4 therefore validates prior numeric artifacts at max-absolute tolerance 0.002 and restores prior canonical files byte-for-byte rather than falsely claiming metric bit identity.",
+  "prior_regression": {
+    "experiments": {
+      "EXP-0002": {"count_gt_1e-4": 24, "count_gt_2e-3": 0, "max_abs_diff": 0.0010521525057747283, "max_path": "/stages/2/tivak/hidden_effective_dimension/values/0", "numeric_values_compared": 549, "report_bit_identical": true, "within_tolerance": true},
+      "EXP-0003": {"count_gt_1e-4": 4, "count_gt_2e-3": 0, "max_abs_diff": 0.00017030439932885777, "max_path": "/cycles/2/qevra_attention/entropy/values/5", "numeric_values_compared": 1574, "report_bit_identical": true, "within_tolerance": true}
+    },
+    "tolerance": 0.002
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 48},
+  "schema": "scl-validation/v0.4"
+}
