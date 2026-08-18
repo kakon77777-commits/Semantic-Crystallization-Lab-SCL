@@ -115,7 +115,7 @@ def export_three_m_v05(result: dict, root: Path) -> None:
 
     checksums = {}
     for path in sorted(root.rglob("*")):
-        if path.is_file() and path.name not in {"checksums.json", "verification.json"}:
+        if path.is_file() and path.name not in {"checksums.json", "verification.json"} and not path.name.startswith("GITHUB_"):
             checksums[str(path.relative_to(root)).replace("\\", "/")] = hashlib.sha256(path.read_bytes()).hexdigest()
     _dump_json(root / "checksums.json", checksums)
 
