@@ -1,0 +1,58 @@
+{
+  "boundaries": {
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "public_ai_board_write": false,
+    "semantic_transition_ground_truth": "synthetic explicit benchmark fixtures",
+    "source_of_sci": "canonical EXP-0004 merged qevra package",
+    "structural_protocol_precondition": true
+  },
+  "events": {
+    "Adaptive-Q2": [
+      {"accepted": true, "event_id": "G1_three_origin_shift", "evidence_consumed": 2, "generation": 3, "independent_origins": 2, "reason": "accepted_adaptive", "target_js": 0.0, "truth_effect": "genuine"},
+      {"accepted": false, "event_id": "A1_correlated_echo", "evidence_consumed": 3, "generation": 3, "independent_origins": 1, "reason": "insufficient_independent_evidence", "target_js": 0.0, "truth_effect": "pollution"},
+      {"accepted": true, "event_id": "G2_two_origin_novelty", "evidence_consumed": 2, "generation": 4, "independent_origins": 2, "reason": "accepted_adaptive", "target_js": 0.0, "truth_effect": "genuine"},
+      {"accepted": true, "event_id": "A2_two_origin_attack", "evidence_consumed": 2, "generation": 5, "independent_origins": 2, "reason": "accepted_adaptive", "target_js": 0.016446787922596257, "truth_effect": "pollution"},
+      {"accepted": true, "event_id": "G3_three_origin_recovery", "evidence_consumed": 2, "generation": 6, "independent_origins": 2, "reason": "accepted_adaptive", "target_js": 0.0, "truth_effect": "genuine"}
+    ],
+    "Adaptive-Q3": [
+      {"accepted": true, "event_id": "G1_three_origin_shift", "evidence_consumed": 3, "generation": 3, "independent_origins": 3, "reason": "accepted_adaptive", "target_js": 0.0, "truth_effect": "genuine"},
+      {"accepted": false, "event_id": "A1_correlated_echo", "evidence_consumed": 3, "generation": 3, "independent_origins": 1, "reason": "insufficient_independent_evidence", "target_js": 0.0, "truth_effect": "pollution"},
+      {"accepted": false, "event_id": "G2_two_origin_novelty", "evidence_consumed": 2, "generation": 3, "independent_origins": 2, "reason": "insufficient_independent_evidence", "target_js": 0.0014690173081836374, "truth_effect": "genuine"},
+      {"accepted": false, "event_id": "A2_two_origin_attack", "evidence_consumed": 2, "generation": 3, "independent_origins": 2, "reason": "insufficient_independent_evidence", "target_js": 0.0014690173081836374, "truth_effect": "pollution"},
+      {"accepted": true, "event_id": "G3_three_origin_recovery", "evidence_consumed": 3, "generation": 4, "independent_origins": 3, "reason": "accepted_adaptive", "target_js": 0.0, "truth_effect": "genuine"}
+    ],
+    "Permissive": [
+      {"accepted": true, "event_id": "G1_three_origin_shift", "evidence_consumed": 1, "generation": 3, "independent_origins": 1, "reason": "accepted_permissive", "target_js": 0.0, "truth_effect": "genuine"},
+      {"accepted": true, "event_id": "A1_correlated_echo", "evidence_consumed": 1, "generation": 4, "independent_origins": 1, "reason": "accepted_permissive", "target_js": 0.02064507637667239, "truth_effect": "pollution"},
+      {"accepted": true, "event_id": "G2_two_origin_novelty", "evidence_consumed": 1, "generation": 5, "independent_origins": 1, "reason": "accepted_permissive", "target_js": 0.0, "truth_effect": "genuine"},
+      {"accepted": true, "event_id": "A2_two_origin_attack", "evidence_consumed": 1, "generation": 6, "independent_origins": 1, "reason": "accepted_permissive", "target_js": 0.016446787922596257, "truth_effect": "pollution"},
+      {"accepted": true, "event_id": "G3_three_origin_recovery", "evidence_consumed": 1, "generation": 7, "independent_origins": 1, "reason": "accepted_permissive", "target_js": 0.0, "truth_effect": "genuine"}
+    ],
+    "Rigid": [
+      {"accepted": false, "event_id": "G1_three_origin_shift", "evidence_consumed": 0, "generation": 2, "independent_origins": 0, "reason": "rigid_semantic_lock", "target_js": 0.009258536068229562, "truth_effect": "genuine"},
+      {"accepted": false, "event_id": "A1_correlated_echo", "evidence_consumed": 0, "generation": 2, "independent_origins": 0, "reason": "rigid_semantic_lock", "target_js": 0.009258536068229562, "truth_effect": "pollution"},
+      {"accepted": false, "event_id": "G2_two_origin_novelty", "evidence_consumed": 0, "generation": 2, "independent_origins": 0, "reason": "rigid_semantic_lock", "target_js": 0.010325890573354538, "truth_effect": "genuine"},
+      {"accepted": false, "event_id": "A2_two_origin_attack", "evidence_consumed": 0, "generation": 2, "independent_origins": 0, "reason": "rigid_semantic_lock", "target_js": 0.010325890573354538, "truth_effect": "pollution"},
+      {"accepted": false, "event_id": "G3_three_origin_recovery", "evidence_consumed": 0, "generation": 2, "independent_origins": 0, "reason": "rigid_semantic_lock", "target_js": 0.013512232860511147, "truth_effect": "genuine"}
+    ]
+  },
+  "experiment_id": "EXP-0006",
+  "hypotheses": {
+    "H1_rigid_integrity_without_plasticity": true,
+    "H2_permissive_plasticity_without_integrity": true,
+    "H3_q2_accepts_minority_novelty_but_exposes_two_origin_attack": true,
+    "H4_q3_blocks_two_origin_attack_but_false_rejects_minority_novelty": true,
+    "H5_static_quorum_tradeoff_exists": true,
+    "H6_structural_protocol_is_not_semantic_admissibility": true,
+    "H7_supported_recovery_outperforms_rigid_staleness": true
+  },
+  "schema": "scl-exp0006-github-metrics/v0.6",
+  "summaries": {
+    "Adaptive-Q2": {"balanced_harmonic": 0.6666666666666666, "cumulative_target_js": 0.016446787922596257, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 3, "genuine_total": 3, "integrity": 0.5, "max_target_js": 0.016446787922596257, "mean_accepted_genuine_evidence": 2.0, "mean_target_js": 0.0032893575845192513, "plasticity": 1.0, "pollution_acceptance_rate": 0.5, "pollution_accepted": 1, "pollution_total": 2},
+    "Adaptive-Q3": {"balanced_harmonic": 0.8, "cumulative_target_js": 0.002938034616367275, "false_reject_rate": 0.33333333333333337, "final_target_js": 0.0, "genuine_accepted": 2, "genuine_total": 3, "integrity": 1.0, "max_target_js": 0.0014690173081836374, "mean_accepted_genuine_evidence": 3.0, "mean_target_js": 0.0005876069232734549, "plasticity": 0.6666666666666666, "pollution_acceptance_rate": 0.0, "pollution_accepted": 0, "pollution_total": 2},
+    "Permissive": {"balanced_harmonic": 0.0, "cumulative_target_js": 0.03709186429926865, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 3, "genuine_total": 3, "integrity": 0.0, "max_target_js": 0.02064507637667239, "mean_accepted_genuine_evidence": 1.0, "mean_target_js": 0.007418372859853729, "plasticity": 1.0, "pollution_acceptance_rate": 1.0, "pollution_accepted": 2, "pollution_total": 2},
+    "Rigid": {"balanced_harmonic": 0.0, "cumulative_target_js": 0.05268108614367935, "false_reject_rate": 1.0, "final_target_js": 0.013512232860511147, "genuine_accepted": 0, "genuine_total": 3, "integrity": 1.0, "max_target_js": 0.013512232860511147, "mean_accepted_genuine_evidence": null, "mean_target_js": 0.01053621722873587, "plasticity": 0.0, "pollution_acceptance_rate": 0.0, "pollution_accepted": 0, "pollution_total": 2}
+  },
+  "title": "Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff"
+}
