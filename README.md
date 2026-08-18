@@ -12,7 +12,19 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.6 / EXP-0006 — Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff**
+**SCL v0.7 / EXP-0007 — Adaptive Epistemic Admission / Learning When to Trust**
+
+EXP-0007 asks whether the admissibility threshold itself can adapt from delayed evidence rather than staying fixed at Q2 or Q3. The learned policy never sees the current event's truth label: it maintains Beta reliability posteriors for provenance roots from one-event-delayed validation feedback, then combines trust-weighted support with current risk, semantic novelty and recent pollution prevalence.
+
+Across a 15-event deterministic sequence with source drift, Static-Q2 remains maximally plastic but accepts 5/6 pollution events; Static-Q3 keeps integrity at 0.833 but accepts only 5/9 genuine updates. Learned-Adaptive accepts 7/9 genuine updates and 1/6 pollution events, matching Q3 integrity while increasing plasticity from 0.556 to 0.778. Its risk-weighted cumulative target JS is `0.06780`, about 5.6% below Static-Q3 (`0.07184`) and far below Static-Q2 (`0.23379`).
+
+The gain is not oracle behavior. A previously trusted A/B/C coalition still passes one later attack before delayed negative feedback lowers reputation. Root B moves from phase-1 trust `0.714` to final `0.455`, while emerging root D rises from `0.500` to `0.667`. The experiment therefore identifies **epistemic hysteresis**: trust can lag both genuine source emergence and source compromise.
+
+See `experiments/EXP-0007/results/report.md`, `experiments/EXP-0007/results/trust_trajectory.jsonl`, and `experiments/EXP-0007/3m/`.
+
+---
+
+### Previous milestone: SCL v0.6 / EXP-0006 — Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff
 
 EXP-0006 asks what happens after protocol and persistence already exist: a persistent cognition must remain revisable, but a structurally valid update can still be semantically wrong. The experiment therefore holds structural validity constant and compares Rigid, Permissive, Adaptive-Q2 and Adaptive-Q3 admission laws across three synthetic genuine target shifts and two structurally valid pollution events.
 
@@ -157,6 +169,7 @@ experiments/EXP-0003/        semantic-basin stabilization, memory attention, abl
 experiments/EXP-0004/        cross-agent SCI reconstruction, transfer, correction, contamination stress, ledger, and 3M outputs
 experiments/EXP-0005/        protocol × persistence continuity, restart/fault audit, and 3M outputs
 experiments/EXP-0006/        admissible cognitive transitions and plasticity–integrity frontier
+experiments/EXP-0007/        adaptive epistemic admission, provenance trust drift, and delayed-feedback audit
 python/scl_exp/              transparent neural/grid/3M experiment helpers
 tests_py/                    Python unit and experiment-mechanics tests
 src/                          generic validator/expander/metrics functions
