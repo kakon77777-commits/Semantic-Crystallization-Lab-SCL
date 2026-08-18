@@ -1,0 +1,16 @@
+{
+  "canonical_checksums_sha256": "e8027ed2748b6ce053fa92b2c7c41e370d8e87fac1d768db54d12abf2ee6d215",
+  "files": {
+    "graphs/routes.jsonl": "00b9d37ba51e781896c2d505678d9c605d2da6833edd24944d57c2cc28aa4061",
+    "ledgers/admission_events.jsonl": "d54713bae2d1082913c40daeeb3fcb2567a8465be79f1b0121345e199a41ddff",
+    "manifest.json": "2b634944381cf1c3260cc8585c82ddb3f7b283a11b9acc99ea87df2db3ae739b",
+    "matrices/learned_root_trust.cells.jsonl": "7a8001423b2c73376cde24ecb3de191048bd0ad02c040ec08482ca96efd273c4",
+    "matrices/policy_final_feature.cells.jsonl": "f0adeee49c729ef933009112360c3101db12593b80b2820f636402725a95de1d",
+    "matrices/policy_metrics.cells.jsonl": "b92885a1a9116992c020c9a55db2c3697e240cbdcc1d9067c559c2e6df1b2e36",
+    "provenance/events.jsonl": "177c02ed3a27ba2fa616a1ffcffe523b62ace95e1f8bad5f52e7a97f6ca53bc5",
+    "reports/projection_loss.json": "f724d6616fe1199ffc2e8f55e1039f83d84cae904b9dc88651ab4435a0283292",
+    "substrate.json": "43b9caa032feca899f35cfba4338515d58007ec954955ec279dafcd8ce14486c"
+  },
+  "schema": "scl-exp0007-3m-github-index/v0.7",
+  "verification": {"failures": [], "files_checked": 9, "valid": true}
+}
