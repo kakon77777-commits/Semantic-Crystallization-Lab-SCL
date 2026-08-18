@@ -12,15 +12,23 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.5 / EXP-0005 — Protocol–Persistent Cognition Continuity**
+**SCL v0.6 / EXP-0006 — Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff**
 
-EXP-0005 isolates two continuity laws above the neural layer: **protocol** as inter-agent continuity and **persistence** as intra-agent continuity through time. It consumes the canonical F01–F19 SCI artifacts from EXP-0004 and runs a deterministic 2×2 protocol × persistence experiment across three agents.
+EXP-0006 asks what happens after protocol and persistence already exist: a persistent cognition must remain revisable, but a structurally valid update can still be semantically wrong. The experiment therefore holds structural validity constant and compares Rigid, Permissive, Adaptive-Q2 and Adaptive-Q3 admission laws across three synthetic genuine target shifts and two structurally valid pollution events.
 
-The factor separation is clean: persistent arms reduce immediate restart JS from `0.0243` to `0.0000`, while protocol arms raise final correction retention under stale/provenance/rollback/fork faults from `0%` to `100%`. Persistence without protocol (`A01`) survives restart but is later overwritten by untyped last-write-wins traffic; protocol without persistence (`A10`) initially loses the SCI but reconstructs it from a valid bootstrap and then rejects all four fault classes. `A11` is the only arm with both zero restart drift and full fault-resistant correction retention.
+The result is a bounded plasticity–integrity frontier. Rigid has integrity `1.0` but plasticity `0.0`; Permissive has plasticity `1.0` but integrity `0.0`; Adaptive-Q2 has plasticity `1.0` and integrity `0.5`; Adaptive-Q3 has integrity `1.0` but plasticity `0.667` because it false-rejects a genuine two-origin minority novelty. Q2 rejects the one-root correlated echo but accepts a two-origin coordinated attack; Q3 blocks both attacks but also blocks the two-origin genuine novelty until a later three-origin recovery.
 
-The no-protocol arms also produce an explicit temporal false consensus: final cross-agent JS is `0.0000`, yet target JS worsens from the accepted reference `0.0251` to `0.1053` (about `4.19×`). Agreement across time is therefore not a truth signal.
+Thus `who/parent/version/hash/provenance` is not enough by itself: **structural protocol validity is not semantic admissibility**, while an infinitely rigid admissibility law degenerates into an inability to learn. See `experiments/EXP-0006/results/report.md`, `experiments/EXP-0006/EXP0006_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0006/3m/`.
 
-See `experiments/EXP-0005/results/report.md`, `experiments/EXP-0005/EXP0005_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0005/3m/`.
+---
+
+### Previous milestone: SCL v0.5 / EXP-0005 — Protocol–Persistent Cognition Continuity
+
+EXP-0005 isolates two continuity laws above the neural layer: **protocol** as inter-agent continuity and **persistence** as intra-agent continuity through time. Persistent arms reduce immediate restart JS from `0.0243` to `0.0000`, while protocol arms raise final correction retention under stale/provenance/rollback/fork faults from `0%` to `100%`.
+
+Persistence without protocol survives restart but can still be overwritten; protocol without persistence can recover by valid bootstrap but does not eliminate the restart discontinuity itself. The no-protocol arms also demonstrate temporal false consensus: cross-agent JS reaches `0.0000` while target distortion becomes about `4.19×` worse.
+
+See `experiments/EXP-0005/results/report.md` and `VALIDATION_V05.json`.
 
 ---
 
@@ -148,6 +156,7 @@ experiments/EXP-0002/        neural symbol-feature localization experiment and b
 experiments/EXP-0003/        semantic-basin stabilization, memory attention, ablations, and 3M outputs
 experiments/EXP-0004/        cross-agent SCI reconstruction, transfer, correction, contamination stress, ledger, and 3M outputs
 experiments/EXP-0005/        protocol × persistence continuity, restart/fault audit, and 3M outputs
+experiments/EXP-0006/        admissible cognitive transitions and plasticity–integrity frontier
 python/scl_exp/              transparent neural/grid/3M experiment helpers
 tests_py/                    Python unit and experiment-mechanics tests
 src/                          generic validator/expander/metrics functions
