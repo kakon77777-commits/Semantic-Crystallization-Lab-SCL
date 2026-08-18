@@ -1,14 +1,15 @@
 {
   "name": "semantic-crystallization-lab-scl",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
-  "description": "Finite semantic crystallization experiments with explicit expansion contracts and dictionary-aware metrics.",
+  "description": "Finite semantic crystallization experiments with explicit expansion contracts, bidirectional symbol-feature localization, and semantic-basin stability measurement.",
   "scripts": {
     "test": "node --test",
-    "exp:0001": "node scripts/run-exp0001.js"
+    "exp:0001": "node scripts/run-exp0001.js",
+    "test:py": "python -m unittest discover -s tests_py -v",
+    "exp:0002": "python scripts/run_exp0002.py",
+    "exp:0003": "python scripts/run_exp0003.py"
   },
-  "engines": {
-    "node": ">=20"
-  }
+  "engines": {"node": ">=20"}
 }
