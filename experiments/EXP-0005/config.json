@@ -1,0 +1,23 @@
+{
+  "boundaries": {
+    "cross_agent_coordinate": "shared F01-F19 feature space only",
+    "ctcl_mode": "deterministic-logical-instant-compatibility-only",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "public_ai_board_write": false
+  },
+  "config": {
+    "accepted_version": 2,
+    "fault_next_version": 3,
+    "feature_space": "SCL-F01-F19-v0.2",
+    "logical_restart_label": "session-2-restart",
+    "protocol_schema": "sci-protocol-envelope/v0.1"
+  },
+  "factorial": {
+    "A00": {"persistence": false, "protocol": false},
+    "A01": {"persistence": true, "protocol": false},
+    "A10": {"persistence": false, "protocol": true},
+    "A11": {"persistence": true, "protocol": true}
+  },
+  "faults": ["stale_version", "missing_provenance", "rollback", "conflicting_correction"]
+}
