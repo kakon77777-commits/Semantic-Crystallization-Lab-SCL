@@ -66,7 +66,7 @@ An SCI package is a proposal, not truth. In multi-agent use it should support ap
 
 ## Current evidence boundary
 
-SCL EXP-0001 through EXP-0005 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
+SCL EXP-0001 through EXP-0006 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
 
 ## Continuity note
 
@@ -81,3 +81,13 @@ $$
 $$
 
 This is an operational distinction, not an identity theorem. Protocol constrains admissible inter-agent state transitions; persistence preserves an agent's accepted imprint/history across restart. The bounded experiment shows that either factor alone can fail in a different way.
+
+## Transition admissibility note
+
+EXP-0006 adds a third operational distinction beyond protocol and persistence:
+
+$$
+\text{Structural transition validity} \neq \text{semantic transition admissibility}.
+$$
+
+A persistent SCI must be revisable, but unrestricted revisability allows structurally valid contamination. The bounded experiment therefore treats admissibility as a plasticity–integrity tradeoff: stronger evidence quorums improve resistance to correlated updates while increasing the risk of rejecting genuine minority novelty. This is an experimental decomposition, not a universal optimality theorem.
