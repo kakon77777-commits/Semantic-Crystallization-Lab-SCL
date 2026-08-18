@@ -1,0 +1,27 @@
+{
+  "experiments": {
+    "EXP-0002": {
+      "count_gt_1e-4": 24,
+      "count_gt_2e-3": 0,
+      "max_abs_diff": 0.0010521525057747283,
+      "max_path": "/stages/2/tivak/hidden_effective_dimension/values/0",
+      "numeric_values_compared": 549,
+      "report_bit_identical": true,
+      "report_sha256_original": "799c211e5f6a777dbe643f7dd2ef4d05aa251b434c69132e57d53d9aadfc31f3",
+      "report_sha256_rerun": "799c211e5f6a777dbe643f7dd2ef4d05aa251b434c69132e57d53d9aadfc31f3",
+      "within_tolerance": true
+    },
+    "EXP-0003": {
+      "count_gt_1e-4": 4,
+      "count_gt_2e-3": 0,
+      "max_abs_diff": 0.00017030439932885777,
+      "max_path": "/cycles/2/qevra_attention/entropy/values/5",
+      "numeric_values_compared": 1574,
+      "report_bit_identical": true,
+      "report_sha256_original": "d8a9468bc2d0b2a977fb06234efb631b6d4af90be728ce359c906c2941c240de",
+      "report_sha256_rerun": "d8a9468bc2d0b2a977fb06234efb631b6d4af90be728ce359c906c2941c240de",
+      "within_tolerance": true
+    }
+  },
+  "tolerance": 0.002
+}
