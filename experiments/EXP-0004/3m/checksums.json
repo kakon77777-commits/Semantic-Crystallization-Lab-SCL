@@ -1,0 +1,11 @@
+{
+  "graphs/routes.jsonl": "8b1933273c1fe8f80f9cc73c5eb31eb7ddf95e21a344b20320a2534a686172e1",
+  "ledgers/ai_board_sci.jsonl": "50eb61ae3539b8739d9aa84aee64c42f7b676ec36fdeb560490b3ea1c272f8b7",
+  "manifest.json": "50c08f40d8aea9f8e229551115935720ebedd64da94670d6a20312baed27bd31",
+  "matrices/agent_distance.cells.jsonl": "c2d57a1da1536333adf7f499918a5496aa61cf8e1c272482299e85277d57beef",
+  "matrices/agent_feature.cells.jsonl": "7ca452d15ae328967442596628d795bef2b62d83687200fc2bf78ef22ad27e54",
+  "matrices/package_feature.cells.jsonl": "a7c73b0e79c4829b6b76fbc734ec565d08830626fbf6b797d66a8b61b9a9a087",
+  "provenance/events.jsonl": "d3712866202015f2b7aca0076aacd330164a4b23fd1601b0be0f87ce1fe0230d",
+  "reports/projection_loss.json": "a128f7dd2b91ba1aad1616c391f46d665e70fc928ba77e5acd01871b6f2f40b5",
+  "substrate.json": "79b3fc11f4c81f8390bcc8e8d01af06a01c0733c9342537be207ca5c32525aa0"
+}
