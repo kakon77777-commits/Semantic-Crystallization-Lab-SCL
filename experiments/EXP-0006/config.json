@@ -1,0 +1,6 @@
+{
+  "adaptive_max_candidate_median_js": 0.01,
+  "adaptive_max_evidence_js": 0.02,
+  "evidence_noise": 0.008,
+  "feature_space": "SCL-F01-F19-v0.2"
+}
