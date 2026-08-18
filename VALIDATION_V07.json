@@ -1,0 +1,76 @@
+{
+  "boundaries": {
+    "current_truth_visible_to_policy": false,
+    "feedback_mode": "one_event_delayed",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "semantic_ground_truth": "synthetic explicit online benchmark",
+    "source_of_sci": "canonical EXP-0004 merged qevra package",
+    "structural_protocol_precondition": true
+  },
+  "date": "2026-08-19",
+  "exp0006_canonical_integrity": {
+    "checked": 6,
+    "files": {
+      "experiments/EXP-0006/3m/checksums.json": {"actual": "f35d965350b72c8da753810dedbb23233035cba8fc6f1e7365429e6d5838d90d", "expected": "f35d965350b72c8da753810dedbb23233035cba8fc6f1e7365429e6d5838d90d", "match": true},
+      "experiments/EXP-0006/3m/verification.json": {"actual": "336a32762db213c9744c5a7d9087c04f33a39ba03b240f225f70434442f420e1", "expected": "336a32762db213c9744c5a7d9087c04f33a39ba03b240f225f70434442f420e1", "match": true},
+      "experiments/EXP-0006/ledger/transition_events.jsonl": {"actual": "8d61fd11ca351b1ae31b4c14b6de82628187075f23bb34a657dc9b707e585b18", "expected": "8d61fd11ca351b1ae31b4c14b6de82628187075f23bb34a657dc9b707e585b18", "match": true},
+      "experiments/EXP-0006/results/metrics.json": {"actual": "ca05836479b0e228058b6baeea72d5ef95f9edb5f6bf83ab79e14bd4e926611f", "expected": "ca05836479b0e228058b6baeea72d5ef95f9edb5f6bf83ab79e14bd4e926611f", "match": true},
+      "experiments/EXP-0006/results/per_event_summary.jsonl": {"actual": "adfd7d586c7af348a259a951e9f0a4610812b536afb2ac2d4552376bb1872d1b", "expected": "adfd7d586c7af348a259a951e9f0a4610812b536afb2ac2d4552376bb1872d1b", "match": true},
+      "experiments/EXP-0006/results/report.md": {"actual": "5bc12f08e3c60c1af5c8a1461f125d8bfb809b66d97b626f7275c7d467050294", "expected": "5bc12f08e3c60c1af5c8a1461f125d8bfb809b66d97b626f7275c7d467050294", "match": true}
+    },
+    "matches": true
+  },
+  "exp0007_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0007/3m/checksums.json": "e8027ed2748b6ce053fa92b2c7c41e370d8e87fac1d768db54d12abf2ee6d215",
+      "experiments/EXP-0007/3m/verification.json": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb",
+      "experiments/EXP-0007/config.json": "8a35453efbf35dbcbf4535f92559502f30f01f45c9b2bdc4e72c815458e4410d",
+      "experiments/EXP-0007/ledger/admission_events.jsonl": "959ce551344c884250fe4f32775dcb7fa75a72ce9088282258e295c12c677b1c",
+      "experiments/EXP-0007/results/metrics.json": "1d2840c509f25f081644b773ae69d029b088b4a76116c37971f92a56e86dbb71",
+      "experiments/EXP-0007/results/per_event_summary.jsonl": "d54713bae2d1082913c40daeeb3fcb2567a8465be79f1b0121345e199a41ddff",
+      "experiments/EXP-0007/results/report.md": "a4d20a2c81a753f858bb2b19a7ad535dd076fd504ddae223469383d7d31202de",
+      "experiments/EXP-0007/results/trust_trajectory.jsonl": "9f84daf702f9b887423018d2c7c3adb69d8d53f9b6fa2b226bd62ff148f4410b"
+    },
+    "reruns": 2
+  },
+  "exp0007_three_m": {"failures": [], "files_checked": 9, "valid": true},
+  "experiment": "EXP-0007",
+  "exploratory_observations": {
+    "E1_emerging_source_bootstrap_lag_observed": true,
+    "E2_reputation_hysteresis_observed": true
+  },
+  "hypotheses": {
+    "H1_static_quorum_tradeoff_persists": true,
+    "H2_learned_beats_both_static_risk_weighted_loss": true,
+    "H3_learned_tracks_provenance_drift": true,
+    "H4_learned_rejects_correlated_alias_echo": true,
+    "H5_learned_is_not_oracle": true,
+    "H6_high_reputation_attack_can_still_bypass_learning": true,
+    "H7_dynamic_threshold_varies_over_time": true
+  },
+  "learned_trust_brier": 0.23040371951395455,
+  "learned_trust_drift": {
+    "A_final": 0.7272727272727273,
+    "B_final": 0.45454545454545453,
+    "B_phase1": 0.7142857142857143,
+    "D_final": 0.6666666666666666,
+    "D_initial": 0.5,
+    "E_final": 0.7777777777777778,
+    "F_final": 0.6
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "primary_metrics": {
+    "Learned-Adaptive": {"cumulative_target_js": 0.019366422653976482, "false_accept_rate": 0.16666666666666666, "false_reject_rate": 0.2222222222222222, "final_target_js": 0.0, "genuine_accepted": 7, "genuine_total": 9, "integrity": 0.8333333333333334, "max_target_js": 0.0188072263515787, "mean_target_js": 0.0012910948435984322, "plasticity": 0.7777777777777778, "pollution_accepted": 1, "pollution_total": 6, "risk_weighted_cumulative_target_js": 0.06779866591536766},
+    "Oracle": {"cumulative_target_js": 0.0, "false_accept_rate": 0.0, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 9, "genuine_total": 9, "integrity": 1.0, "max_target_js": 0.0, "mean_target_js": 0.0, "plasticity": 1.0, "pollution_accepted": 0, "pollution_total": 6, "risk_weighted_cumulative_target_js": 0.0},
+    "Static-Q2": {"cumulative_target_js": 0.07899140230524629, "false_accept_rate": 0.8333333333333334, "false_reject_rate": 0.0, "final_target_js": 0.0, "genuine_accepted": 9, "genuine_total": 9, "integrity": 0.16666666666666663, "max_target_js": 0.0188072263515787, "mean_target_js": 0.005266093487016419, "plasticity": 1.0, "pollution_accepted": 5, "pollution_total": 6, "risk_weighted_cumulative_target_js": 0.23379137000866637},
+    "Static-Q3": {"cumulative_target_js": 0.021086120662613204, "false_accept_rate": 0.16666666666666666, "false_reject_rate": 0.4444444444444444, "final_target_js": 0.0, "genuine_accepted": 5, "genuine_total": 9, "integrity": 0.8333333333333334, "max_target_js": 0.0188072263515787, "mean_target_js": 0.001405741377507547, "plasticity": 0.5555555555555556, "pollution_accepted": 1, "pollution_total": 6, "risk_weighted_cumulative_target_js": 0.07184449276931923}
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 77},
+  "runtime_note": "EXP-0007 is a deterministic feature-space online admission benchmark. Learned-Adaptive sees only one-event-delayed validation feedback, never the current event truth label.",
+  "schema": "scl-validation/v0.7",
+  "title": "Adaptive Epistemic Admission / Learning When to Trust"
+}
