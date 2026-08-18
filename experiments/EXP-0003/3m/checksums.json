@@ -1,0 +1,11 @@
+{
+  "graphs/routes.jsonl": "0a5bb3c00f16f05a27e26364406ab9563fec428fcdcd3f380a19c133efec3d95",
+  "manifest.json": "6cf099af13461e7552d93e1e3ef96e01ea1bd0cc0e5fab37053fa82406a36a57",
+  "matrices/centroid_feature.cells.jsonl": "27b3b546191fa207dcf7f856ce259632e404d3cf76f5e3999bc6f16078f045a5",
+  "matrices/context_feature.cells.jsonl": "c560788be5d333027bcf14f10d74cc53ddd628cdeca07220a28e1e2a5abd078c",
+  "matrices/memory_attention.cells.jsonl": "1ca7614a5bd504b189d352586e1c30994d76381228622a749e3534c17903058f",
+  "projections/human_views.jsonl": "4c7cbffdabf1fc930676515772cbc294776ba39daeb55e290c26bf14e11463b4",
+  "provenance/events.jsonl": "b624623e1aa81736b9642bf8383970cfc09f8b631859b7d8b86aef9c7e609251",
+  "reports/projection_loss.json": "c11b3a4c797311a552b474c1edd653464df3c68aeeb3e168903ef2012841c623",
+  "substrate.json": "7915217529b509519b150d75b4f1e1df3d585d9affeddbb508fcb089162e396f"
+}
