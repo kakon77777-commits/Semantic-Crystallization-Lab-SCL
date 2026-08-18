@@ -1,0 +1,22 @@
+{
+  "diverse": [
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"diverse-learning","lexeme":"qevra","text":"code reviewer uses qevra when equivalent programs preserve semantics and different reasoning paths"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"diverse-learning","lexeme":"qevra","text":"visual notation uses qevra as compact reusable symbol with reversible expansion"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"diverse-learning","lexeme":"qevra","text":"multilingual explanation uses qevra to localize one concept bundle"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"diverse-learning","lexeme":"qevra","text":"scientific notation uses qevra for bounded semantic reach and new topology"},
+    {"features":["F19"],"kind":"diverse-control","lexeme":"tivak","text":"code reviewer uses tivak as document identifier"},
+    {"features":["F19"],"kind":"diverse-control","lexeme":"tivak","text":"visual index uses tivak as short record label"},
+    {"features":["F19"],"kind":"diverse-control","lexeme":"tivak","text":"multilingual metadata uses tivak to refer document"},
+    {"features":["F19"],"kind":"diverse-control","lexeme":"tivak","text":"scientific bibliography uses tivak as document pointer"}
+  ],
+  "repetition": [
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"repetition","lexeme":"qevra","text":"qevra is a reusable compositional operator"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"repetition","lexeme":"qevra","text":"qevra is a reusable compositional operator"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"repetition","lexeme":"qevra","text":"qevra is a reusable compositional operator"},
+    {"features":["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10","F11","F12","F13","F14","F15","F16","F17","F18"],"kind":"repetition","lexeme":"qevra","text":"qevra is a reusable compositional operator"},
+    {"features":["F19"],"kind":"repetition-control","lexeme":"tivak","text":"tivak is a document pointer"},
+    {"features":["F19"],"kind":"repetition-control","lexeme":"tivak","text":"tivak is a document pointer"},
+    {"features":["F19"],"kind":"repetition-control","lexeme":"tivak","text":"tivak is a document pointer"},
+    {"features":["F19"],"kind":"repetition-control","lexeme":"tivak","text":"tivak is a document pointer"}
+  ]
+}
