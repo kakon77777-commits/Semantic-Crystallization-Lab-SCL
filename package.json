@@ -1,16 +1,17 @@
 {
   "name": "semantic-crystallization-lab-scl",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
-  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, semantic-basin stability, and cross-agent SCI transfer experiments.",
+  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, cross-agent transfer, and protocol/persistent cognition continuity experiments.",
   "scripts": {
     "test": "node --test",
     "exp:0001": "node scripts/run-exp0001.js",
     "test:py": "python -m unittest discover -s tests_py -v",
     "exp:0002": "python scripts/run_exp0002.py",
     "exp:0003": "python scripts/run_exp0003.py",
-    "exp:0004": "python scripts/run_exp0004.py"
+    "exp:0004": "python scripts/run_exp0004.py",
+    "exp:0005": "python scripts/run_exp0005.py"
   },
   "engines": {
     "node": ">=20"
