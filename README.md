@@ -12,7 +12,19 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.3 / EXP-0003 — Semantic Basin Stabilization**
+**SCL v0.4 / EXP-0004 — Cross-Agent Symbolic Cognitive Imprint Transfer**
+
+EXP-0004 freezes the term **Symbolic Cognitive Imprint (SCI) / 符號認知印刻** and tests whether one symbol-conditioned semantic feature basin can be transferred and corrected across three independently initialized agents without assuming aligned raw hidden coordinates. The shared comparison space is the explicit F01–F19 feature coordinate only.
+
+Key bounded result: single-donor transfer moves B/C 38.3% closer to donor A in feature-space JS, but receiver target distortion becomes 2.80× worse. A coordinate-wise median correction from three independent SCI proposals instead reduces cross-agent JS from 0.0559 to 0.0424 and mean target JS from 0.0526 to 0.0400. Thus agreement with one donor is not equivalent to semantic improvement.
+
+The experiment also emits an append-only AI-Board-compatible SCI proposal/objection/correction ledger with CTCL-compatible logical sequence identifiers; it performs no public Board write and no live CTCL call.
+
+See `papers/scl-series/SCI_v0.1.md`, `experiments/EXP-0004/results/report.md`, and `experiments/EXP-0004/3m/`.
+
+---
+
+### Previous milestone: SCL v0.3 / EXP-0003 — Semantic Basin Stabilization
 
 EXP-0003 refines the AI-side hypothesis from “more semantic content means more active hidden coordinates” to a dynamic localization claim: a learned symbol should become a more stable address into a distributed semantic feature basin as it is repeatedly recalled, routed through memory, and learned across compatible contexts.
 
@@ -33,7 +45,7 @@ $$
 
 under semantic consolidation, while target fidelity is tracked separately.
 
-Reproduce from the byte-complete release archive:
+Reproduce:
 
 ```bash
 python -m pytest -q
@@ -41,7 +53,7 @@ npm test
 python scripts/run_exp0003.py
 ```
 
-See `experiments/EXP-0003/results/report.md`, `experiments/EXP-0003/3m/`, and `experiments/EXP-0003/EXP0003_SOURCE_AND_PROCESS.md`. This remains a finite transparent toy-model mechanism experiment; it does not expose proprietary-model hidden states or prove a universal semantic fixed point.
+See `experiments/EXP-0003/results/report.md`, `experiments/EXP-0003/3m/`, and the v0.3 design/plan under `docs/superpowers/`. This remains a finite transparent toy-model mechanism experiment; it does not expose proprietary-model hidden states or prove a universal semantic fixed point.
 
 ---
 
@@ -97,7 +109,7 @@ It does **not** prove the stronger ontological/cardinality claims of the source 
 
 ## Reproduce
 
-Requires Node.js 20+ and no third-party runtime dependencies for EXP-0001.
+Requires Node.js 20+ and no third-party runtime dependencies.
 
 ```bash
 npm test
@@ -114,15 +126,20 @@ Generated outputs:
 ```text
 docs/superpowers/specs/       experiment design/specification
 docs/superpowers/plans/       implementation plan
-papers/source-original/       preserved source papers and EML-U reference package in byte-complete archive
-experiments/EXP-0001/        finite semantic crystallization
-experiments/EXP-0002/        neural symbol-feature localization and bounded 3M outputs
+papers/source-original/       preserved source papers and EML-U reference package
+experiments/EXP-0001/source/  source passage
+experiments/EXP-0001/semantic-ir/ explicit atoms and invariant map
+experiments/EXP-0001/lexicon/ new lexemes and expansion graph
+experiments/EXP-0001/chain/   checked-in compression levels
+experiments/EXP-0001/results/ reproducible metrics/report
+experiments/EXP-0002/        neural symbol-feature localization experiment and bounded 3M outputs
 experiments/EXP-0003/        semantic-basin stabilization, memory attention, ablations, and 3M outputs
-python/scl_exp/              transparent neural/grid/3M experiment helpers in byte-complete archive
-tests_py/                    Python experiment-mechanics tests in byte-complete archive
+experiments/EXP-0004/        cross-agent SCI reconstruction, transfer, correction, contamination stress, ledger, and 3M outputs
+python/scl_exp/              transparent neural/grid/3M experiment helpers
+tests_py/                    Python unit and experiment-mechanics tests
 src/                          generic validator/expander/metrics functions
 test/                         Node built-in tests
-scripts/                      deterministic experiment runners; EXP-0003 runner in byte-complete archive
+scripts/                      deterministic experiment runners
 ```
 
 ## Design boundary
