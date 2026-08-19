@@ -1,0 +1,22 @@
+{
+  "event_type_counts": {
+    "imprint.trust-admission.accept": 46,
+    "imprint.trust-admission.objection": 34
+  },
+  "phase_counts": {
+    "betrayal": 12,
+    "calibration": 20,
+    "cold_start": 12,
+    "concept_drift": 24,
+    "recovery": 12
+  },
+  "policy_counts": {
+    "Adaptive-Dynamics": 20,
+    "Cumulative-History": 20,
+    "Fixed-Decay": 20,
+    "Oracle": 20
+  },
+  "rows": 80,
+  "schema": "scl-ledger-summary/v0.8",
+  "sha256": "8c683f3d816df744b51054c72d3fadd9a67c3b437ab8de70e59b16cc88095004"
+}
