@@ -66,7 +66,7 @@ An SCI package is a proposal, not truth. In multi-agent use it should support ap
 
 ## Current evidence boundary
 
-SCL EXP-0001 through EXP-0007 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
+SCL EXP-0001 through EXP-0008 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
 
 ## Continuity note
 
@@ -103,3 +103,11 @@ $$
 $$
 
 A learned threshold can move along the plasticity–integrity frontier, but it introduces **epistemic hysteresis**: new reliable sources may be under-trusted until enough feedback arrives, while previously reliable sources may retain excess trust after compromise. This is a bounded observation about the EXP-0007 benchmark, not a claim that Beta reputation or any specific trust update rule is universally correct.
+
+## Trust-dynamics note
+
+EXP-0008 separates the quality of an internal trust state from the quality of the downstream admission decision. Three policies share one admission equation while differing only in how historical source evidence is retained: cumulative memory, fixed exponential decay, or volatility-sensitive adaptive decay/recovery.
+
+The bounded result shows that a more finely calibrated trust state can still be decision-equivalent to a simpler history if both remain on the same side of the hard admission threshold. SCI governance therefore may need to represent trust uncertainty/volatility directly rather than compressing all trust history to one scalar support score.
+
+This is an experimental warning, not a claim that fixed decay is universally optimal.
