@@ -1,0 +1,15 @@
+{
+  "canonical_files": {
+    "graphs/routes.jsonl": "176707127e12fb9b4d7fd4e74b6919e1aa0c487bcf6ea299da67bc6641827624",
+    "ledgers/epistemic_decisions.jsonl": "ac7776d0e35da7fba8d43e18cfc467880a81d9a68f73f29de0ae4c0c434d5521",
+    "manifest.json": "d4afdcf85c54848fb2b8a731a56cd941ff79ef96dae3a34ef3b296c930a52452",
+    "matrices/policy_event_decision.cells.jsonl": "6e82f0d591dfa4c3be977d5e2682dca5db750202daa8d267546fcdcebe6e05a7",
+    "matrices/policy_metrics.cells.jsonl": "b7360c943aee3a2aa770c09a52131cceb9071fb20b067299705a3a1a8cdfcbe2",
+    "matrices/shared_trust_snapshots.cells.jsonl": "254d210e9b48429eea202c8df48b3fed2733ad11921f0a7ed223b95bed4509f6",
+    "provenance/events.jsonl": "aea34bddd94b5affb1aaef5f33b3663009166b905951b4a029936c6bae177b19",
+    "reports/projection_loss.json": "d0fdd4fb450a76db8c64f9a815fa1f0948d34d35465dd51f4db1c07004465431",
+    "substrate.json": "9d62a495a0ffe712da402b0c16b0a6f0d2ceea5b5f7c58be235b3685eff24a4c"
+  },
+  "schema": "scl-3m-github-index/v0.9",
+  "verification": {"failures": [], "files_checked": 9, "valid": true}
+}
