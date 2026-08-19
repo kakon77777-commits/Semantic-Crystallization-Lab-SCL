@@ -1,0 +1,17 @@
+{
+  "canonical_files": 10,
+  "checksums": {
+    "graphs/routes.jsonl": "92ba8c2015120f4ff5680faa42de74cc71cc56e721a944349e17bd71227d58f5",
+    "ledgers/reflexive_decisions.jsonl": "da87bccbf87b01127106f5ae0253d10175ed3aa704804b452176cbd1f56e0807",
+    "manifest.json": "7fa1d912b55c41651252b748e214078c291b6d051da713b4171287f389b8392f",
+    "matrices/artifact_rule_sources.cells.jsonl": "0701142ff295b7673cdcad81ea7a01424d0969306f97fea3ac700744dd126563",
+    "matrices/policy_event_reflexive_decision.cells.jsonl": "9ab314968760659495de3e562d74ce5a58e3c35962d0098513bf42b040349070",
+    "matrices/policy_metrics.cells.jsonl": "deb88616937214e1ab27ec662181f57091f458c08f5f5c8b8ddbce85fe0a259e",
+    "matrices/shared_trust_snapshots.cells.jsonl": "e8bda5e14409fc3c187931ca7b2a4e1978aae99315b7140427d5e0dc08d98ee3",
+    "provenance/events.jsonl": "f669bf737cf45969357252d9fedb1c909532e7eb73df825ee98671a550df9c52",
+    "reports/projection_loss.json": "dbdaf66080248fe0fe238c79d07c111f8ba3289626688d3ed5ac42a426da49d7",
+    "substrate.json": "e4e8711376e093409d31b2a531a121bab86179b737abe602b42542285dc2599a"
+  },
+  "schema": "scl-3m-github-index/v0.10",
+  "verification": {"failures": [], "files_checked": 10, "valid": true}
+}
