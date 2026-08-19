@@ -66,8 +66,7 @@ An SCI package is a proposal, not truth. In multi-agent use it should support ap
 
 ## Current evidence boundary
 
-SCL EXP-0001 through EXP-0009 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
-
+SCL EXP-0001 through EXP-0010 provide finite engineering demonstrations only. They do not prove universal semantic fixed points, cross-model ontology equivalence, or the stronger cardinality/ontological conjectures in the source theory papers.
 
 ## Continuity note
 
@@ -83,7 +82,6 @@ $$
 
 This is an operational distinction, not an identity theorem. Protocol constrains admissible inter-agent state transitions; persistence preserves an agent's accepted imprint/history across restart. The bounded experiment shows that either factor alone can fail in a different way.
 
-
 ## Transition admissibility note
 
 EXP-0006 adds a third operational distinction beyond protocol and persistence:
@@ -93,7 +91,6 @@ $$
 $$
 
 A persistent SCI must be revisable, but unrestricted revisability allows structurally valid contamination. The bounded experiment therefore treats admissibility as a plasticity–integrity tradeoff: stronger evidence quorums improve resistance to correlated updates while increasing the risk of rejecting genuine minority novelty. This is an experimental decomposition, not a universal optimality theorem.
-
 
 ## Adaptive epistemic admission note
 
@@ -107,7 +104,6 @@ $$
 
 A learned threshold can move along the plasticity–integrity frontier, but it introduces **epistemic hysteresis**: new reliable sources may be under-trusted until enough feedback arrives, while previously reliable sources may retain excess trust after compromise. This is a bounded observation about the EXP-0007 benchmark, not a claim that Beta reputation or any specific trust update rule is universally correct.
 
-
 ## Trust-dynamics note
 
 EXP-0008 separates the quality of an internal trust state from the quality of the downstream admission decision. Three policies share one admission equation while differing only in how historical source evidence is retained: cumulative memory, fixed exponential decay, or volatility-sensitive adaptive decay/recovery.
@@ -115,7 +111,6 @@ EXP-0008 separates the quality of an internal trust state from the quality of th
 The bounded result shows that a more finely calibrated trust state can still be decision-equivalent to a simpler history if both remain on the same side of the hard admission threshold. SCI governance therefore may need to represent trust uncertainty/volatility directly rather than compressing all trust history to one scalar support score.
 
 This is an experimental warning, not a claim that fixed decay is universally optimal.
-
 
 ## Uncertainty-aware decision note
 
@@ -126,3 +121,19 @@ $$
 $$
 
 Posterior uncertainty, volatility and disagreement can justify `Seek Evidence` or `Defer`, but reactive use of those signals does not guarantee lower total loss. In the bounded benchmark, Belief-State reduces high-risk false accepts while losing overall after the first historically trusted coalition attack passes before negative feedback exists. This motivates a prospective challenge rule: sufficiently high risk/novelty may warrant independent evidence even when current confidence is high.
+
+## Reflexive artifact note
+
+EXP-0010 treats the prior experiment chain itself as a cognition-shaping artifact. A deterministic rule pack is compiled from the previous reports and validation records, then evaluated on newly instantiated candidate packages with an explicit zero exact-hash-overlap guard. This adds a sixth operational distinction:
+
+$$
+\text{experiment result as description} \neq \text{experiment artifact as future cognitive input}.
+$$
+
+In the bounded fixture, first-order artifact exposure produces a large transfer gain on a new homologous failure class, while a second-order policy that models attacks against the first-order challenge rule does **not** improve further. The result therefore supports a limited `0→1` reflexive lift but rejects any simple monotonic law of the form
+
+$$
+\text{higher reflexive order} \Rightarrow \text{higher decision quality}.
+$$
+
+This is not evidence that a frontier AI will necessarily acquire the same meta-strategies merely by reading the repository. It is a finite engineering demonstration that an experiment artifact can be made causally active in a later decision policy, and that the resulting meta-policy itself becomes part of the next adversarial environment.
