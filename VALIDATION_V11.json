@@ -1,0 +1,78 @@
+{
+  "boundaries": {
+    "a3_opponent_model_updates_from_probe_response_only": true,
+    "artifact_exposure_is_experimental_factor": true,
+    "current_truth_visible_to_non_oracle_policy": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "new_fixture_candidate_hash_overlap_required_zero": true,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "same_probe_set_and_probe_costs_for_non_oracle_policies": true,
+    "shared_trust_memory_across_non_oracle_policies": true
+  },
+  "closed_loop_audit": {
+    "a3_attack_events": 13,
+    "a3_attack_mode_top1_hits": 12,
+    "a3_catches_a2_errors": ["R11S03_boundary_attack","R11S04_boundary_attack","R11S06_boundary_attack","R11M01_slow_roll_switch","R11M02_slow_roll_attack","R11M05_false_disagreement_switch","R11M06_false_disagreement_attack","R11R03_slow_roll_return","R11R04_false_disagreement_return"],
+    "a3_mode_switch_lag_events": ["R11S05_benign_bridge","R11R02_benign_update","R11R04_false_disagreement_return"],
+    "a3_probe_event_mode_top1_hits": 12,
+    "a3_probe_events": 12,
+    "information_latency_cost_break_even_multiplier_vs_a2": 10.05724788931896
+  },
+  "date": "2026-08-20",
+  "exp0010_canonical_integrity": {
+    "checked": 7,
+    "files": {
+      "experiments/EXP-0010/3m/checksums.json": {"actual":"e57d9b284316417059901b638dff8dcefaeeb86f406e0b463994a618a8f33949","expected":"e57d9b284316417059901b638dff8dcefaeeb86f406e0b463994a618a8f33949","match":true},
+      "experiments/EXP-0010/3m/verification.json": {"actual":"5550a0cf8e71a710b869c47e24469e6e271d52b05dbc8171629ef829441d6e7b","expected":"5550a0cf8e71a710b869c47e24469e6e271d52b05dbc8171629ef829441d6e7b","match":true},
+      "experiments/EXP-0010/config.json": {"actual":"227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7","expected":"227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7","match":true},
+      "experiments/EXP-0010/ledger/reflexive_decisions.jsonl": {"actual":"5f51c9f3206e302acf7a0858d4ff18795ec26fe498adcf5f3055dc8cf7794f11","expected":"5f51c9f3206e302acf7a0858d4ff18795ec26fe498adcf5f3055dc8cf7794f11","match":true},
+      "experiments/EXP-0010/results/metrics.json": {"actual":"4100e02109775179daaaed0c5645831d133a5d8e10795b68bda34c84ab658507","expected":"4100e02109775179daaaed0c5645831d133a5d8e10795b68bda34c84ab658507","match":true},
+      "experiments/EXP-0010/results/per_event_summary.jsonl": {"actual":"0bcd5d7b84776ffa86d0a8f20a0bbfb3c3b097b05025a9e6a0238e5ec0ed474c","expected":"0bcd5d7b84776ffa86d0a8f20a0bbfb3c3b097b05025a9e6a0238e5ec0ed474c","match":true},
+      "experiments/EXP-0010/results/report.md": {"actual":"170bb3c1d46cb4efa633b470b76cc20e96f91fd3bab3796823eba86961295b2d","expected":"170bb3c1d46cb4efa633b470b76cc20e96f91fd3bab3796823eba86961295b2d","match":true}
+    },
+    "matches": true
+  },
+  "exp0011_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0011/3m/checksums.json": "27474605177e6eef02e5c90310d86eae4c537fd87a52ca8f4a617ced98207725",
+      "experiments/EXP-0011/3m/verification.json": "80fc64aa618e5a5aa05c4de5a9999994c47690d2a2b7bd5e46b57b1704b5b2f1",
+      "experiments/EXP-0011/config.json": "198b8ab5c58dd637632c3acc58579f5d49537ad4c54127bd6db9cc84fef648f4",
+      "experiments/EXP-0011/ledger/closed_loop_decisions.jsonl": "580531a5cd4f135be236458c6e813e822be3d080009b310c700199f81700a6f3",
+      "experiments/EXP-0011/results/metrics.json": "3eb94e1b9a351ec6f963bb55dc97af88c727f88c7e398a623bbdc7cc1f85aca0",
+      "experiments/EXP-0011/results/per_event_summary.jsonl": "ed8ca9c9ee8e50014e9714a94325911931b8763d78108f0242504620bbfc03a6",
+      "experiments/EXP-0011/results/report.md": "fd5f1a8be0b58f8f63912af874e3d1b68e374cb5ad0207ed36d50e3b5f970601"
+    },
+    "reruns": 2
+  },
+  "exp0011_three_m": {"failures":[],"files_checked":11,"valid":true},
+  "experiment":"EXP-0011",
+  "exploratory_observations": {
+    "E1_a3_zero_target_loss_but_high_deferral": true,
+    "E2_closed_loop_advantage_survives_about_10x_cost_scaling_if_behavior_fixed": true
+  },
+  "hypotheses": {
+    "H1_closed_loop_pack_compiles_exp0010": true,
+    "H2_a3_uses_multiple_probe_types": true,
+    "H3_a3_reduces_mode_switch_loss_vs_a2": true,
+    "H4_a3_catches_at_least_one_a2_error": true,
+    "H5_a3_tracks_multiple_attack_modes": true,
+    "H6_mode_switch_lag_or_non_oracle_gap_remains": true,
+    "H7_no_exact_candidate_reuse_from_prior_experiments": true
+  },
+  "memorization_guard": {"all_event_ids_new":true,"candidate_hash_overlap_count":0,"candidate_hash_overlaps":[],"prior_hash_token_count":324},
+  "node_tests":{"command":"npm test","failed":0,"passed":11},
+  "primary_metrics": {
+    "A0-Reactive":{"action_counts":{"accept":13,"defer":6,"seek_evidence":2},"defer_cost":0.011292,"events":19,"false_accepts":10,"false_rejects":0,"opponent_model_updates":0,"phase_loss":{"mode_switch":0.13816935370867053,"rapid_switch":0.066415159950889,"stationary_mode":0.10132227348773669},"probe_cost":0.0016,"probe_queries":2,"probe_types_used":["independent","temporal"],"risk_weighted_target_loss":0.29301478714729623,"total_loss":0.30590678714729624,"tracked_attack_modes":[]},
+    "A1-Artifact-Reflexive":{"action_counts":{"accept":12,"defer":7,"seek_evidence":4},"defer_cost":0.013356,"events":19,"false_accepts":9,"false_rejects":0,"opponent_model_updates":0,"phase_loss":{"mode_switch":0.13816935370867053,"rapid_switch":0.066415159950889,"stationary_mode":0.07498863314190982},"probe_cost":0.0032,"probe_queries":4,"probe_types_used":["independent","temporal"],"risk_weighted_target_loss":0.26301714680146937,"total_loss":0.27957314680146933,"tracked_attack_modes":[]},
+    "A2-Second-Order":{"action_counts":{"accept":12,"defer":7,"seek_evidence":4},"defer_cost":0.013356,"events":19,"false_accepts":9,"false_rejects":0,"opponent_model_updates":0,"phase_loss":{"mode_switch":0.13816935370867053,"rapid_switch":0.066415159950889,"stationary_mode":0.07498863314190982},"probe_cost":0.0032,"probe_queries":4,"probe_types_used":["independent","temporal"],"risk_weighted_target_loss":0.26301714680146937,"total_loss":0.27957314680146933,"tracked_attack_modes":[]},
+    "A3-Closed-Loop":{"action_counts":{"accept":6,"defer":13,"seek_evidence":21},"defer_cost":0.025907999999999997,"events":19,"false_accepts":0,"false_rejects":0,"opponent_model_updates":21,"phase_loss":{"mode_switch":0.017992,"rapid_switch":0.010204,"stationary_mode":0.014512},"probe_cost":0.016800000000000002,"probe_queries":21,"probe_types_used":["independent","provenance","temporal"],"risk_weighted_target_loss":0.0,"total_loss":0.042708,"tracked_attack_modes":["boundary_skimming","false_disagreement","slow_roll"]},
+    "Oracle":{"action_counts":{"accept":6,"reject":13},"defer_cost":0.0,"events":19,"false_accepts":0,"false_rejects":0,"opponent_model_updates":0,"phase_loss":{"mode_switch":0.0,"rapid_switch":0.0,"stationary_mode":0.0},"probe_cost":0.0,"probe_queries":0,"probe_types_used":[],"risk_weighted_target_loss":0.0,"total_loss":0.0,"tracked_attack_modes":[]}
+  },
+  "python_tests":{"command":"python -m pytest -q","failed":0,"passed":116},
+  "runtime_note":"Deterministic feature-space closed-loop reflexive strategy benchmark; current truth hidden from non-Oracle policies; A3 updates opponent posterior from probe responses only.",
+  "schema":"scl-validation/v0.11",
+  "title":"Closed-Loop Reflexive Strategy / Model–Act–Observe–Update"
+}
