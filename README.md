@@ -12,7 +12,27 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.10 / EXP-0010 — Reflexive Epistemic Challenge / X-Order Cognitive Lift**
+**SCL v0.12 / EXP-0012 — Autonomy Under Epistemic Pressure / Active Inquiry Resolution**
+
+EXP-0012 tests whether the defer-heavy safety mechanism from EXP-0011 can be converted into immediate autonomous resolution without increasing the probe budget. A3 and A4 share the same trust snapshots, opponent likelihoods, three probe channels, two-probe cap and probe costs. A4 adds only a one-step value-of-information planner and probe-conditioned immediate-resolution rule.
+
+The preregistered A4 arm does **not** achieve the autonomy objective: it performs `0` probes and defers `20/20` events. Under the frozen planner utility, delayed validation is locally cheaper than Accept, Reject or Probe, so the policy collapses into a **defer attractor**. This keeps risk-weighted target loss very low (`0.00039`) and even makes total loss (`0.03792`) lower than A3 (`0.12862`), while immediate resolution falls to `0.000`. The result therefore separates **epistemic safety by abstention** from **autonomous epistemic resolution**.
+
+A post-hoc sensitivity grid (explicitly not preregistered evidence) shows three qualitative regimes: cheap deferral produces abstention, intermediate penalties can open an inquiry window, and expensive deferral can jump directly into over-rejection. This motivates a multi-step horizon/budget model rather than further tuning of one-step costs. See `experiments/EXP-0012/results/report.md`, `VALIDATION_V12.json`, and `experiments/EXP-0012/3m/`.
+
+---
+
+### Previous milestone: SCL v0.11 / EXP-0011 — Closed-Loop Reflexive Strategy / Model–Act–Observe–Update
+
+EXP-0011 follows the negative second-order result from EXP-0010 by replacing a static “challenge the challenge rule” trigger with a persistent opponent-response model. A3 maintains a Bayes-filter posterior over four declared response modes and chooses among the same `independent` / `temporal` / `provenance` probes available to A1/A2. Current truth remains hidden; A3 updates only from observed probe responses.
+
+On the fixed 19-event fixture, A3 reduces total loss from A2 `0.27957` to `0.04271` and mode-switch loss from `0.13817` to `0.01799`, while preventing all recorded pollution accepts. It uses all three probe types and tracks boundary-skimming, slow-roll and false-disagreement modes. The gain is not free: A3 performs 21 probes and defers 13/19 events, so the current mechanism buys safety with substantial latency/autonomy cost.
+
+The bounded lesson is therefore **closed-loop reflexivity can outperform a static higher-order trigger when probe responses are mode-informative, but the current solution is defer-heavy rather than autonomously resolving attacks in real time**. See `experiments/EXP-0011/results/report.md`, `VALIDATION_V11.json`, and `experiments/EXP-0011/3m/`.
+
+---
+
+### Previous milestone: SCL v0.10 / EXP-0010 — Reflexive Epistemic Challenge / X-Order Cognitive Lift
 
 EXP-0010 treats the prior experiment chain itself as an experimental input. A0 uses the EXP-0009 reactive belief-state decision layer without reading prior SCL artifacts. A1 compiles a reflexive rule pack from all nine prior reports plus the EXP-0004–0009 validation records, then prospectively challenges failure signatures such as false consensus, reputation hysteresis and high-confidence errors that reactive uncertainty may discover too late. A2 additionally models how an environment can target A1's published challenge rule.
 
