@@ -1,0 +1,19 @@
+{
+  "canonical_files": {
+    "graphs/routes.jsonl": "f849d38b703b5b8117d0815f97cf8edd50798731598d683c486284c2e4edb44e",
+    "ledgers/finite_horizon_decisions.jsonl": "fbc3b9435db46dbec92936df82f870bf155cacc89e228ac8a4f9a27cd7c2fdd2",
+    "manifest.json": "24899e4f1b32b1241aa45e3e1cf412d43fdf2d1e1d8c0b3adfd811f050258767",
+    "matrices/artifact_rule_sources.cells.jsonl": "7d7c685dcff8b2c1ad0ac12f6e141cb17bd7c20b1684f729a959c2f31c42793e",
+    "matrices/defer_budget_trajectory.cells.jsonl": "dc3be9274271c4c89a04b916d731aed6c03fc3dcdf404cfd60c4f02606793c37",
+    "matrices/opponent_posterior.cells.jsonl": "db0f8ff09d9bea246fe3d7124947c1a2ce8344ed0db11c569f31da63d1b98fbb",
+    "matrices/planner_horizon_loss.cells.jsonl": "f47421534d5fa40a2ea00b84862f73e614fe226663944e2907fdd71f129f53f9",
+    "matrices/policy_event_resolution.cells.jsonl": "217e4d645a50571eb829b8a81951d2b29a5c605231d72cb4c69a45822e1c7eaf",
+    "matrices/policy_metrics.cells.jsonl": "0527ffc1bbe89056433824ea157978a05db6fe8a7a22424e450fc40c744a41be",
+    "provenance/events.jsonl": "ded396ad439e3999565ac0c2c86444763a5827edf88847a696f5ef9df6651892",
+    "reports/projection_loss.json": "83fb25176f114e7a45ae23a054b1e8e795bcac6430bc64e8d9cec724671e7d1f",
+    "substrate.json": "6a96550ebb95f193f37036f58f96359640722288fec03275e5c306604f722469"
+  },
+  "experiment": "EXP-0013",
+  "schema": "scl-github-3m-index/v0.13",
+  "verification": {"failures":[],"files_checked":12,"valid":true}
+}
