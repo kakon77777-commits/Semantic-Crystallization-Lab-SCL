@@ -1,0 +1,69 @@
+{
+  "boundaries": {
+    "a5_added_mechanism": "depth-2 probe rollout plus hard cross-event deferral budget",
+    "a5_hard_defer_budget": 4,
+    "current_truth_visible_to_non_oracle_policy": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "new_fixture_candidate_hash_overlap_required_zero": true,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "same_max_probe_budget_for_a3_a4_a5": true,
+    "same_probe_set_and_probe_costs_for_a3_a4_a5": true,
+    "shared_trust_memory_across_non_oracle_policies": true
+  },
+  "date": "2026-08-20",
+  "exp0012_canonical_integrity": {
+    "checked": 8,
+    "files": {
+      "experiments/EXP-0012/3m/checksums.json": {"actual":"ed0756c87fd7622cc96bf8e971c0d4c905f42989e675c8be1eed26abef819ce8","expected":"ed0756c87fd7622cc96bf8e971c0d4c905f42989e675c8be1eed26abef819ce8","match":true},
+      "experiments/EXP-0012/3m/verification.json": {"actual":"80fc64aa618e5a5aa05c4de5a9999994c47690d2a2b7bd5e46b57b1704b5b2f1","expected":"80fc64aa618e5a5aa05c4de5a9999994c47690d2a2b7bd5e46b57b1704b5b2f1","match":true},
+      "experiments/EXP-0012/config.json": {"actual":"8ddd51dd243e9c04c731cd83b960e16ffa91f4024f7ef962676dc414c1b8dc46","expected":"8ddd51dd243e9c04c731cd83b960e16ffa91f4024f7ef962676dc414c1b8dc46","match":true},
+      "experiments/EXP-0012/ledger/active_inquiry_decisions.jsonl": {"actual":"b4cbd98a817ef95e933deb0ad97193d47591e7ff7aef3621a1dd982b3c340957","expected":"b4cbd98a817ef95e933deb0ad97193d47591e7ff7aef3621a1dd982b3c340957","match":true},
+      "experiments/EXP-0012/results/exploratory_sensitivity.json": {"actual":"2b2b2dd768939f0a543ea94782d6105137186fa1c4dcdde65a4bd55c80d6e72c","expected":"2b2b2dd768939f0a543ea94782d6105137186fa1c4dcdde65a4bd55c80d6e72c","match":true},
+      "experiments/EXP-0012/results/metrics.json": {"actual":"6b43e7b5b4b49a91df25e5cd57589387ea84dcf72a8a8bc53d65f34a05f34527","expected":"6b43e7b5b4b49a91df25e5cd57589387ea84dcf72a8a8bc53d65f34a05f34527","match":true},
+      "experiments/EXP-0012/results/per_event_summary.jsonl": {"actual":"fea6d4e43e239a911c65a0eb53637399e1ede14ce0df38616f30dec495f89a22","expected":"fea6d4e43e239a911c65a0eb53637399e1ede14ce0df38616f30dec495f89a22","match":true},
+      "experiments/EXP-0012/results/report.md": {"actual":"9aeecb591afb62a3ec7238dd63196d843b5b1671d11ff90203c00a6a8b9f0585","expected":"9aeecb591afb62a3ec7238dd63196d843b5b1671d11ff90203c00a6a8b9f0585","match":true}
+    },
+    "matches": true
+  },
+  "exp0013_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0013/3m/checksums.json": "ab170d5d64ad52f75b6c1120a6d9af9590b1c693e7d8fe13bb823495d6eb963b",
+      "experiments/EXP-0013/3m/verification.json": "910325fd883483bedb7b5def9b4f38628a253d5c55d72d85351b4f31cc300338",
+      "experiments/EXP-0013/config.json": "de59bcee6e43809d626f041307896a63d6afd42b59b08c7efef90cc7a79167de",
+      "experiments/EXP-0013/ledger/finite_horizon_decisions.jsonl": "fbc3b9435db46dbec92936df82f870bf155cacc89e228ac8a4f9a27cd7c2fdd2",
+      "experiments/EXP-0013/results/metrics.json": "d23325eebca369eb4babc4ebe953a8fe03b98563a237099f89d6c8ae43c35e9b",
+      "experiments/EXP-0013/results/per_event_summary.jsonl": "217e4d645a50571eb829b8a81951d2b29a5c605231d72cb4c69a45822e1c7eaf",
+      "experiments/EXP-0013/results/report.md": "5286b48480285f3fd7a16b31e33dacdc54b1dec88b5e77748961b8f266df6138"
+    },
+    "reruns": 2
+  },
+  "exp0013_three_m": {"failures":[],"files_checked":12,"valid":true},
+  "experiment": "EXP-0013",
+  "hypotheses": {
+    "H1_planning_pack_compiles_exp0012": true,
+    "H2_a5_uses_multistep_inquiry": true,
+    "H3_a5_breaks_a4_defer_attractor": true,
+    "H4_a5_resolves_at_least_one_a4_defer_correctly": true,
+    "H5_a5_target_loss_not_worse_than_a3": true,
+    "H6_a5_total_loss_below_a3": true,
+    "H7_a5_respects_hard_defer_budget": true,
+    "H8_non_oracle_gap_remains": true,
+    "H9_no_exact_candidate_reuse_from_prior_experiments": true
+  },
+  "memorization_guard": {"all_event_ids_new":true,"candidate_hash_overlap_count":0,"candidate_hash_overlaps":[],"prior_hash_token_count":402},
+  "node_tests": {"command":"npm test","failed":0,"passed":11},
+  "primary_metrics": {
+    "A3-Closed-Loop-Deferred": {"action_counts":{"accept":14,"defer":8,"seek_evidence":23},"active_plan_count":0,"defer_budget_total":null,"defer_budget_used":null,"defer_cost":0.016163999999999998,"defer_count":8,"events":22,"false_accepts":5,"false_rejects":0,"immediate_resolution_rate":0.6363636363636364,"max_probe_budget":2,"max_probe_depth_used":2,"phase_loss":{"budgeted_stationary":0.014655999999999999,"deadline_pressure":0.07848567232734313,"multi_step_switch":0.07270391139276673},"planning_horizon":1,"probe_cost":0.0184,"probe_queries":23,"probe_types_used":["independent","provenance","temporal"],"resolved_after_probe":5,"risk_weighted_target_loss":0.13128158372010987,"total_loss":0.16584558372010985},
+    "A4-One-Step-VOI": {"action_counts":{"defer":22},"active_plan_count":0,"defer_budget_total":null,"defer_budget_used":null,"defer_cost":0.041364,"defer_count":22,"events":22,"false_accepts":0,"false_rejects":0,"immediate_resolution_rate":0.0,"max_probe_budget":2,"max_probe_depth_used":0,"phase_loss":{"budgeted_stationary":0.013082956792381722,"deadline_pressure":0.013775971811188085,"multi_step_switch":0.014956496687410793},"planning_horizon":1,"probe_cost":0.0,"probe_queries":0,"probe_types_used":[],"resolved_after_probe":0,"risk_weighted_target_loss":0.0004514252909806033,"total_loss":0.0418154252909806},
+    "A5-Finite-Horizon": {"action_counts":{"accept":4,"defer":4,"reject":14,"seek_evidence":22},"active_plan_count":22,"defer_budget_total":4,"defer_budget_used":4,"defer_cost":0.007944,"defer_count":4,"events":22,"false_accepts":0,"false_rejects":4,"immediate_resolution_rate":0.8181818181818182,"max_probe_budget":2,"max_probe_depth_used":2,"phase_loss":{"budgeted_stationary":0.005781086060060728,"deadline_pressure":0.01262923705473248,"multi_step_switch":0.008217331129085072},"planning_horizon":2,"probe_cost":0.0176,"probe_queries":22,"probe_types_used":["independent","temporal"],"resolved_after_probe":13,"risk_weighted_target_loss":0.0010836542438782803,"total_loss":0.02662765424387828},
+    "Oracle": {"action_counts":{"accept":9,"reject":13},"active_plan_count":0,"defer_budget_total":null,"defer_budget_used":null,"defer_cost":0.0,"defer_count":0,"events":22,"false_accepts":0,"false_rejects":0,"immediate_resolution_rate":1.0,"max_probe_budget":0,"max_probe_depth_used":0,"phase_loss":{"budgeted_stationary":0.0,"deadline_pressure":0.0,"multi_step_switch":0.0},"planning_horizon":1,"probe_cost":0.0,"probe_queries":0,"probe_types_used":[],"resolved_after_probe":0,"risk_weighted_target_loss":0.0,"total_loss":0.0}
+  },
+  "python_tests": {"command":"python -m pytest -q","failed":0,"passed":131},
+  "resolved_a4_deferrals": ["R13S01_anchor","R13S02_boundary_attack","R13S03_boundary_attack","R13S05_boundary_attack","R13S07_boundary_attack","R13M01_slow_roll_switch","R13M02_slow_roll_attack","R13M04_false_disagreement","R13M05_false_disagreement","R13M08_benign_bridge","R13D02_benign_update","R13D04_benign_update","R13D05_slow_roll","R13D07_boundary_final"],
+  "runtime_note": "Deterministic feature-space finite-horizon epistemic planning benchmark; A3/A4/A5 share trust snapshots, probe set/cost and two-probe cap; A5 alone adds depth-2 rollout plus a four-defer hard budget; current truth is hidden from non-Oracle policies.",
+  "schema": "scl-validation/v0.13",
+  "title": "Finite-Horizon Epistemic Planning / Deferral-Budgeted Inquiry"
+}
