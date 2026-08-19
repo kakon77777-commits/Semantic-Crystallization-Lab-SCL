@@ -1,0 +1,14 @@
+{
+  "files": [
+    {"bytes":12023,"path":"python/scl_exp/reflexive_strategy.py","sha256":"1bc3492b82f6be665e870787dd7393e6b608c2d5936a8adfd833daf65dee07a5"},
+    {"bytes":25936,"path":"python/scl_exp/exp0011.py","sha256":"a59b1d4e55a61c9ea7ddeaeb6f5b10c3c613762d8289653f241ab4c4fba4a161"},
+    {"bytes":7577,"path":"python/scl_exp/three_m_v11.py","sha256":"cc72886223262b4490d3ad1534f837cd0d2f5227c45d851d11c10e9dbff7459a"},
+    {"bytes":7769,"path":"scripts/run_exp0011.py","sha256":"e71bab1f0ce2f1d24cc779b30822fc83791743dcb30375e0e8c71aa4b26394c9"},
+    {"bytes":3353,"path":"tests_py/test_closed_loop_reflexive.py","sha256":"4678b54fbf8a7c5482ea88d22cee998bcd0276cdedd3e5cb2dc560ebb0e05a22"},
+    {"bytes":2128,"path":"tests_py/test_exp0011.py","sha256":"0cb731d7ef8e199e0cdd8dd85502a3727a384c99cd7011fbf923786904163819"},
+    {"bytes":1061,"path":"tests_py/test_three_m_v11.py","sha256":"be76f1b0bab0846b6bf88a1b0b1db662b1961c7308a88befab0805687bb7dd1f"},
+    {"bytes":733,"path":"tests_py/test_runner_exp0011.py","sha256":"466c6b2889b9a6c763c0b91ba9800e32f8c840448a15b74e67f809fa8c91e429"}
+  ],
+  "note":"Canonical source files are byte-complete in the release ZIP. This index binds the GitHub audit record to those exact files.",
+  "schema":"scl-exp0011-source-index/v0.1"
+}
