@@ -1,0 +1,95 @@
+{
+  "artifact_pack": {
+    "prospective_challenge_threshold": 0.76,
+    "report_count": 9,
+    "report_sha256": {
+      "EXP-0001": "29c6781ad83dc84bc1ab2511a1b0c64883c3239a207ffd3dfcd4bff6fdff0bc6",
+      "EXP-0002": "799c211e5f6a777dbe643f7dd2ef4d05aa251b434c69132e57d53d9aadfc31f3",
+      "EXP-0003": "d8a9468bc2d0b2a977fb06234efb631b6d4af90be728ce359c906c2941c240de",
+      "EXP-0004": "faa01e77e1fcf83dd7ecb069103bf370fab1c7f71c304020d02c142ba829924f",
+      "EXP-0005": "45392efa1a75a7bd8864ebddcc907e7b2609b16f2203d27cf0d39b701780e3f9",
+      "EXP-0006": "5bc12f08e3c60c1af5c8a1461f125d8bfb809b66d97b626f7275c7d467050294",
+      "EXP-0007": "a4d20a2c81a753f858bb2b19a7ad535dd076fd504ddae223469383d7d31202de",
+      "EXP-0008": "36d7dea7676b6cb29abee2b6eefa8477f5325a7d8678822bb5dd6801f199921b",
+      "EXP-0009": "c2a97bb9bd5d0e2f25835d0486769e268f97d02765459b390dd5450bae475bc7"
+    },
+    "validation_count": 6,
+    "validation_sha256": {
+      "EXP-0004": "71c102bec166ec8f568fa900a195161f48123769bf2b5204d39c5bc0a0cd6872",
+      "EXP-0005": "c64f8ca9c46460e0aa3380e7ca6486e9e64d4ee699e64fa86c12fbc1a9c9b151",
+      "EXP-0006": "02a2759377ebedca22975239ddb9fc28abc7b094a16592c1cff463455fa7cbe9",
+      "EXP-0007": "76f4e86e67c6585dd359f967ef7fff7bb6a7a2a73924e1636e0dc98ba960fdff",
+      "EXP-0008": "1777e147459c732b3a95957e7d1a75e671ecd28fa30345749410566cb6bc98ea",
+      "EXP-0009": "f2964679aadce90adf1755fb6bff19051a1bad5321b13de2608a1ec0b3559320"
+    }
+  },
+  "boundaries": {
+    "artifact_exposure_is_experimental_factor": true,
+    "current_truth_visible_to_non_oracle_policy": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "new_fixture_candidate_hash_overlap_required_zero": true,
+    "oracle_is_evaluation_ceiling_only": true,
+    "phase_2_environment_conditioned_on_a1_rule": true,
+    "public_ai_board_write": false,
+    "shared_trust_memory_across_non_oracle_policies": true
+  },
+  "date": "2026-08-20",
+  "exp0009_canonical_integrity": {
+    "checked": 7,
+    "files": {
+      "experiments/EXP-0009/3m/checksums.json": {"actual": "b3e111ba3ce89d5423d11170ed7bb917b5860f4fa203febeee1af6372e1a22b8", "expected": "b3e111ba3ce89d5423d11170ed7bb917b5860f4fa203febeee1af6372e1a22b8", "match": true},
+      "experiments/EXP-0009/3m/verification.json": {"actual": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb", "expected": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb", "match": true},
+      "experiments/EXP-0009/config.json": {"actual": "227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7", "expected": "227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7", "match": true},
+      "experiments/EXP-0009/ledger/epistemic_decisions.jsonl": {"actual": "ac7776d0e35da7fba8d43e18cfc467880a81d9a68f73f29de0ae4c0c434d5521", "expected": "ac7776d0e35da7fba8d43e18cfc467880a81d9a68f73f29de0ae4c0c434d5521", "match": true},
+      "experiments/EXP-0009/results/metrics.json": {"actual": "4ea86645a1c926b0c542f1af3f28b2c9b16c400fcff38170dcc1911d3e57037a", "expected": "4ea86645a1c926b0c542f1af3f28b2c9b16c400fcff38170dcc1911d3e57037a", "match": true},
+      "experiments/EXP-0009/results/per_event_summary.jsonl": {"actual": "6e82f0d591dfa4c3be977d5e2682dca5db750202daa8d267546fcdcebe6e05a7", "expected": "6e82f0d591dfa4c3be977d5e2682dca5db750202daa8d267546fcdcebe6e05a7", "match": true},
+      "experiments/EXP-0009/results/report.md": {"actual": "c2a97bb9bd5d0e2f25835d0486769e268f97d02765459b390dd5450bae475bc7", "expected": "c2a97bb9bd5d0e2f25835d0486769e268f97d02765459b390dd5450bae475bc7", "match": true}
+    },
+    "matches": true
+  },
+  "exp0010_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0010/3m/checksums.json": "e57d9b284316417059901b638dff8dcefaeeb86f406e0b463994a618a8f33949",
+      "experiments/EXP-0010/3m/verification.json": "5550a0cf8e71a710b869c47e24469e6e271d52b05dbc8171629ef829441d6e7b",
+      "experiments/EXP-0010/config.json": "227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7",
+      "experiments/EXP-0010/ledger/reflexive_decisions.jsonl": "5f51c9f3206e302acf7a0858d4ff18795ec26fe498adcf5f3055dc8cf7794f11",
+      "experiments/EXP-0010/results/metrics.json": "4100e02109775179daaaed0c5645831d133a5d8e10795b68bda34c84ab658507",
+      "experiments/EXP-0010/results/per_event_summary.jsonl": "0bcd5d7b84776ffa86d0a8f20a0bbfb3c3b097b05025a9e6a0238e5ec0ed474c",
+      "experiments/EXP-0010/results/report.md": "170bb3c1d46cb4efa633b470b76cc20e96f91fd3bab3796823eba86961295b2d"
+    },
+    "reruns": 2
+  },
+  "exp0010_three_m": {"failures": [], "files_checked": 10, "valid": true},
+  "experiment": "EXP-0010",
+  "hypotheses": {
+    "H1_artifact_pack_compiles_prior_failure_chain": true,
+    "H2_a1_reduces_novel_transfer_loss_vs_a0": true,
+    "H3_a1_catches_at_least_one_a0_high_confidence_error": true,
+    "H4_meta_adversary_exploits_a1_rule": true,
+    "H5_a2_reduces_meta_phase_loss_vs_a1": false,
+    "H6_no_exact_candidate_reuse_from_prior_experiments": true,
+    "H7_a2_is_not_oracle": true
+  },
+  "memorization_guard": {"all_event_ids_new": true, "candidate_hash_overlap_count": 0, "candidate_hash_overlaps": [], "prior_hash_token_count": 286},
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "order_lift": {
+    "a1_caught_a0_high_confidence_errors": ["R10N01_trusted_consensus_pollution"],
+    "a1_meta_exploits": ["R10M01_boundary_skimming_attack", "R10M03_slow_roll_attack", "R10M06_low_signal_slow_roll"],
+    "a2_meta_catches": [],
+    "phase1_a0_to_a1_absolute_loss_reduction": 0.12379067468133852,
+    "phase1_a0_to_a1_relative_loss_reduction": 0.8825854193113689,
+    "phase2_a1_to_a2_absolute_loss_reduction": -0.0008000000000000021
+  },
+  "primary_metrics": {
+    "A0-Reactive": {"defer_cost": 0.011855999999999998, "events": 14, "evidence_cost": 0.0064, "evidence_queries": 8, "false_accepts": 4, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.037198772211311085, "novel_transfer": 0.14025914316364452}, "prospective_challenges": 0, "risk_weighted_target_loss": 0.1592019153749556, "second_order_challenges": 0, "total_loss": 0.1774579153749556},
+    "A1-Artifact-Reflexive": {"defer_cost": 0.011999999999999999, "events": 14, "evidence_cost": 0.007200000000000001, "evidence_queries": 9, "false_accepts": 3, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.037198772211311085, "novel_transfer": 0.016468468482306}, "prospective_challenges": 1, "risk_weighted_target_loss": 0.03446724069361709, "second_order_challenges": 0, "total_loss": 0.05366724069361709},
+    "A2-Second-Order": {"defer_cost": 0.011999999999999999, "events": 14, "evidence_cost": 0.008, "evidence_queries": 10, "false_accepts": 3, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.03799877221131109, "novel_transfer": 0.016468468482306}, "prospective_challenges": 1, "risk_weighted_target_loss": 0.03446724069361709, "second_order_challenges": 1, "total_loss": 0.05446724069361709},
+    "Oracle": {"defer_cost": 0.0, "events": 14, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 0, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.0, "novel_transfer": 0.0}, "prospective_challenges": 0, "risk_weighted_target_loss": 0.0, "second_order_challenges": 0, "total_loss": 0.0}
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 108},
+  "runtime_note": "EXP-0010 is a deterministic feature-space reflexive-policy experiment. A1 reads prior SCL artifacts through a SHA-audited compiler; A2 models attacks against the A1 challenge rule. Current truth remains hidden from non-Oracle policies.",
+  "schema": "scl-validation/v0.10",
+  "title": "Reflexive Epistemic Challenge / X-Order Cognitive Lift"
+}
