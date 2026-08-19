@@ -1,0 +1,14 @@
+{
+  "files": [
+    {"bytes":11014,"path":"python/scl_exp/active_inquiry.py","sha256":"ca7f6e477f1cb8276ce5241e6ab79d9ff83be45c2195ce872c2a632cd9695420"},
+    {"bytes":22300,"path":"python/scl_exp/exp0012.py","sha256":"dca0ed1d5fbbb00cc844ef3b0287425033c1fdb0a5d3b2a0d46e90e3a26b3d48"},
+    {"bytes":7217,"path":"python/scl_exp/three_m_v12.py","sha256":"a338dddc9d98a9ae9d51246a908aef4076dbc2b455688792f8fcc4b5bcd137a8"},
+    {"bytes":7906,"path":"scripts/run_exp0012.py","sha256":"a72315b5ce40696d728448f34396750fb84810e6a881588266c49e3581bf7e7b"},
+    {"bytes":3003,"path":"tests_py/test_active_inquiry.py","sha256":"97244c04eef4e5bcecc9573a37286208b58a36b83c49a20fee16a0a1cb36d684"},
+    {"bytes":1742,"path":"tests_py/test_exp0012.py","sha256":"3d817e830107ebea086978b903c490c2b867e2b4c7ecbd0033593969d530b0e1"},
+    {"bytes":1073,"path":"tests_py/test_three_m_v12.py","sha256":"82a05894d4d114cba3d59e7095a5ba30831436d6b3ddb5f71e5f823b5787b811"},
+    {"bytes":784,"path":"tests_py/test_runner_exp0012.py","sha256":"feb9682508344f65f0d5720552ab77bb2bac237e125cd6a2d18fde412ed20364"}
+  ],
+  "note": "Canonical source/TDD files are byte-complete in the release ZIP. This index binds the GitHub audit record to those exact files.",
+  "schema": "scl-exp0012-source-index/v0.1"
+}
