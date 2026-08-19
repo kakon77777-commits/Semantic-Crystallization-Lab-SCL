@@ -1,9 +1,9 @@
 {
   "name": "semantic-crystallization-lab-scl",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
-  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, persistent cognition continuity, admissible transitions, and adaptive trust-dynamics experiments.",
+  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, persistent cognition continuity, adaptive trust, and uncertainty-aware epistemic decision experiments.",
   "scripts": {
     "test": "node --test",
     "exp:0001": "node scripts/run-exp0001.js",
@@ -14,7 +14,8 @@
     "exp:0005": "python scripts/run_exp0005.py",
     "exp:0006": "python scripts/run_exp0006.py",
     "exp:0007": "python scripts/run_exp0007.py",
-    "exp:0008": "python scripts/run_exp0008.py"
+    "exp:0008": "python scripts/run_exp0008.py",
+    "exp:0009": "python scripts/run_exp0009.py"
   },
   "engines": {
     "node": ">=20"
