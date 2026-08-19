@@ -1,0 +1,68 @@
+{
+  "active_evidence_scalar_errors_resolved": 0,
+  "boundaries": {
+    "current_truth_visible_to_non_oracle_policy": false,
+    "defer_resolution_mode": "one-event-delayed validation",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "seek_evidence_costed": true,
+    "shared_trust_memory_across_non_oracle_policies": true,
+    "trust_feedback_mode": "one-event-delayed external audit"
+  },
+  "date": "2026-08-19",
+  "exp0008_canonical_integrity": {
+    "checked": 8,
+    "files": {
+      "experiments/EXP-0008/3m/checksums.json": {"actual": "46888823dbb59549342e6eed67f357866bc1bc6e37d8b7b1da8b94bb8904455e", "expected": "46888823dbb59549342e6eed67f357866bc1bc6e37d8b7b1da8b94bb8904455e", "match": true},
+      "experiments/EXP-0008/3m/verification.json": {"actual": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb", "expected": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb", "match": true},
+      "experiments/EXP-0008/config.json": {"actual": "f68e08ee907b9ccf3bef2507f064e19f8f0c7202610f636ae70a059f3d495607", "expected": "f68e08ee907b9ccf3bef2507f064e19f8f0c7202610f636ae70a059f3d495607", "match": true},
+      "experiments/EXP-0008/ledger/trust_dynamics_events.jsonl": {"actual": "8c683f3d816df744b51054c72d3fadd9a67c3b437ab8de70e59b16cc88095004", "expected": "8c683f3d816df744b51054c72d3fadd9a67c3b437ab8de70e59b16cc88095004", "match": true},
+      "experiments/EXP-0008/results/metrics.json": {"actual": "c1dd0a8899c67fefc1c0b67cbe5b02738e3b079a41a498b826a6a685185fb8a6", "expected": "c1dd0a8899c67fefc1c0b67cbe5b02738e3b079a41a498b826a6a685185fb8a6", "match": true},
+      "experiments/EXP-0008/results/per_event_summary.jsonl": {"actual": "792000a85b05dd3c45b4953a30339f5d2051ec0e15e23ff849c1aa9d645e714c", "expected": "792000a85b05dd3c45b4953a30339f5d2051ec0e15e23ff849c1aa9d645e714c", "match": true},
+      "experiments/EXP-0008/results/report.md": {"actual": "36d7dea7676b6cb29abee2b6eefa8477f5325a7d8678822bb5dd6801f199921b", "expected": "36d7dea7676b6cb29abee2b6eefa8477f5325a7d8678822bb5dd6801f199921b", "match": true},
+      "experiments/EXP-0008/results/trust_trajectory.jsonl": {"actual": "37af0291c3a86c74e5d69edb3182b150359c8f1ed69e408ce6cdce44dad30281", "expected": "37af0291c3a86c74e5d69edb3182b150359c8f1ed69e408ce6cdce44dad30281", "match": true}
+    },
+    "matches": true
+  },
+  "exp0009_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0009/3m/checksums.json": "b3e111ba3ce89d5423d11170ed7bb917b5860f4fa203febeee1af6372e1a22b8",
+      "experiments/EXP-0009/3m/verification.json": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb",
+      "experiments/EXP-0009/config.json": "227ee3368116c411e4c72423fc0eddc74815672697057b5a72710c033b0e42f7",
+      "experiments/EXP-0009/ledger/epistemic_decisions.jsonl": "ac7776d0e35da7fba8d43e18cfc467880a81d9a68f73f29de0ae4c0c434d5521",
+      "experiments/EXP-0009/results/metrics.json": "4ea86645a1c926b0c542f1af3f28b2c9b16c400fcff38170dcc1911d3e57037a",
+      "experiments/EXP-0009/results/per_event_summary.jsonl": "6e82f0d591dfa4c3be977d5e2682dca5db750202daa8d267546fcdcebe6e05a7",
+      "experiments/EXP-0009/results/report.md": "c2a97bb9bd5d0e2f25835d0486769e268f97d02765459b390dd5450bae475bc7"
+    },
+    "reruns": 2
+  },
+  "exp0009_three_m": {"failures": [], "files_checked": 9, "valid": true},
+  "experiment": "EXP-0009",
+  "exploratory_observations": {
+    "E1_first_trusted_coalition_betrayal_penetrates_belief_state": true,
+    "E2_uncertainty_reduces_high_risk_false_accepts_but_not_total_loss": true
+  },
+  "hypotheses": {
+    "H1_multi_action_uncertainty_policy_uses_seek_and_defer": true,
+    "H2_belief_state_reduces_total_loss_vs_scalar": false,
+    "H3_belief_state_pays_nonzero_information_cost": true,
+    "H4_belief_state_is_not_oracle": true,
+    "H5_uncertainty_changes_decisions_vs_mean_only": true,
+    "H6_active_evidence_resolves_at_least_one_scalar_error": false,
+    "H7_high_risk_false_accepts_not_worse_than_scalar": true
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "primary_metrics": {
+    "Belief-State": {"action_counts": {"accept": 4, "defer": 8, "seek_evidence": 12}, "defer_cost": 0.015359999999999999, "defer_count": 8, "events": 12, "evidence_cost": 0.009600000000000001, "evidence_queries": 12, "false_accepts": 1, "false_rejects": 0, "high_risk_false_accepts": 1, "immediate_accuracy": 0.25, "mean_target_js": 0.0030834405704820264, "risk_weighted_target_loss": 0.13089922341015792, "total_loss": 0.1558592234101579},
+    "Oracle": {"action_counts": {"accept": 7, "reject": 5}, "defer_cost": 0.0, "defer_count": 0, "events": 12, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 0, "false_rejects": 0, "high_risk_false_accepts": 0, "immediate_accuracy": 1.0, "mean_target_js": 0.0, "risk_weighted_target_loss": 0.0, "total_loss": 0.0},
+    "Posterior-Mean": {"action_counts": {"accept": 6, "defer": 6, "seek_evidence": 11}, "defer_cost": 0.011399999999999999, "defer_count": 6, "events": 12, "evidence_cost": 0.0088, "evidence_queries": 11, "false_accepts": 2, "false_rejects": 0, "high_risk_false_accepts": 2, "immediate_accuracy": 0.3333333333333333, "mean_target_js": 0.0028593886254258496, "risk_weighted_target_loss": 0.12185315267451229, "total_loss": 0.14205315267451227},
+    "Scalar-Threshold": {"action_counts": {"accept": 5, "reject": 7}, "defer_cost": 0.0, "defer_count": 0, "events": 12, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 2, "false_rejects": 4, "high_risk_false_accepts": 2, "immediate_accuracy": 0.5, "mean_target_js": 0.002903997794607545, "risk_weighted_target_loss": 0.1231343596594523, "total_loss": 0.1231343596594523}
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 99},
+  "runtime_note": "EXP-0009 is a deterministic feature-space decision benchmark. Non-Oracle policies share identical trust snapshots; current event truth is hidden; evidence seeking and deferral are explicitly costed.",
+  "schema": "scl-validation/v0.9",
+  "title": "Uncertainty-Aware Epistemic Decision"
+}
