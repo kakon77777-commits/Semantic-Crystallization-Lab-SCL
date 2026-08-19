@@ -1,0 +1,10 @@
+{
+  "by_action": {"accept": 31, "defer": 18, "reject": 7},
+  "by_phase": {"meta_adversarial": 28, "novel_transfer": 28},
+  "by_policy": {"A0-Reactive": 14, "A1-Artifact-Reflexive": 14, "A2-Second-Order": 14, "Oracle": 14},
+  "prospective_challenge_rows": 2,
+  "rows": 56,
+  "schema": "scl-ledger-summary/v0.10",
+  "second_order_challenge_rows": 1,
+  "sha256": "5f51c9f3206e302acf7a0858d4ff18795ec26fe498adcf5f3055dc8cf7794f11"
+}
