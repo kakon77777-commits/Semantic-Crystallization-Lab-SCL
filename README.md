@@ -12,17 +12,19 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.7 / EXP-0007 — Adaptive Epistemic Admission / Learning When to Trust**
+**SCL v0.8 / EXP-0008 — Adaptive Trust Dynamics / Reputation Decay–Recovery**
 
-EXP-0007 asks whether the admissibility threshold itself can adapt from delayed evidence rather than staying fixed at Q2 or Q3. The learned policy never sees the current event's truth label: it maintains Beta reliability posteriors for provenance roots from one-event-delayed validation feedback, then combines trust-weighted support with current risk, semantic novelty and recent pollution prevalence.
+EXP-0008 holds the EXP-0007 admission equation fixed and varies only how provenance trust is remembered over time: cumulative history, fixed exponential decay, or volatility-sensitive adaptive decay with betrayal/recovery asymmetry. The 20-event online fixture includes source cold-start, repeated betrayal, rehabilitation and later provenance drift.
 
-Across a 15-event deterministic sequence with source drift, Static-Q2 remains maximally plastic but accepts 5/6 pollution events; Static-Q3 keeps integrity at 0.833 but accepts only 5/9 genuine updates. Learned-Adaptive accepts 7/9 genuine updates and 1/6 pollution events, matching Q3 integrity while increasing plasticity from 0.556 to 0.778. Its risk-weighted cumulative target JS is `0.06780`, about 5.6% below Static-Q3 (`0.07184`) and far below Static-Q2 (`0.23379`).
+The strongest bounded result is a negative one: Adaptive-Dynamics has the best delayed-feedback trust Brier score (`0.1797`) but produces the same accept/reject sequence and the same risk-weighted loss (`0.22099`) as Cumulative-History. Fixed-Decay instead rejects all six pollution events and reaches risk-weighted loss `0.00113` in this fixture. Thus **better trust-state calibration does not imply better admission decisions** when richer trust states are projected through the same hard decision boundary.
 
-The gain is not oracle behavior. A previously trusted A/B/C coalition still passes one later attack before delayed negative feedback lowers reputation. Root B moves from phase-1 trust `0.714` to final `0.455`, while emerging root D rises from `0.500` to `0.667`. The experiment therefore identifies **epistemic hysteresis**: trust can lag both genuine source emergence and source compromise.
-
-See `experiments/EXP-0007/results/report.md`, `experiments/EXP-0007/results/trust_trajectory.jsonl`, and `experiments/EXP-0007/3m/`.
+See `experiments/EXP-0008/results/report.md`, `experiments/EXP-0008/EXP0008_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0008/3m/`.
 
 ---
+
+### Previous milestone: SCL v0.7 / EXP-0007 — Adaptive Epistemic Admission / Learning When to Trust
+
+EXP-0007 learned provenance reliability under one-event-delayed feedback and modestly beat Static-Q3 on its synthetic risk-weighted benchmark while exposing epistemic hysteresis: new reliable roots needed time to earn trust, while historically trusted roots could retain enough reputation to pass a later attack.
 
 ### Previous milestone: SCL v0.6 / EXP-0006 — Admissible Cognitive Transition Law / Plasticity–Integrity Tradeoff
 
@@ -77,47 +79,15 @@ $$
 
 under semantic consolidation, while target fidelity is tracked separately.
 
-Reproduce:
-
-```bash
-python -m pytest -q
-npm test
-python scripts/run_exp0003.py
-```
-
-See `experiments/EXP-0003/results/report.md`, `experiments/EXP-0003/3m/`, and the v0.3 design/plan under `docs/superpowers/`. This remains a finite transparent toy-model mechanism experiment; it does not expose proprietary-model hidden states or prove a universal semantic fixed point.
-
 ---
 
 ### Previous milestone: SCL v0.2 / EXP-0002 — Bidirectional Symbol–Feature Localization
 
-EXP-0002 established the immediately preceding result: `qevra` gained broader learned feature localization and better reverse retrieval while raw hidden-coordinate breadth did not monotonically increase. Its formal report remains at `experiments/EXP-0002/results/report.md`.
+EXP-0002 established that `qevra` gained broader learned feature localization and better reverse retrieval while raw hidden-coordinate breadth did not monotonically increase. Its formal report remains at `experiments/EXP-0002/results/report.md`.
 
 ### Previous milestone: SCL v0.1 / EXP-0001 — Finite Semantic Crystallization
 
-EXP-0001 starts from a 358-code-point Chinese passage selected from *內容信息上下界無限原理：認識論猜想* and constructs the following finite chain:
-
-```text
-L0  source Chinese prose                         358 code points
-L1  controlled Chinese                          149 code points
-L2  base semantic IR                            128 code points
-L3  reusable composite-operator IR               74 code points
-L4  qevra                                         5 code points
-```
-
-Surface-only terminal compression is therefore:
-
-$$
-C_{surface} = \frac{358}{5} = 71.6
-$$
-
-But the first-use dictionary-aware package is larger than the source. With the complete v0.1 atom/lexicon definition payload, the measured terminal ratio is approximately:
-
-$$
-C_{dictionary} \approx 0.105886
-$$
-
-That is intentional and important: EXP-0001 does **not** hide vocabulary-definition cost. Under the experiment's simplified fixed-dictionary amortization model, the terminal layer becomes code-point-positive after about 10 comparable documents reuse the same dictionary. This is only an amortization illustration; a real multi-document corpus experiment is a later milestone.
+EXP-0001 starts from a 358-code-point Chinese passage selected from *內容信息上下界無限原理：認識論猜想* and constructs a finite chain ending in the experimental lexeme `qevra`. Surface-only terminal compression is `71.6×`, while the first-use dictionary-aware package is larger than the source; the experiment intentionally keeps dictionary cost explicit.
 
 ## Experimental lexemes
 
@@ -126,57 +96,32 @@ That is intentional and important: EXP-0001 does **not** hide vocabulary-definit
 - `vesh(x,m,b)` — a representation reaches meaning under an admissibility boundary.
 - `qevra` — the context-bound terminal crystallization of EXP-0001.
 
-These lexemes are namespace-scoped experiment objects. Their semantics come from `experiments/EXP-0001/lexicon/lexicon.json`, not from spelling or external convention.
-
-## What EXP-0001 currently demonstrates
-
-- recursive expansion from `qevra` to base semantic IR;
-- recovery of all 8 manually declared source invariants;
-- strict surface shortening across the checked-in levels;
-- explicit separation of surface ratio and dictionary-aware ratio;
-- rejection of direct source-prose embedding in the lexicon;
-- reuse of `narel` and `vesh` in a novel code-oriented composition not present in the source passage.
-
-It does **not** prove the stronger ontological/cardinality claims of the source papers, automatic semantic discovery, or automatic human comprehension of invented lexemes.
-
 ## Reproduce
 
-Requires Node.js 20+ and no third-party runtime dependencies.
-
 ```bash
+python -m pytest -q
 npm test
-npm run exp:0001
+python scripts/run_exp0008.py
 ```
-
-Generated outputs:
-
-- `experiments/EXP-0001/results/metrics.json`
-- `experiments/EXP-0001/results/report.md`
 
 ## Repository map
 
 ```text
 docs/superpowers/specs/       experiment design/specification
-docs/superpowers/plans/       implementation plan
 papers/source-original/       preserved source papers and EML-U reference package
-experiments/EXP-0001/source/  source passage
-experiments/EXP-0001/semantic-ir/ explicit atoms and invariant map
-experiments/EXP-0001/lexicon/ new lexemes and expansion graph
-experiments/EXP-0001/chain/   checked-in compression levels
-experiments/EXP-0001/results/ reproducible metrics/report
-experiments/EXP-0002/        neural symbol-feature localization experiment and bounded 3M outputs
-experiments/EXP-0003/        semantic-basin stabilization, memory attention, ablations, and 3M outputs
-experiments/EXP-0004/        cross-agent SCI reconstruction, transfer, correction, contamination stress, ledger, and 3M outputs
-experiments/EXP-0005/        protocol × persistence continuity, restart/fault audit, and 3M outputs
-experiments/EXP-0006/        admissible cognitive transitions and plasticity–integrity frontier
-experiments/EXP-0007/        adaptive epistemic admission, provenance trust drift, and delayed-feedback audit
-python/scl_exp/              transparent neural/grid/3M experiment helpers
-tests_py/                    Python unit and experiment-mechanics tests
-src/                          generic validator/expander/metrics functions
-test/                         Node built-in tests
+experiments/EXP-0001/         finite semantic crystallization
+experiments/EXP-0002/         neural symbol-feature localization
+experiments/EXP-0003/         semantic-basin stabilization
+experiments/EXP-0004/         cross-agent SCI transfer/correction
+experiments/EXP-0005/         protocol × persistence continuity
+experiments/EXP-0006/         admissible transition-law frontier
+experiments/EXP-0007/         adaptive epistemic admission
+experiments/EXP-0008/         adaptive trust-memory dynamics, decay, betrayal and recovery
+python/scl_exp/               transparent experiment helpers
+tests_py/                     Python TDD and regression tests
 scripts/                      deterministic experiment runners
 ```
 
 ## Design boundary
 
-SCL deliberately keeps finite experiment boundaries explicit. These runs demonstrate mechanisms and measured trends; they do not by themselves establish the stronger ontological/cardinality claims of the source papers.
+SCL deliberately keeps finite experiment boundaries explicit. These runs demonstrate mechanisms and measured trends; they do not by themselves establish universal cognition laws or the stronger ontological/cardinality claims of the source papers.
