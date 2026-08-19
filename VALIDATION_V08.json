@@ -1,0 +1,72 @@
+{
+  "adaptive_final_trust": {
+    "A": {"alpha": 3.32426710630337, "beta": 4.2211880199261085, "mean": 0.4405654862020936, "observations": 8.0, "volatility": 0.2168432711011619},
+    "B": {"alpha": 6.260646503383322, "beta": 3.0857372100308305, "mean": 0.6698469370990936, "observations": 11.0, "volatility": 0.30822063513217396},
+    "C": {"alpha": 2.291782293535685, "beta": 4.075342105263121, "mean": 0.3599399273505702, "observations": 5.0, "volatility": 0.1541319820820493},
+    "D": {"alpha": 7.22328786714244, "beta": 2.0, "mean": 0.7831575866644137, "observations": 7.0, "volatility": 0.22515522017276562},
+    "E": {"alpha": 5.680817636960738, "beta": 2.0, "mean": 0.7396110551595663, "observations": 5.0, "volatility": 0.2427398002705536},
+    "F": {"alpha": 5.945174791113347, "beta": 2.0, "mean": 0.7482748897812803, "observations": 3.0, "volatility": 0.23397718133612486},
+    "G": {"alpha": 5.945174791113347, "beta": 2.0, "mean": 0.7482748897812803, "observations": 3.0, "volatility": 0.23397718133612486},
+    "X": {"alpha": 2.0, "beta": 4.143184866652124, "mean": 0.32556402638261284, "observations": 3.0, "volatility": 0.15949425045965374}
+  },
+  "boundaries": {
+    "current_truth_visible_to_policy": false,
+    "feedback_mode": "one_event_delayed",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "only_trust_memory_dynamics_differs_between_non_oracle_arms": true,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "semantic_ground_truth": "synthetic explicit online benchmark",
+    "shared_admission_threshold_formula": true,
+    "source_of_sci": "canonical EXP-0004 merged qevra package",
+    "structural_protocol_precondition": true
+  },
+  "date": "2026-08-19",
+  "exp0007_canonical_integrity": {"checked": 8, "matches": true},
+  "exp0008_determinism": {
+    "core_bit_identical": true,
+    "core_hashes": {
+      "experiments/EXP-0008/3m/checksums.json": "46888823dbb59549342e6eed67f357866bc1bc6e37d8b7b1da8b94bb8904455e",
+      "experiments/EXP-0008/3m/verification.json": "6a3db155d8d09e7342a96f629a00582ac41f0b267cd387a80ec64a09aa9f6dbb",
+      "experiments/EXP-0008/config.json": "f68e08ee907b9ccf3bef2507f064e19f8f0c7202610f636ae70a059f3d495607",
+      "experiments/EXP-0008/ledger/trust_dynamics_events.jsonl": "8c683f3d816df744b51054c72d3fadd9a67c3b437ab8de70e59b16cc88095004",
+      "experiments/EXP-0008/results/metrics.json": "c1dd0a8899c67fefc1c0b67cbe5b02738e3b079a41a498b826a6a685185fb8a6",
+      "experiments/EXP-0008/results/per_event_summary.jsonl": "792000a85b05dd3c45b4953a30339f5d2051ec0e15e23ff849c1aa9d645e714c",
+      "experiments/EXP-0008/results/report.md": "36d7dea7676b6cb29abee2b6eefa8477f5325a7d8678822bb5dd6801f199921b",
+      "experiments/EXP-0008/results/trust_trajectory.jsonl": "37af0291c3a86c74e5d69edb3182b150359c8f1ed69e408ce6cdce44dad30281"
+    },
+    "reruns": 2
+  },
+  "exp0008_three_m": {"failures": [], "files_checked": 9, "valid": true},
+  "experiment": "EXP-0008",
+  "exploratory_observations": {
+    "E1_better_trust_calibration_without_better_admission": true,
+    "E2_fixed_decay_dominates_this_fixture": true
+  },
+  "hypotheses": {
+    "H1_no_forgetting_exhibits_reputation_hysteresis": true,
+    "H2_fixed_decay_reduces_hysteresis_vs_cumulative": true,
+    "H3_adaptive_dynamics_tracks_betrayal_and_recovery": true,
+    "H4_adaptive_risk_loss_beats_cumulative": false,
+    "H5_adaptive_is_not_oracle": true,
+    "H6_cold_start_and_betrayal_cannot_both_be_zero_cost": true,
+    "H7_trust_learning_rate_is_state_dependent": true
+  },
+  "node_tests": {"command": "npm test", "failed": 0, "passed": 11},
+  "primary_metrics": {
+    "Adaptive-Dynamics": {"plasticity": 0.7142857142857143, "integrity": 0.8333333333333334, "false_accept_rate": 0.16666666666666666, "false_reject_rate": 0.2857142857142857, "risk_weighted_cumulative_target_js": 0.22098910420428952, "betrayal_pollution_accepts": 1, "cold_start_false_rejects": 1, "recovery_false_rejects": 2, "concept_drift_pollution_accepts": 0, "concept_drift_genuine_rejects": 1},
+    "Cumulative-History": {"plasticity": 0.7142857142857143, "integrity": 0.8333333333333334, "false_accept_rate": 0.16666666666666666, "false_reject_rate": 0.2857142857142857, "risk_weighted_cumulative_target_js": 0.22098910420428952, "betrayal_pollution_accepts": 1, "cold_start_false_rejects": 1, "recovery_false_rejects": 2, "concept_drift_pollution_accepts": 0, "concept_drift_genuine_rejects": 1},
+    "Fixed-Decay": {"plasticity": 0.7142857142857143, "integrity": 1.0, "false_accept_rate": 0.0, "false_reject_rate": 0.2857142857142857, "risk_weighted_cumulative_target_js": 0.0011305174936419916, "betrayal_pollution_accepts": 0, "cold_start_false_rejects": 1, "recovery_false_rejects": 2, "concept_drift_pollution_accepts": 0, "concept_drift_genuine_rejects": 1},
+    "Oracle": {"plasticity": 1.0, "integrity": 1.0, "false_accept_rate": 0.0, "false_reject_rate": 0.0, "risk_weighted_cumulative_target_js": 0.0, "betrayal_pollution_accepts": 0, "cold_start_false_rejects": 0, "recovery_false_rejects": 0, "concept_drift_pollution_accepts": 0, "concept_drift_genuine_rejects": 0}
+  },
+  "python_tests": {"command": "python -m pytest -q", "failed": 0, "passed": 88},
+  "runtime_note": "EXP-0008 is deterministic feature-space trust-memory computation over canonical EXP-0004 SCI; current event truth is hidden from non-Oracle policies and only one-event-delayed feedback is used.",
+  "schema": "scl-validation/v0.8",
+  "title": "Adaptive Trust Dynamics / Reputation Decay–Recovery",
+  "trust_brier": {
+    "Adaptive-Dynamics": 0.17965883941345429,
+    "Cumulative-History": 0.1982915919764441,
+    "Fixed-Decay": 0.20057221792902916
+  }
+}
