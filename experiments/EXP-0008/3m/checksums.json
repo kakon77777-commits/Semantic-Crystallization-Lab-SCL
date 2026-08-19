@@ -1,0 +1,11 @@
+{
+  "graphs/routes.jsonl": "c3abd6c92fa671d93eac9ed20dfbd796fd3d8f65a371ed9e4be3bef65f16a9a5",
+  "ledgers/trust_dynamics_events.jsonl": "792000a85b05dd3c45b4953a30339f5d2051ec0e15e23ff849c1aa9d645e714c",
+  "manifest.json": "161a3521d5c7ad9958f091220e7402f965f697b35f34504a1f3b634c0060350d",
+  "matrices/policy_final_feature.cells.jsonl": "1e28ebab15f21990367ae521d27310a0831516171710e6c7b3566109f50d1d3c",
+  "matrices/policy_metrics.cells.jsonl": "3e485794f3070b228bfd3bb50e2360eba885a8b056c66f2931eb5d2ae9b7fbeb",
+  "matrices/root_trust_dynamics.cells.jsonl": "1bd28874f2cfb687eb49c99cf9638fd0327212787552e746aae82bb5a372dda8",
+  "provenance/events.jsonl": "40417b2e844116160872fb3c038804dcee6c27b0a449a28ceeeeeebc2bbf6a5f",
+  "reports/projection_loss.json": "62e7acab8938abb5e7cb83148f7a4dd214b3489b7341e586d235ce0f219142f2",
+  "substrate.json": "3bfcae0c140ac99c76aa783f004275fb496d1208f2624cc142c9c8483d27d64f"
+}
