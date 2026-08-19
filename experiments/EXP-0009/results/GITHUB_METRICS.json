@@ -1,0 +1,30 @@
+{
+  "active_evidence_scalar_errors_resolved": 0,
+  "boundaries": {
+    "current_truth_visible_to_non_oracle_policy": false,
+    "defer_resolution_mode": "one-event-delayed validation",
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "seek_evidence_costed": true,
+    "shared_trust_memory_across_non_oracle_policies": true,
+    "trust_feedback_mode": "one-event-delayed external audit"
+  },
+  "hypotheses": {
+    "H1_multi_action_uncertainty_policy_uses_seek_and_defer": true,
+    "H2_belief_state_reduces_total_loss_vs_scalar": false,
+    "H3_belief_state_pays_nonzero_information_cost": true,
+    "H4_belief_state_is_not_oracle": true,
+    "H5_uncertainty_changes_decisions_vs_mean_only": true,
+    "H6_active_evidence_resolves_at_least_one_scalar_error": false,
+    "H7_high_risk_false_accepts_not_worse_than_scalar": true
+  },
+  "policies": {
+    "Belief-State": {"action_counts": {"accept": 4, "defer": 8, "seek_evidence": 12}, "defer_cost": 0.015359999999999999, "defer_count": 8, "events": 12, "evidence_cost": 0.009600000000000001, "evidence_queries": 12, "false_accepts": 1, "false_rejects": 0, "high_risk_false_accepts": 1, "immediate_accuracy": 0.25, "mean_target_js": 0.0030834405704820264, "risk_weighted_target_loss": 0.13089922341015792, "total_loss": 0.1558592234101579},
+    "Oracle": {"action_counts": {"accept": 7, "reject": 5}, "defer_cost": 0.0, "defer_count": 0, "events": 12, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 0, "false_rejects": 0, "high_risk_false_accepts": 0, "immediate_accuracy": 1.0, "mean_target_js": 0.0, "risk_weighted_target_loss": 0.0, "total_loss": 0.0},
+    "Posterior-Mean": {"action_counts": {"accept": 6, "defer": 6, "seek_evidence": 11}, "defer_cost": 0.011399999999999999, "defer_count": 6, "events": 12, "evidence_cost": 0.0088, "evidence_queries": 11, "false_accepts": 2, "false_rejects": 0, "high_risk_false_accepts": 2, "immediate_accuracy": 0.3333333333333333, "mean_target_js": 0.0028593886254258496, "risk_weighted_target_loss": 0.12185315267451229, "total_loss": 0.14205315267451227},
+    "Scalar-Threshold": {"action_counts": {"accept": 5, "reject": 7}, "defer_cost": 0.0, "defer_count": 0, "events": 12, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 2, "false_rejects": 4, "high_risk_false_accepts": 2, "immediate_accuracy": 0.5, "mean_target_js": 0.002903997794607545, "risk_weighted_target_loss": 0.1231343596594523, "total_loss": 0.1231343596594523}
+  },
+  "schema": "scl-exp0009-github-metrics/v0.1"
+}
