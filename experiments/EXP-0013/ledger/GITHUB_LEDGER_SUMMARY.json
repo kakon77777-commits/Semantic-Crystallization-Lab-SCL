@@ -1,0 +1,31 @@
+{
+  "a5_budget_trajectory": [
+    {"action":"accept","after":4,"before":4,"event_id":"R13S01_anchor","probes":2,"sequence":1},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S02_boundary_attack","probes":2,"sequence":2},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S03_boundary_attack","probes":1,"sequence":3},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S04_benign_update","probes":0,"sequence":4},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S05_boundary_attack","probes":1,"sequence":5},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S06_benign_bridge","probes":0,"sequence":6},
+    {"action":"reject","after":4,"before":4,"event_id":"R13S07_boundary_attack","probes":1,"sequence":7},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M01_slow_roll_switch","probes":0,"sequence":8},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M02_slow_roll_attack","probes":2,"sequence":9},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M03_benign_recovery","probes":0,"sequence":10},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M04_false_disagreement","probes":2,"sequence":11},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M05_false_disagreement","probes":1,"sequence":12},
+    {"action":"reject","after":4,"before":4,"event_id":"R13M06_benign_update","probes":0,"sequence":13},
+    {"action":"defer","after":3,"before":4,"event_id":"R13M07_slow_roll_return","probes":0,"sequence":14},
+    {"action":"accept","after":3,"before":3,"event_id":"R13M08_benign_bridge","probes":2,"sequence":15},
+    {"action":"defer","after":2,"before":3,"event_id":"R13D01_boundary_return","probes":1,"sequence":16},
+    {"action":"accept","after":2,"before":2,"event_id":"R13D02_benign_update","probes":2,"sequence":17},
+    {"action":"defer","after":1,"before":2,"event_id":"R13D03_false_disagreement","probes":1,"sequence":18},
+    {"action":"accept","after":1,"before":1,"event_id":"R13D04_benign_update","probes":2,"sequence":19},
+    {"action":"reject","after":1,"before":1,"event_id":"R13D05_slow_roll","probes":1,"sequence":20},
+    {"action":"defer","after":0,"before":1,"event_id":"R13D06_benign_recovery","probes":0,"sequence":21},
+    {"action":"reject","after":0,"before":0,"event_id":"R13D07_boundary_final","probes":1,"sequence":22}
+  ],
+  "by_final_action": {"accept":27,"defer":34,"reject":27},
+  "by_policy": {"A3-Closed-Loop-Deferred":22,"A4-One-Step-VOI":22,"A5-Finite-Horizon":22,"Oracle":22},
+  "experiment": "EXP-0013",
+  "rows": 88,
+  "schema": "scl-github-ledger-summary/v0.13"
+}
