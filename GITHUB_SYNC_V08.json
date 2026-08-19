@@ -1,0 +1,60 @@
+{
+  "schema": "scl-github-sync/v0.8",
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.8-exp0008",
+  "base_commit": "51a5e44968127fe09ad03e2c25e7992678f38b0a",
+  "experiment": "EXP-0008",
+  "github_browsable_core": [
+    "README.md",
+    "package.json",
+    "VALIDATION_V08.json",
+    "papers/scl-series/SCI_v0.1.md",
+    "docs/superpowers/specs/2026-08-19-scl-v0.8-exp0008-design.md",
+    "python/scl_exp/trust_dynamics.py",
+    "python/scl_exp/exp0008.py",
+    "python/scl_exp/three_m_v08.py",
+    "scripts/run_exp0008.py",
+    "tests_py/test_trust_dynamics.py",
+    "tests_py/test_trust_dynamics_admission.py",
+    "tests_py/test_exp0008.py",
+    "tests_py/test_three_m_v08.py",
+    "tests_py/test_runner_exp0008.py",
+    "experiments/EXP-0008/README.md",
+    "experiments/EXP-0008/EXP0008_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0008/config.json",
+    "experiments/EXP-0008/results/report.md",
+    "experiments/EXP-0008/ledger/GITHUB_LEDGER_SUMMARY.json",
+    "experiments/EXP-0008/3m/GITHUB_INDEX.json",
+    "experiments/EXP-0008/3m/checksums.json",
+    "experiments/EXP-0008/3m/verification.json"
+  ],
+  "release_archive": {
+    "filename": "SCL_v0.8_EXP-0008_2026-08-19.zip",
+    "sha256": "ea164acf7a2681bc42e4cf0e152f9c6092bb5bbbfb1607691636d3149e340979",
+    "bytes": 2407152,
+    "zip_integrity": "PASS",
+    "included_in_archive": false,
+    "note": "This sync manifest is intentionally excluded from the ZIP because it records that ZIP's final SHA-256. The archive contains complete raw outputs, full TDD suite, prior experiment history and original binary sources."
+  },
+  "boundaries": {
+    "current_truth_visible_to_policy": false,
+    "feedback_mode": "one_event_delayed",
+    "oracle_is_evaluation_ceiling_only": true,
+    "public_ai_board_write": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "shared_admission_threshold_formula": true,
+    "only_trust_memory_dynamics_differs_between_non_oracle_arms": true,
+    "synthetic_online_ground_truth": true,
+    "cross_agent_coordinate": "shared F01-F19 feature space only"
+  },
+  "download_only_raw": {
+    "experiments/EXP-0008/results/metrics.json": "c1dd0a8899c67fefc1c0b67cbe5b02738e3b079a41a498b826a6a685185fb8a6",
+    "experiments/EXP-0008/results/per_event_summary.jsonl": "792000a85b05dd3c45b4953a30339f5d2051ec0e15e23ff849c1aa9d645e714c",
+    "experiments/EXP-0008/results/trust_trajectory.jsonl": "37af0291c3a86c74e5d69edb3182b150359c8f1ed69e408ce6cdce44dad30281",
+    "experiments/EXP-0008/ledger/trust_dynamics_events.jsonl": "8c683f3d816df744b51054c72d3fadd9a67c3b437ab8de70e59b16cc88095004",
+    "experiments/EXP-0008/3m/raw_projection_files": "sha256-listed in experiments/EXP-0008/3m/GITHUB_INDEX.json",
+    "full_tdd_suite": "included in the byte-complete ZIP; all EXP-0008-specific TDD files are browsable on GitHub",
+    "original_binary_sources": "included under release/original-binaries inside the byte-complete ZIP"
+  }
+}
