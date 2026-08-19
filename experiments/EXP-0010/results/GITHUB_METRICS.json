@@ -1,0 +1,41 @@
+{
+  "artifact_flags": {
+    "false_consensus_warning": true,
+    "reactive_uncertainty_too_late": true,
+    "reputation_hysteresis_warning": true,
+    "static_quorum_tradeoff": true,
+    "structural_not_semantic_warning": true,
+    "trust_state_decision_separation": true
+  },
+  "experiment": "EXP-0010",
+  "hypotheses": {
+    "H1_artifact_pack_compiles_prior_failure_chain": true,
+    "H2_a1_reduces_novel_transfer_loss_vs_a0": true,
+    "H3_a1_catches_at_least_one_a0_high_confidence_error": true,
+    "H4_meta_adversary_exploits_a1_rule": true,
+    "H5_a2_reduces_meta_phase_loss_vs_a1": false,
+    "H6_no_exact_candidate_reuse_from_prior_experiments": true,
+    "H7_a2_is_not_oracle": true
+  },
+  "memorization_guard": {
+    "all_event_ids_new": true,
+    "candidate_hash_overlap_count": 0,
+    "candidate_hash_overlaps": [],
+    "prior_hash_token_count": 286
+  },
+  "order_lift": {
+    "a1_caught_a0_high_confidence_errors": ["R10N01_trusted_consensus_pollution"],
+    "a1_meta_exploits": ["R10M01_boundary_skimming_attack", "R10M03_slow_roll_attack", "R10M06_low_signal_slow_roll"],
+    "a2_meta_catches": [],
+    "phase1_a0_to_a1_absolute_loss_reduction": 0.12379067468133852,
+    "phase1_a0_to_a1_relative_loss_reduction": 0.8825854193113689,
+    "phase2_a1_to_a2_absolute_loss_reduction": -0.0008000000000000021
+  },
+  "policy_summaries": {
+    "A0-Reactive": {"defer_cost": 0.011855999999999998, "events": 14, "evidence_cost": 0.0064, "evidence_queries": 8, "false_accepts": 4, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.037198772211311085, "novel_transfer": 0.14025914316364452}, "prospective_challenges": 0, "risk_weighted_target_loss": 0.1592019153749556, "second_order_challenges": 0, "total_loss": 0.1774579153749556},
+    "A1-Artifact-Reflexive": {"defer_cost": 0.011999999999999999, "events": 14, "evidence_cost": 0.007200000000000001, "evidence_queries": 9, "false_accepts": 3, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.037198772211311085, "novel_transfer": 0.016468468482306}, "prospective_challenges": 1, "risk_weighted_target_loss": 0.03446724069361709, "second_order_challenges": 0, "total_loss": 0.05366724069361709},
+    "A2-Second-Order": {"defer_cost": 0.011999999999999999, "events": 14, "evidence_cost": 0.008, "evidence_queries": 10, "false_accepts": 3, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.03799877221131109, "novel_transfer": 0.016468468482306}, "prospective_challenges": 1, "risk_weighted_target_loss": 0.03446724069361709, "second_order_challenges": 1, "total_loss": 0.05446724069361709},
+    "Oracle": {"defer_cost": 0.0, "events": 14, "evidence_cost": 0.0, "evidence_queries": 0, "false_accepts": 0, "false_rejects": 0, "phase_loss": {"meta_adversarial": 0.0, "novel_transfer": 0.0}, "prospective_challenges": 0, "risk_weighted_target_loss": 0.0, "second_order_challenges": 0, "total_loss": 0.0}
+  },
+  "title": "Reflexive Epistemic Challenge / X-Order Cognitive Lift"
+}
