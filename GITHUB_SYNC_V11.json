@@ -1,0 +1,48 @@
+{
+  "schema": "scl-github-sync/v0.11",
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "branch": "scl-v0.11-exp0011",
+  "base_commit": "ca6df24e02ecd3ee3e965f84e70094b3483c109d",
+  "experiment": "EXP-0011",
+  "github_browsable_core": [
+    "VALIDATION_V11.json",
+    "docs/superpowers/specs/2026-08-20-scl-v0.11-exp0011-design.md",
+    "papers/scl-series/SCI_v0.11_addendum.md",
+    "experiments/EXP-0011/README.md",
+    "experiments/EXP-0011/EXP0011_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0011/config.json",
+    "experiments/EXP-0011/results/report.md",
+    "experiments/EXP-0011/ledger/GITHUB_LEDGER_SUMMARY.json",
+    "experiments/EXP-0011/3m/GITHUB_INDEX.json",
+    "experiments/EXP-0011/3m/checksums.json",
+    "experiments/EXP-0011/3m/verification.json",
+    "experiments/EXP-0011/GITHUB_SOURCE_INDEX.json"
+  ],
+  "release_archive": {
+    "filename": "SCL_v0.11_EXP-0011_2026-08-20.zip",
+    "sha256": "52a4e361406b18ff8fa131e3137aef6ef8db72cd9598b6361843ee9c56320e40",
+    "bytes": 2527221,
+    "zip_integrity": "PASS",
+    "included_in_archive": false,
+    "note": "This sync manifest is intentionally excluded from the ZIP because it records that ZIP's final SHA-256. The archive contains complete raw outputs, full source/TDD, prior experiment history and original binary sources."
+  },
+  "boundaries": {
+    "current_truth_visible_to_non_oracle_policy": false,
+    "a3_opponent_model_updates_from_probe_response_only": true,
+    "same_probe_set_and_probe_costs_for_non_oracle_policies": true,
+    "shared_trust_memory_across_non_oracle_policies": true,
+    "new_fixture_candidate_hash_overlap_required_zero": true,
+    "public_ai_board_write": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "cross_agent_coordinate": "shared F01-F19 feature space only"
+  },
+  "download_only_raw": {
+    "experiments/EXP-0011/results/metrics.json": "3eb94e1b9a351ec6f963bb55dc97af88c727f88c7e398a623bbdc7cc1f85aca0",
+    "experiments/EXP-0011/results/per_event_summary.jsonl": "ed8ca9c9ee8e50014e9714a94325911931b8763d78108f0242504620bbfc03a6",
+    "experiments/EXP-0011/ledger/closed_loop_decisions.jsonl": "580531a5cd4f135be236458c6e813e822be3d080009b310c700199f81700a6f3",
+    "experiments/EXP-0011/3m/raw_projection_files": "sha256-listed in experiments/EXP-0011/3m/GITHUB_INDEX.json",
+    "full_source_and_tdd": "sha256-listed in experiments/EXP-0011/GITHUB_SOURCE_INDEX.json and byte-complete in ZIP",
+    "original_binary_sources": "included under release/original-binaries inside the byte-complete ZIP"
+  }
+}
