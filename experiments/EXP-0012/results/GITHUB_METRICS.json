@@ -1,0 +1,32 @@
+{
+  "exploratory_observations": {
+    "E1_defer_attractor_observed": true,
+    "E2_sensitivity_shows_defer_inquiry_reject_regions": true,
+    "E3_total_loss_can_improve_while_immediate_resolution_collapses": true
+  },
+  "exploratory_sensitivity_representative": [
+    {"accept_count":0,"defer_count":20,"false_accepts":0,"false_rejects":0,"planner_defer_penalty":0.33,"planner_probe_penalty":0.035,"probe_queries":0,"reject_count":0,"risk_weighted_target_loss":0.0003948144948539286,"total_loss":0.037918814494853924},
+    {"accept_count":4,"defer_count":6,"false_accepts":0,"false_rejects":4,"planner_defer_penalty":0.5,"planner_probe_penalty":0.035,"probe_queries":17,"reject_count":10,"risk_weighted_target_loss":0.0007429053447915513,"total_loss":0.02671490534479155},
+    {"accept_count":2,"defer_count":1,"false_accepts":0,"false_rejects":6,"planner_defer_penalty":0.5,"planner_probe_penalty":0.01,"probe_queries":24,"reject_count":17,"risk_weighted_target_loss":0.0011914969640946288,"total_loss":0.02244349696409463},
+    {"accept_count":0,"defer_count":0,"false_accepts":0,"false_rejects":8,"planner_defer_penalty":0.65,"planner_probe_penalty":0.035,"probe_queries":0,"reject_count":20,"risk_weighted_target_loss":0.002328057838213038,"total_loss":0.002328057838213038}
+  ],
+  "hypotheses": {
+    "H1_autonomy_pack_compiles_exp0011": true,
+    "H2_a4_uses_active_inquiry_planning": false,
+    "H3_a4_reduces_deferral_vs_a3": false,
+    "H4_a4_target_loss_not_worse_than_a3": true,
+    "H5_a4_total_loss_below_a3": true,
+    "H6_a4_resolves_at_least_one_a3_defer_correctly": false,
+    "H7_non_oracle_gap_remains": true,
+    "H8_no_exact_candidate_reuse_from_prior_experiments": true
+  },
+  "memorization_guard": {"all_event_ids_new":true,"candidate_hash_overlap_count":0,"candidate_hash_overlaps":[],"prior_hash_token_count":364},
+  "primary_metrics": {
+    "A2-Second-Order": {"action_counts":{"accept":18,"defer":2,"seek_evidence":2},"active_plan_count":0,"defer_cost":0.0042120000000000005,"defer_count":2,"events":20,"false_accepts":10,"false_rejects":0,"immediate_resolution_rate":0.9,"max_probe_budget":2,"phase_loss":{"mode_switch_resolution":0.08254215236947923,"rapid_resolution":0.08553171998712952,"stationary_resolution":0.05314145959418882},"probe_cost":0.0016,"probe_queries":2,"probe_types_used":["independent","temporal"],"resolved_after_probe":0,"risk_weighted_target_loss":0.21540333195079756,"total_loss":0.22121533195079757},
+    "A3-Closed-Loop-Deferred": {"action_counts":{"accept":11,"defer":9,"seek_evidence":23},"active_plan_count":0,"defer_cost":0.018491999999999998,"defer_count":9,"events":20,"false_accepts":3,"false_rejects":0,"immediate_resolution_rate":0.55,"max_probe_budget":2,"phase_loss":{"mode_switch_resolution":0.08708795872609125,"rapid_resolution":0.030573867784255193,"stationary_resolution":0.010956},"probe_cost":0.0184,"probe_queries":23,"probe_types_used":["independent","provenance","temporal"],"resolved_after_probe":0,"risk_weighted_target_loss":0.09172582651034644,"total_loss":0.12861782651034645},
+    "A4-Active-Resolution": {"action_counts":{"defer":20},"active_plan_count":0,"defer_cost":0.037523999999999995,"defer_count":20,"events":20,"false_accepts":0,"false_rejects":0,"immediate_resolution_rate":0.0,"max_probe_budget":2,"phase_loss":{"mode_switch_resolution":0.013191901911491034,"rapid_resolution":0.013792766170838714,"stationary_resolution":0.010934146412524177},"probe_cost":0.0,"probe_queries":0,"probe_types_used":[],"resolved_after_probe":0,"risk_weighted_target_loss":0.0003948144948539286,"total_loss":0.037918814494853924},
+    "Oracle": {"action_counts":{"accept":8,"reject":12},"active_plan_count":0,"defer_cost":0.0,"defer_count":0,"events":20,"false_accepts":0,"false_rejects":0,"immediate_resolution_rate":1.0,"max_probe_budget":0,"phase_loss":{"mode_switch_resolution":0.0,"rapid_resolution":0.0,"stationary_resolution":0.0},"probe_cost":0.0,"probe_queries":0,"probe_types_used":[],"resolved_after_probe":0,"risk_weighted_target_loss":0.0,"total_loss":0.0}
+  },
+  "resolved_a3_deferrals": [],
+  "schema": "scl-exp0012-github-metrics/v0.1"
+}
