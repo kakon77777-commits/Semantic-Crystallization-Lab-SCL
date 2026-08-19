@@ -1,0 +1,14 @@
+{
+  "experiment": "EXP-0013",
+  "files": {
+    "python/scl_exp/exp0013.py": "8328e9839f5fe3d24b574874199ad2849324c5f42f693a2457fae0434ed3620a",
+    "python/scl_exp/finite_horizon_inquiry.py": "5a15b33cc2fad3eadce7ba691e23c5e527c2243339108bfb1b9e1d49eb2ce421",
+    "python/scl_exp/three_m_v13.py": "10f62c2c18bc59f00011ab3fba4aad17812fa1bc66f65864e2da0c21204b105c",
+    "scripts/run_exp0013.py": "99db7f96ee1700bd19363dadadad66a27e30375d7127e0127563b627ae8ec2a9",
+    "tests_py/test_exp0013.py": "037a8d06f100bbda025809ef8fcb5ae04e2bf8d00c6bf15730a1d5f91280ca25",
+    "tests_py/test_finite_horizon_inquiry.py": "ebf9266ee57ea4e6f7e01d43e00de5d1ce2773382cb6fc4748908ea248e0f158",
+    "tests_py/test_runner_exp0013.py": "49abf39f8dbdfae7e0362bb9d705c46b75937e0ff83a4a6d48dec2aebc565599",
+    "tests_py/test_three_m_v13.py": "0c1b1899aa1dc343efde9fa65e51c2fc3125037a625727d680d057221fd3caf1"
+  },
+  "schema": "scl-github-source-index/v0.13"
+}
