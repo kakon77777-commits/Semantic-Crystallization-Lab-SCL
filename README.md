@@ -12,22 +12,27 @@ A one-word title or pointer is not counted as structural compression merely beca
 
 ## Current milestone
 
-**SCL v0.9 / EXP-0009 — Uncertainty-Aware Epistemic Decision**
+**SCL v0.10 / EXP-0010 — Reflexive Epistemic Challenge / X-Order Cognitive Lift**
 
-EXP-0009 moves the bottleneck from trust-memory quality to decision projection. All non-Oracle policies receive the **same** one-event-delayed Adaptive trust trajectory; only the mapping from belief state to action changes. Scalar-Threshold is binary accept/reject, Posterior-Mean can also seek evidence or defer, and Belief-State additionally consumes posterior uncertainty, volatility and disagreement.
+EXP-0010 treats the prior experiment chain itself as an experimental input. A0 uses the EXP-0009 reactive belief-state decision layer without reading prior SCL artifacts. A1 compiles a reflexive rule pack from all nine prior reports plus the EXP-0004–0009 validation records, then prospectively challenges failure signatures such as false consensus, reputation hysteresis and high-confidence errors that reactive uncertainty may discover too late. A2 additionally models how an environment can target A1's published challenge rule.
 
-Belief-State does reduce high-risk false accepts from `2` to `1`, uses `12` paid evidence queries and `8` deferrals, and differs behaviorally from Posterior-Mean. But its total loss is `0.15586`, worse than Scalar-Threshold at `0.12313` and Posterior-Mean at `0.14205`. It still accepts the first high-reputation A/B/C betrayal before negative feedback exists, then pays extra evidence/defer costs while carrying that earlier distortion. The preregistered active-evidence rescue gate also fails (`0` immediate scalar errors are converted into a correct immediate accept/reject after seeking).
+On a new Phase-I fixture with zero exact candidate-hash reuse, A0 novel-transfer loss is `0.14026` while A1 falls to `0.01647`; A1 catches a new trusted-consensus pollution that A0 accepts with high confidence. This is bounded evidence for **0→1 reflexive transfer** rather than direct answer memorization. Phase II then conditions the environment on A1's rule: A1 is exploited by three meta-attacks. A2 triggers one second-order challenge but does not convert any of those exploits into a better final decision, and its meta-phase loss is slightly worse (`0.037999` vs `0.037199`). Thus **higher reflexive order is not automatically monotone in performance**.
 
-The bounded lesson is therefore stronger than “use uncertainty”: **reactive uncertainty-aware action is not enough when high-confidence failure arrives before uncertainty has had time to rise**. See `experiments/EXP-0009/results/report.md`, `experiments/EXP-0009/EXP0009_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0009/3m/`.
+See `experiments/EXP-0010/results/report.md`, `experiments/EXP-0010/EXP0010_SOURCE_AND_PROCESS.md`, and `experiments/EXP-0010/3m/`.
 
 ---
+
+### Previous milestone: SCL v0.9 / EXP-0009 — Uncertainty-Aware Epistemic Decision
+
+EXP-0009 holds trust memory fixed and varies only the projection from belief state to action. Belief-State reduces high-risk false accepts but pays enough evidence/defer cost that total loss is worse than the scalar baseline, and reactive evidence seeking fails to repair the first trusted-coalition betrayal. This motivates the prospective challenge mechanism tested in EXP-0010.
+
+See `experiments/EXP-0009/results/report.md` and `VALIDATION_V09.json`.
 
 ### Previous milestone: SCL v0.8 / EXP-0008 — Adaptive Trust Dynamics / Reputation Decay–Recovery
 
 EXP-0008 keeps the admission threshold fixed and changes only trust-memory dynamics. Adaptive-Dynamics obtains the best trust Brier score but produces the same admission sequence and risk-weighted loss as cumulative history, while simple Fixed-Decay dominates the particular fixture. This separates **trust-state quality** from **decision-policy quality** and motivates EXP-0009.
 
 See `experiments/EXP-0008/results/report.md` and `VALIDATION_V08.json`.
-
 
 ### Previous milestone: SCL v0.7 / EXP-0007 — Adaptive Epistemic Admission / Learning When to Trust
 
