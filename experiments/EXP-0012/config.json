@@ -1,0 +1,21 @@
+{
+  "decision": {
+    "base_accept_probability": 0.64,
+    "defer_cost": 0.0012,
+    "evidence_cost": 0.0008,
+    "max_seek": 2,
+    "min_seek_signal": 0.045,
+    "novelty_accept_weight": 2.0,
+    "risk_accept_weight": 0.12,
+    "seek_disagreement_weight": 0.16,
+    "seek_value_scale": 0.22,
+    "uncertainty_band_weight": 0.14
+  },
+  "defer_cost": 0.0012,
+  "feature_space": "SCL-F01-F19-v0.2",
+  "max_probes_a2": 2,
+  "max_probes_a3": 2,
+  "max_probes_a4": 2,
+  "probe_cost": 0.0008,
+  "risk_loss_weight": 3.0
+}
