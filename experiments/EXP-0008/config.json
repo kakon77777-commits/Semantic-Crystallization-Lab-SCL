@@ -1,0 +1,24 @@
+{
+  "admission": {
+    "base_required_support": 0.85,
+    "dynamics": {
+      "adaptive_base_decay": 0.97,
+      "alpha0": 2.0,
+      "beta0": 2.0,
+      "betrayal_boost": 2.8,
+      "fixed_decay": 0.9,
+      "max_decay": 0.995,
+      "min_decay": 0.52,
+      "recovery_boost": 2.2,
+      "surprise_ema": 0.58,
+      "volatility_decay_strength": 0.42
+    },
+    "min_distinct_origins": 2,
+    "novelty_weight": 4.0,
+    "recent_pollution_weight": 0.45,
+    "recent_window": 4,
+    "risk_weight": 0.5
+  },
+  "feature_space": "SCL-F01-F19-v0.2",
+  "risk_loss_weight": 3.0
+}
