@@ -1,0 +1,61 @@
+{
+  "base_commit": "ff3b65fbc682780669d7b8ec0534ef85dcadd54e",
+  "boundaries": {
+    "artifact_exposure_is_experimental_factor": true,
+    "cross_agent_coordinate": "shared F01-F19 feature space only",
+    "current_truth_visible_to_non_oracle_policy": false,
+    "live_ctcl_call": false,
+    "neural_retraining": false,
+    "new_fixture_candidate_hash_overlap_required_zero": true,
+    "oracle_is_evaluation_ceiling_only": true,
+    "phase_2_environment_conditioned_on_a1_rule": true,
+    "public_ai_board_write": false,
+    "shared_trust_memory_across_non_oracle_policies": true
+  },
+  "branch": "scl-v0.10-exp0010",
+  "download_only_raw": {
+    "experiments/EXP-0010/3m/raw_projection_files": "sha256-listed in experiments/EXP-0010/3m/GITHUB_INDEX.json",
+    "experiments/EXP-0010/ledger/reflexive_decisions.jsonl": "5f51c9f3206e302acf7a0858d4ff18795ec26fe498adcf5f3055dc8cf7794f11",
+    "experiments/EXP-0010/results/metrics.json": "4100e02109775179daaaed0c5645831d133a5d8e10795b68bda34c84ab658507",
+    "experiments/EXP-0010/results/per_event_summary.jsonl": "0bcd5d7b84776ffa86d0a8f20a0bbfb3c3b097b05025a9e6a0238e5ec0ed474c",
+    "full_tdd_suite": "included in the byte-complete ZIP; all EXP-0010-specific TDD files are browsable on GitHub",
+    "original_binary_sources": "included under release/original-binaries inside the byte-complete ZIP"
+  },
+  "experiment": "EXP-0010",
+  "github_browsable_core": [
+    "README.md",
+    "package.json",
+    "VALIDATION_V10.json",
+    "papers/scl-series/SCI_v0.1.md",
+    "docs/superpowers/specs/2026-08-20-scl-v0.10-exp0010-design.md",
+    "python/scl_exp/reflexive_artifact.py",
+    "python/scl_exp/reflexive_challenge.py",
+    "python/scl_exp/exp0010.py",
+    "python/scl_exp/three_m_v10.py",
+    "scripts/run_exp0010.py",
+    "tests_py/test_reflexive_artifact.py",
+    "tests_py/test_reflexive_challenge.py",
+    "tests_py/test_exp0010.py",
+    "tests_py/test_three_m_v10.py",
+    "tests_py/test_runner_exp0010.py",
+    "experiments/EXP-0010/README.md",
+    "experiments/EXP-0010/EXP0010_SOURCE_AND_PROCESS.md",
+    "experiments/EXP-0010/config.json",
+    "experiments/EXP-0010/results/GITHUB_METRICS.json",
+    "experiments/EXP-0010/results/report.md",
+    "experiments/EXP-0010/ledger/GITHUB_LEDGER_SUMMARY.json",
+    "experiments/EXP-0010/3m/GITHUB_INDEX.json",
+    "experiments/EXP-0010/3m/checksums.json",
+    "experiments/EXP-0010/3m/verification.json"
+  ],
+  "release_archive": {
+    "bytes": 2765422,
+    "filename": "SCL_v0.10_EXP-0010_2026-08-20.zip",
+    "included_in_archive": false,
+    "note": "This sync manifest is intentionally excluded from the ZIP because it records that ZIP's final SHA-256. The archive contains complete raw outputs, full TDD suite, prior experiment history and original binary sources.",
+    "sha256": "4ba91b47e294a7126a60c0640a6f3724c217bf5fcca4b9010f059d2ec8183648",
+    "zip_integrity": "PASS"
+  },
+  "repository": "kakon77777-commits/Semantic-Crystallization-Lab-SCL",
+  "schema": "scl-github-sync/v0.10"
+}
