@@ -1,9 +1,9 @@
 {
   "name": "semantic-crystallization-lab-scl",
-  "version": "0.10.0",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
-  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, adaptive epistemic governance, and reflexive X-order cognition experiments.",
+  "description": "Finite semantic crystallization, Symbolic Cognitive Imprint, reflexive strategy, and active epistemic inquiry/autonomy experiments.",
   "scripts": {
     "test": "node --test",
     "exp:0001": "node scripts/run-exp0001.js",
@@ -16,7 +16,9 @@
     "exp:0007": "python scripts/run_exp0007.py",
     "exp:0008": "python scripts/run_exp0008.py",
     "exp:0009": "python scripts/run_exp0009.py",
-    "exp:0010": "python scripts/run_exp0010.py"
+    "exp:0010": "python scripts/run_exp0010.py",
+    "exp:0011": "python scripts/run_exp0011.py",
+    "exp:0012": "python scripts/run_exp0012.py"
   },
   "engines": {
     "node": ">=20"
