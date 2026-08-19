@@ -1,0 +1,13 @@
+{
+  "graphs/routes.jsonl": "2ff7f758f0783b2a0e4d5af9d7849836aa959118c18a9eeed214d636aaadf672",
+  "ledgers/active_inquiry_decisions.jsonl": "b4cbd98a817ef95e933deb0ad97193d47591e7ff7aef3621a1dd982b3c340957",
+  "manifest.json": "7c850be82ff6ba99364eeef98dab676dfc7373dadf1bc01a2d8b4e2b30c45c78",
+  "matrices/artifact_rule_sources.cells.jsonl": "a971ea7b40daa149fec5aaaf41f96ab58f407556b7bdbda36d0011a8908ef58f",
+  "matrices/opponent_posterior.cells.jsonl": "8d477061c17d3bb09a34932648c0f29705a9c8ff0598475045b4f1a2a1187f6a",
+  "matrices/planner_expected_loss.cells.jsonl": "046395366b10e382304b1a359723c73ed27a36af7725925589e074a58353d813",
+  "matrices/policy_event_resolution.cells.jsonl": "fea6d4e43e239a911c65a0eb53637399e1ede14ce0df38616f30dec495f89a22",
+  "matrices/policy_metrics.cells.jsonl": "e61d0739639ae048894f006a5c7a59317bed114b7b275ed4212977a06d716fd6",
+  "provenance/events.jsonl": "18144c79d0a30d5a5aef7316abcbb50cb89839f72182b5d434fd8f484e5fb99d",
+  "reports/projection_loss.json": "63469ad471d78c0ab28eb08ea8bd9cfa184fdd2463e20e3ec9b70d01545ffdce",
+  "substrate.json": "c71a71e19d4656532d8b1f408a872bf69dcdcf3c068f0e55d4520cb3c1082d12"
+}
