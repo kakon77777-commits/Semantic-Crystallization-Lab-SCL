@@ -1,0 +1,19 @@
+{
+  "a4_actions": {
+    "defer": 20
+  },
+  "by_final_action": {
+    "accept": 37,
+    "defer": 31,
+    "reject": 12
+  },
+  "by_policy": {
+    "A2-Second-Order": 20,
+    "A3-Closed-Loop-Deferred": 20,
+    "A4-Active-Resolution": 20,
+    "Oracle": 20
+  },
+  "full_ledger_sha256": "b4cbd98a817ef95e933deb0ad97193d47591e7ff7aef3621a1dd982b3c340957",
+  "rows": 80,
+  "schema": "scl-exp0012-ledger-summary/v0.1"
+}
