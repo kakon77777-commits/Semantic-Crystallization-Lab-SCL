@@ -1,0 +1,22 @@
+{
+  "a3_probe_types": [
+    "independent",
+    "provenance",
+    "temporal"
+  ],
+  "by_final_action": {
+    "accept": 49,
+    "defer": 33,
+    "reject": 13
+  },
+  "by_policy": {
+    "A0-Reactive": 19,
+    "A1-Artifact-Reflexive": 19,
+    "A2-Second-Order": 19,
+    "A3-Closed-Loop": 19,
+    "Oracle": 19
+  },
+  "full_ledger_sha256": "580531a5cd4f135be236458c6e813e822be3d080009b310c700199f81700a6f3",
+  "rows": 95,
+  "schema": "scl-exp0011-ledger-summary/v0.1"
+}
